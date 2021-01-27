@@ -68,8 +68,32 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: c7c93a2b4503e84f9d5776a651c93df3
     GuidInternal: 
-    m_lastTime: -8585899201365727542
-    List: []
+    m_lastTime: -8585898565416945760
+    List:
+    - name: audio-asset
+      guid: 5ab080505457b94e91c1717744b73ab0
+      id: 3910721282
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: audio-asset
+        ObjectType: 4
+      Path: Default Work Unit\audio-asset
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: test_loop
+      guid: 97a7b2b67b96b844b256d20d83549a14
+      id: 2490990646
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: test_loop
+        ObjectType: 3
+      Path: Default Work Unit\test_loop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -110,6 +134,9 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585899201365225331
     List: []
-  ExpandedItems: []
+  ExpandedItems:
+  - /tuc-jam-jan-2021
+  - /tuc-jam-jan-2021/Events
+  - /tuc-jam-jan-2021/Events/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
