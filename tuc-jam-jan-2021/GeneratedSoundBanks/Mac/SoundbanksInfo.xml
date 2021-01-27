@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
 		<ProjectRoot>D:\Jam2021\tuc-jam-jan-2021\</ProjectRoot>
-		<SourceFilesRoot>D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>D:\Jam2021\tuc-jam-jan-2021\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<SourceFilesRoot>D:\Jam2021\tuc-jam-jan-2021\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Jam2021\tuc-jam-jan-2021\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\Jam2021\tuc-jam-jan-2021\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\Jam2021\tuc-jam-jan-2021\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3838450991">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3053300949">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
