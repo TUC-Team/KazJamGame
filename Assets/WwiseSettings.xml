@@ -4,11 +4,11 @@
   <CreatedPicker>true</CreatedPicker>
   <CreateWwiseGlobal>true</CreateWwiseGlobal>
   <CreateWwiseListener>true</CreateWwiseListener>
-  <GenerateSoundBanksAsPreBuildStep>true</GenerateSoundBanksAsPreBuildStep>
+  <GenerateSoundBanksAsPreBuildStep>false</GenerateSoundBanksAsPreBuildStep>
   <ShowMissingRigidBodyWarning>true</ShowMissingRigidBodyWarning>
   <ShowSpatialAudioWarningMsg>true</ShowSpatialAudioWarningMsg>
   <SoundbankPath>Audio/GeneratedSoundBanks</SoundbankPath>
   <WwiseInstallationPathMac />
   <WwiseInstallationPathWindows>C:\Program Files (x86)\Audiokinetic\Wwise 2019.2.8.7432</WwiseInstallationPathWindows>
-  <WwiseProjectPath>C:/Users/derno/Documents/WwiseProjects/tuc-jam-jan-2021/tuc-jam-jan-2021.wproj</WwiseProjectPath>
+  <WwiseProjectPath>../../Jam2021/tuc-jam-jan-2021/tuc-jam-jan-2021.wproj</WwiseProjectPath>
 </WwiseSettings>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>D:\Jam2021\tuc-jam-jan-2021\</ProjectRoot>
+		<SourceFilesRoot>D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Jam2021\tuc-jam-jan-2021\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Jam2021\tuc-jam-jan-2021\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="4204904655">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2597442952" Language="SFX" Hash="3771313415">
+			<ObjectPath>\SoundBanks\Default Work Unit\master_bank</ObjectPath>
+			<ShortName>master_bank</ShortName>
+			<Path>master_bank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="905956797" Name="test_loop_new" ObjectPath="\Events\Default Work Unit\test_loop_new" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="931828245" Language="SFX">
+							<ShortName>75 BPM - E - Dirty Guitar Riffs - Riff 1 - pan left.wav</ShortName>
+							<Path>SFX\75 BPM - E - Dirty Guitar Riffs - Riff 1 - pan left_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
