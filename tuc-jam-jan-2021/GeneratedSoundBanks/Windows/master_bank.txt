@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	742047857	test_loop_new_upd			\Default Work Unit\test_loop_new_upd	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	931828245	75 BPM - E - Dirty Guitar Riffs - Riff 1 - pan left	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\75 BPM - E - Dirty Guitar Riffs - Riff 1 - pan left_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\75 BPM - E - Dirty Guitar Riffs - Riff 1 - pan left		1228868
+

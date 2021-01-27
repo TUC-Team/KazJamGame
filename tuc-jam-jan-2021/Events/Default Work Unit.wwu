@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2B3AC9C7-0345-4FE8-9D57-76A651C93DF3}" SchemaVersion="97">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{2B3AC9C7-0345-4FE8-9D57-76A651C93DF3}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="test_loop_new_upd" ID="{B6B2A797-967B-44B8-B256-D20D83549A14}">
+					<ChildrenList>
+						<Action Name="" ID="{59C2CBA1-0DCB-4950-9555-95B616FB14BC}" ShortID="597566900">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="75 BPM - E - Dirty Guitar Riffs - Riff 1 - pan left" ID="{958A218F-7DCE-4244-BBB4-F7296BF1867B}" WorkUnitID="{0B8A8412-535D-478C-A682-64DFB12B79D8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="audio-asset" ID="{5080B05A-5754-4EB9-91C1-717744B73AB0}" ShortID="601810086"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
