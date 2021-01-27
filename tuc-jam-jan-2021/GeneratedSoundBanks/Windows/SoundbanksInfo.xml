@@ -16,12 +16,12 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2597442952" Language="SFX" Hash="3771313415">
+		<SoundBank Id="2597442952" Language="SFX" Hash="3877364532">
 			<ObjectPath>\SoundBanks\Default Work Unit\master_bank</ObjectPath>
 			<ShortName>master_bank</ShortName>
 			<Path>master_bank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="905956797" Name="test_loop_new" ObjectPath="\Events\Default Work Unit\test_loop_new" DurationType="Infinite">
+				<Event Id="742047857" Name="test_loop_new_upd" ObjectPath="\Events\Default Work Unit\test_loop_new_upd" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="931828245" Language="SFX">
 							<ShortName>75 BPM - E - Dirty Guitar Riffs - Riff 1 - pan left.wav</ShortName>

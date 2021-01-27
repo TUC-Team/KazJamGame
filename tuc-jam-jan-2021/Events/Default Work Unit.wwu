@@ -3,7 +3,7 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{2B3AC9C7-0345-4FE8-9D57-76A651C93DF3}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="test_loop_new" ID="{B6B2A797-967B-44B8-B256-D20D83549A14}">
+				<Event Name="test_loop_new_upd" ID="{B6B2A797-967B-44B8-B256-D20D83549A14}">
 					<ChildrenList>
 						<Action Name="" ID="{59C2CBA1-0DCB-4950-9555-95B616FB14BC}" ShortID="597566900">
 							<ReferenceList>

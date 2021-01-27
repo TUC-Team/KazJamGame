@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 767f7eeec69ba4c4b804f134b0ca8770, type: 3}
   m_Name: B6B2A797-967B-44B8-B256-D20D83549A14
   m_EditorClassIdentifier: 
-  objectName: test_loop_new
-  id: 905956797
+  objectName: test_loop_new_upd
+  id: 742047857
   guid: B6B2A797-967B-44B8-B256-D20D83549A14
