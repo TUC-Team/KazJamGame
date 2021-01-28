@@ -16,7 +16,9 @@ public class ChickenAIBase : MonoBehaviour
     private Vector3 targetPosition;
     private float timeInTargetPosition;
     private HandAIBase hand;
-    private new Collider collider;
+#pragma warning disable 108,114
+    private Collider collider;
+#pragma warning restore 108,114
 
     private void Awake()
     {
