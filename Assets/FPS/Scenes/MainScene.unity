@@ -2867,26 +2867,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e4bd8ac328e4bb4fbbee62ca0f24a98, type: 3}
---- !u!1 &1019516265122841146 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3197546034743387472, guid: dd2c1181b33d77c4e8b9a5e7b60c614a,
-    type: 3}
-  m_PrefabInstance: {fileID: 2484293236789077866}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1019516265122841147
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1019516265122841146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9b0ce1bb69c96b49a7ac1098a7f5796, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damageMultiplier: 1
-  sensibilityToSelfdamage: 0.5
 --- !u!1001 &2484293236789077866
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2894,6 +2874,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2604057396983402077, guid: dd2c1181b33d77c4e8b9a5e7b60c614a,
+        type: 3}
+      propertyPath: healthBarPivot
+      value: 
+      objectReference: {fileID: 1099769529}
     - target: {fileID: 3197546034743387472, guid: dd2c1181b33d77c4e8b9a5e7b60c614a,
         type: 3}
       propertyPath: m_Name
@@ -2954,16 +2939,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3197546034743387479, guid: dd2c1181b33d77c4e8b9a5e7b60c614a,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3337106957182699016, guid: dd2c1181b33d77c4e8b9a5e7b60c614a,
-        type: 3}
-      propertyPath: healthBarPivot
-      value: 
-      objectReference: {fileID: 1099769529}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd2c1181b33d77c4e8b9a5e7b60c614a, type: 3}
 --- !u!1001 &2729281212881330968
