@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Assets.FPS.Scripts;
+using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(ProjectileBase))]
@@ -39,6 +40,10 @@ public class ProjectileStandard : MonoBehaviour
     public float damage = 40f;
     [Tooltip("Area of damage. Keep empty if you don<t want area damage")]
     public DamageArea areaOfDamage;
+
+    [Header("PushForce")]
+    [Tooltip("Push force of the projectile (applied to Pushable)")]
+    public float pushForce = 1f;
 
     [Header("Debug")]
     [Tooltip("Color of the projectile radius debug view")]
@@ -216,6 +221,11 @@ public class ProjectileStandard : MonoBehaviour
             if (damageable)
             {
                 damageable.InflictDamage(damage, false, m_ProjectileBase.owner);
+            }
+            var pushable = collider.GetComponent<Pushable>();
+            if (pushable != null)
+            {
+                pushable.Push(transform.forward * pushForce);
             }
         }
 
