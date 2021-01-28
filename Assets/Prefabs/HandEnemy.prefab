@@ -249,7 +249,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3197546033269739370}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.606, z: 0}
+  m_LocalPosition: {x: 0, y: 1.56, z: 0}
   m_LocalScale: {x: 1, y: 2.001, z: 1}
   m_Children:
   - {fileID: 6581974561924614649}
@@ -423,7 +423,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startState: 2
-  attackRate: 2
+  minPatrolTime: 5
+  maxPatrolTime: 10
+  stayTimeInPatrolPoint: 2
 --- !u!195 &3197546034743387487
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -439,9 +441,9 @@ NavMeshAgent:
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 0
-  m_AutoBraking: 0
-  m_AutoRepath: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
   m_Height: 10
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
@@ -476,7 +478,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.8712057
+  m_Radius: 0.25
   m_Center: {x: 0, y: 1.096424, z: 0}
 --- !u!1 &6453134967160214887
 GameObject:

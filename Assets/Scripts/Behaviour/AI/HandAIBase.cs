@@ -3,19 +3,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using Random = System.Random;
 
 public class HandAIBase : MonoBehaviour
 {
     [SerializeField] private HandState startState;
-    [SerializeField] private float attackRate = 2f;
-    
+    [SerializeField] private float minPatrolTime = 5f;
+    [SerializeField] private float maxPatrolTime = 10f;
+    [SerializeField] private float stayTimeInPatrolPoint = 2f;
+
     private NavMeshAgent agent;
     private ChickenAIBase targetChicken;
-    private ChickenAIBase chickenInAttackRange;
+    private List<ChickenAIBase> chickensInAttackRange = new List<ChickenAIBase>();
     private Animator animator;
     private List<ChickenAIBase> chickens = new List<ChickenAIBase>();
     private HandState state;
-    private float timeSinceLastAttack = 0;
+    private float currentPatrolTime = 0;
+    private float patrolTime = 0;
+    private float currentStayTimeInPatrolPoint = 0;
+    private Vector3 targetPatrolPosition;
 
     private void Awake()
     {
@@ -38,8 +44,6 @@ public class HandAIBase : MonoBehaviour
 
     private void Update()
     {
-        timeSinceLastAttack += Time.deltaTime;
-            
         switch (state)
         {
             case HandState.Hunt:
@@ -59,9 +63,7 @@ public class HandAIBase : MonoBehaviour
     public void RemoveChicken(ChickenAIBase chicken)
     {
         chickens.Remove(chicken);
-
-        if (chicken == chickenInAttackRange)
-            chickenInAttackRange = null;
+        chickensInAttackRange.Remove(chicken);
     }
 
     private ChickenAIBase FindNearestChicken()
@@ -97,21 +99,49 @@ public class HandAIBase : MonoBehaviour
         if (targetChicken == null)
         {
             print("Все курицы закончились");
+            state = HandState.Patrol;
             return;
         }
         
         agent.SetDestination(targetChicken.transform.position);
 
-        if (chickenInAttackRange != null && timeSinceLastAttack >= attackRate)
+        if (chickensInAttackRange.Count > 0)
         {
             PlayAttackAnim();
-            timeSinceLastAttack = 0;
+            state = HandState.Patrol;
         }
     }
-    
-    private void Patrol(){}
 
-    private void OnTriggerStay(Collider other)
+    private void Patrol()
+    {
+        if (patrolTime == 0)
+        {
+            patrolTime = UnityEngine.Random.Range(minPatrolTime, maxPatrolTime);
+            ChangeTargetRandom();
+        }
+
+        agent.SetDestination(targetPatrolPosition);
+
+        if (Vector3.Distance(transform.position, targetPatrolPosition) < .2f)
+            currentStayTimeInPatrolPoint += Time.deltaTime;
+
+        if (currentStayTimeInPatrolPoint >= stayTimeInPatrolPoint)
+        {
+            currentStayTimeInPatrolPoint = 0;
+            ChangeTargetRandom();
+        }
+        
+        currentPatrolTime += Time.deltaTime;
+
+        if (currentPatrolTime >= patrolTime)
+        {
+            patrolTime = 0;
+            currentPatrolTime = 0;
+            state = HandState.Hunt;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
     {
         var chicken = other.GetComponent<ChickenAIBase>();
 
@@ -121,13 +151,42 @@ public class HandAIBase : MonoBehaviour
         if (chicken.IsKilled)
             return;
 
-        chickenInAttackRange = chicken;
+        chickensInAttackRange.Add(chicken);
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        var chicken = other.GetComponent<ChickenAIBase>();
+
+        if (chicken == null)
+            return;
+        
+        chickensInAttackRange.Remove(chicken);
     }
 
     private void OnAttackAnimation()
     {
-        chickenInAttackRange.Kill();
-        chickenInAttackRange = null;
+        if (chickensInAttackRange.Count == 0)
+            return;
+        
+        chickensInAttackRange[0].Kill();
+    }
+    
+    private void ChangeTargetRandom()
+    {
+        var position = transform.position;
+        Vector3 target = position;
+
+        float x = UnityEngine.Random.Range(-15f, 15f);
+        float z = UnityEngine.Random.Range(-15f, 15f);
+
+        target.x += x;
+        target.y = position.y;
+        target.z += z;
+
+        currentStayTimeInPatrolPoint = 0;
+        
+        targetPatrolPosition = target;
     }
 }
 
