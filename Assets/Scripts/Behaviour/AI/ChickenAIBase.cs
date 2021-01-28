@@ -16,7 +16,7 @@ public class ChickenAIBase : MonoBehaviour
     private Vector3 targetPosition;
     private float timeInTargetPosition;
     private HandAIBase hand;
-    private Collider collider;
+    private new Collider collider;
 
     private void Awake()
     {
