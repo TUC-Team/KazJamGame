@@ -359,7 +359,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: {fileID: 2498529960529057547}
   healthBarImage: {fileID: 1210658697973969391}
-  healthBarPivot: {fileID: 0}
+  healthBarPivot: {fileID: 6581974561924614649}
   hideFullHealthBar: 0
 --- !u!114 &1255984444
 MonoBehaviour:
