@@ -5,5 +5,6 @@ public enum TutorialStepMode {
 	WaitClick,
 	Activate,
 	WaitTime,
-	LoadScene
+	LoadScene,
+	AnyKey
 }
