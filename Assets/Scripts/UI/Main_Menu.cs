@@ -10,22 +10,23 @@ using System.Text;
 using UnityEngine.Events;
 using UnityEngine.Audio;
 
-public class Main_Menu : MonoBehaviour
+public class main_Menu : MonoBehaviour
 {
-   // public GameObject Background;
+    public GameObject Main_Menu;
+    public GameObject Settings_Menu;
 
     public static bool isOpened = false;
-    // GameObject menuUI;
-
 
     public void StartTheGame()
     {
         Debug.Log("Start");
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("GameScene");
     }
     public void SettingsTheGame()
     {
         Debug.Log("Settings");
+        Main_Menu.SetActive(false);
+        Settings_Menu.SetActive(true);
     }
     public void CreditsTheGame()
     {
@@ -38,7 +39,13 @@ public class Main_Menu : MonoBehaviour
     }
 
 
-    void Start()
+    public void Back()
+    {
+        Main_Menu.SetActive(true);
+        Settings_Menu.SetActive(false);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+    public void Start()
     {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
@@ -46,20 +53,15 @@ public class Main_Menu : MonoBehaviour
 
     }
 
-    void Update()
+
+    public void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-       GoToMain();
+            SceneManager.LoadScene("Main_Menu");
         }
 
     }
-
-   public void GoToMain()
-   {
-     SceneManager.GetSceneByName("MenuScene");
-   }
-
 
 }
 
