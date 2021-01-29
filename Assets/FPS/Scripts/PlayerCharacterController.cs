@@ -109,6 +109,7 @@ public class PlayerCharacterController : MonoBehaviour
     PlayerInputHandler m_InputHandler;
     CharacterController m_Controller;
     PlayerWeaponsManager m_WeaponsManager;
+    private GameController _gameController;
     Actor m_Actor;
     Vector3 m_GroundNormal;
     Vector3 m_CharacterVelocity;
@@ -126,6 +127,8 @@ public class PlayerCharacterController : MonoBehaviour
         // fetch components on the same gameObject
         m_Controller = GetComponent<CharacterController>();
         DebugUtility.HandleErrorIfNullGetComponent<CharacterController, PlayerCharacterController>(m_Controller, this, gameObject);
+
+        _gameController = FindObjectOfType<GameController>();
 
         m_InputHandler = GetComponent<PlayerInputHandler>();
         DebugUtility.HandleErrorIfNullGetComponent<PlayerInputHandler, PlayerCharacterController>(m_InputHandler, this, gameObject);
@@ -150,6 +153,9 @@ public class PlayerCharacterController : MonoBehaviour
 
     void Update()
     {
+        if (_gameController.IsGameEnded)
+            return;
+        
         // check for Y kill
         if(!isDead && transform.position.y < killHeight)
         {

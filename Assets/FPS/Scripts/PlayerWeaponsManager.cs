@@ -68,6 +68,7 @@ public class PlayerWeaponsManager : MonoBehaviour
 
     WeaponController[] m_WeaponSlots = new WeaponController[9]; // 9 available weapon slots
     PlayerInputHandler m_InputHandler;
+    private GameController _gameController;
     PlayerCharacterController m_PlayerCharacterController;
     float m_WeaponBobFactor;
     Vector3 m_LastCharacterPosition;
@@ -81,6 +82,8 @@ public class PlayerWeaponsManager : MonoBehaviour
 
     private void Start()
     {
+        _gameController = FindObjectOfType<GameController>();
+        
         activeWeaponIndex = -1;
         m_WeaponSwitchState = WeaponSwitchState.Down;
 
@@ -104,6 +107,9 @@ public class PlayerWeaponsManager : MonoBehaviour
 
     private void Update()
     {
+        if (_gameController.IsGameEnded)
+            return;
+        
         // shoot handling
         WeaponController activeWeapon = GetActiveWeapon();
 
