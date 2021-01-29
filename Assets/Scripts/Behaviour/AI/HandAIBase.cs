@@ -17,16 +17,17 @@ public class HandAIBase : MonoBehaviour
     private ChickenAIBase targetChicken;
     private List<ChickenAIBase> chickensInAttackRange = new List<ChickenAIBase>();
     private Animator animator;
-    private List<ChickenAIBase> chickens = new List<ChickenAIBase>();
     private HandState state;
     private float currentPatrolTime = 0;
     private float patrolTime = 0;
     private float currentStayTimeInPatrolPoint = 0;
     private float timeSinceLastAttack = 0;
     private Vector3 targetPatrolPosition;
+    private ChickenManager chickenManager;
 
     private void Awake()
     {
+        chickenManager = FindObjectOfType<ChickenManager>();   
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
     }
@@ -57,23 +58,12 @@ public class HandAIBase : MonoBehaviour
         }
     }
 
-    public void RegisterChicken(ChickenAIBase chicken)
-    {
-        chickens.Add(chicken);
-    }
-
-    public void RemoveChicken(ChickenAIBase chicken)
-    {
-        chickens.Remove(chicken);
-        chickensInAttackRange.Remove(chicken);
-    }
-
     private ChickenAIBase FindNearestChicken()
     {
         float minDist = Mathf.Infinity;
         ChickenAIBase nearestChicken = null;
         
-        foreach (var chicken in chickens)
+        foreach (var chicken in chickenManager.Chickens)
         {
             if (chicken.IsKilled)
                 continue;
@@ -177,6 +167,8 @@ public class HandAIBase : MonoBehaviour
         }
         
         chickensInAttackRange[0].Kill();
+        chickensInAttackRange.RemoveAt(0);
+        
         state = HandState.Patrol;
     }
     

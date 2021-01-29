@@ -15,7 +15,7 @@ public class ChickenAIBase : MonoBehaviour
     private NavMeshAgent agent;
     private Vector3 targetPosition;
     private float timeInTargetPosition;
-    private HandAIBase hand;
+    private ChickenManager chickenManager;
 #pragma warning disable 108,114
     private Collider collider;
 #pragma warning restore 108,114
@@ -24,9 +24,9 @@ public class ChickenAIBase : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         collider = GetComponent<Collider>();
-        hand = FindObjectOfType<HandAIBase>();
+        chickenManager = FindObjectOfType<ChickenManager>();
         
-        hand.RegisterChicken(this);
+        chickenManager.RegisterChicken(this);
 
         timeInTargetPosition = 0;
     }
@@ -56,7 +56,7 @@ public class ChickenAIBase : MonoBehaviour
     {
         IsKilled = true;
         
-        hand.RemoveChicken(this);
+        chickenManager.RemoveChicken(this);
         
         // play anim ...
         print("chicken " + gameObject.name + " was killed");
