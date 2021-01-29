@@ -8,4 +8,5 @@ public sealed class TutorialStep {
 	public MessageData      Message;
 	public ClickData        Click;
 	public ActivateData     Activate;
+	public SceneData        Scene;
 }

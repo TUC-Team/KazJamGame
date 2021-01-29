@@ -5,5 +5,5 @@ public enum TutorialStepMode {
 	WaitClick,
 	Activate,
 	WaitTime,
-	GoToGame
+	LoadScene
 }

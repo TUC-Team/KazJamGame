@@ -51,8 +51,8 @@ public sealed class TutorialManager : MonoBehaviour {
 				return new ActivateState(step.Activate);
 			case TutorialStepMode.WaitTime:
 				return new WaitTimeState(step.Wait);
-			case TutorialStepMode.GoToGame:
-				return new GoToGameState();
+			case TutorialStepMode.LoadScene:
+				return new LoadSceneState(step.Scene);
 			default:
 				throw new ArgumentOutOfRangeException(nameof(step), step.Mode.ToString());
 		}
