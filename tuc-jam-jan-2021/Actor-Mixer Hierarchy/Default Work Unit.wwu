@@ -44,6 +44,9 @@
 						<ActiveSource Name="75 BPM - E - Dirty Guitar Riffs - Riff 1 - pan left" ID="{96EA4614-7D09-4B60-B7FA-9EE8E5D48927}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Folder Name="pc" ID="{8DB7E094-F928-464A-9E84-88AC45AA1699}" ShortID="231377631"/>
+				<Folder Name="chiken" ID="{0078207B-70C0-4FBC-86F8-1D87DA595615}" ShortID="1063727449"/>
+				<Folder Name="ambient" ID="{35436862-59AA-49FC-AC7B-F799F2B80CDF}" ShortID="226786435"/>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
