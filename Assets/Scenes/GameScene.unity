@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 0d89fb722e41ca64195e57233812fb1f, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -715,7 +715,7 @@ PrefabInstance:
         type: 3}
       propertyPath: DiedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1050983707}
+      objectReference: {fileID: 3197546035174805096}
     - target: {fileID: 3197546034743387473, guid: dd2c1181b33d77c4e8b9a5e7b60c614a,
         type: 3}
       propertyPath: DiedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -794,12 +794,6 @@ Light:
     type: 3}
   m_PrefabInstance: {fileID: 6010031991105453679}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &1050983707 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 3197546034743387478, guid: dd2c1181b33d77c4e8b9a5e7b60c614a,
-    type: 3}
-  m_PrefabInstance: {fileID: 442182462}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1228597653
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -866,6 +860,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 3235725120536374800, guid: c996b53e9f849234393d1e90f68d1679,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8041970913709386448, guid: c996b53e9f849234393d1e90f68d1679,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c996b53e9f849234393d1e90f68d1679, type: 3}
@@ -1258,6 +1262,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2083592881}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &3197546035174805096 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3197546034743387478, guid: dd2c1181b33d77c4e8b9a5e7b60c614a,
+    type: 3}
+  m_PrefabInstance: {fileID: 442182462}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6010031991105453679
 PrefabInstance:
   m_ObjectHideFlags: 0
