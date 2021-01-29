@@ -43,8 +43,8 @@ public class main_Menu : MonoBehaviour
     {
         Main_Menu.SetActive(true);
         Settings_Menu.SetActive(false);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+
     public void Start()
     {
         Cursor.lockState = CursorLockMode.None;
