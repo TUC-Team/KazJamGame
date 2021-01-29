@@ -13,12 +13,12 @@ GameObject:
   - component: {fileID: 3293464046137099789}
   - component: {fileID: 3293464046137099786}
   m_Layer: 0
-  m_Name: GameCamera
+  m_Name: TutorialCamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3293464046137099788
 Transform:
   m_ObjectHideFlags: 0
