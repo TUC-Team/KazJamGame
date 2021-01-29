@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class GameController : MonoBehaviour
 {
-    public UnityEvent<bool> GameEndedEvent;
+    public BooleanEvent GameEndedEvent = new BooleanEvent();
     public bool IsGameEnded { get; private set; } = false;
     
     public void EndGame(bool isWin)

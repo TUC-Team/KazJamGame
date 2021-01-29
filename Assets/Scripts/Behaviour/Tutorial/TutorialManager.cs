@@ -53,6 +53,8 @@ public sealed class TutorialManager : MonoBehaviour {
 				return new WaitTimeState(step.Wait);
 			case TutorialStepMode.LoadScene:
 				return new LoadSceneState(step.Scene);
+			case TutorialStepMode.AnyKey:
+				return new AnyKeyState();
 			default:
 				throw new ArgumentOutOfRangeException(nameof(step), step.Mode.ToString());
 		}
