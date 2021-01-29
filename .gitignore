@@ -5,6 +5,7 @@
 .tmp
 
 # IDE
+.vs
 .idea
 *.DotSettings
 
