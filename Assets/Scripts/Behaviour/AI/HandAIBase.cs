@@ -11,6 +11,7 @@ public class HandAIBase : MonoBehaviour
     [SerializeField] private float minPatrolTime = 5f;
     [SerializeField] private float maxPatrolTime = 10f;
     [SerializeField] private float stayTimeInPatrolPoint = 2f;
+    [SerializeField] private float attackRate = 2f;
 
     private NavMeshAgent agent;
     private ChickenAIBase targetChicken;
@@ -21,6 +22,7 @@ public class HandAIBase : MonoBehaviour
     private float currentPatrolTime = 0;
     private float patrolTime = 0;
     private float currentStayTimeInPatrolPoint = 0;
+    private float timeSinceLastAttack = 0;
     private Vector3 targetPatrolPosition;
 
     private void Awake()
@@ -96,6 +98,8 @@ public class HandAIBase : MonoBehaviour
     {
         targetChicken = FindNearestChicken();
 
+        timeSinceLastAttack += Time.deltaTime;
+
         if (targetChicken == null)
         {
             print("Все курицы закончились");
@@ -105,10 +109,10 @@ public class HandAIBase : MonoBehaviour
         
         agent.SetDestination(targetChicken.transform.position);
 
-        if (chickensInAttackRange.Count > 0)
+        if (chickensInAttackRange.Count > 0 && timeSinceLastAttack >= attackRate)
         {
             PlayAttackAnim();
-            state = HandState.Patrol;
+            timeSinceLastAttack = 0;
         }
     }
 
@@ -167,9 +171,13 @@ public class HandAIBase : MonoBehaviour
     private void OnAttackAnimation()
     {
         if (chickensInAttackRange.Count == 0)
+        {
+            state = HandState.Patrol;
             return;
+        }
         
         chickensInAttackRange[0].Kill();
+        state = HandState.Patrol;
     }
     
     private void ChangeTargetRandom()
