@@ -12,48 +12,61 @@ public class HandAIBase : MonoBehaviour
     [SerializeField] private float maxPatrolTime = 10f;
     [SerializeField] private float stayTimeInPatrolPoint = 2f;
     [SerializeField] private float attackRate = 2f;
+    [SerializeField] private float healingSpeed = 10f;
 
-    private NavMeshAgent agent;
-    private ChickenAIBase targetChicken;
-    private List<ChickenAIBase> chickensInAttackRange = new List<ChickenAIBase>();
-    private Animator animator;
-    private HandState state;
-    private float currentPatrolTime = 0;
-    private float patrolTime = 0;
-    private float currentStayTimeInPatrolPoint = 0;
-    private float timeSinceLastAttack = 0;
-    private Vector3 targetPatrolPosition;
-    private ChickenManager chickenManager;
+    private NavMeshAgent _agent;
+    private ChickenAIBase _targetChicken;
+    private List<ChickenAIBase> _chickensInAttackRange = new List<ChickenAIBase>();
+    private Animator _animator;
+    private HandState _state;
+    private float _currentPatrolTime = 0;
+    private float _patrolTime = 0;
+    private float _currentStayTimeInPatrolPoint = 0;
+    private float _timeSinceLastAttack = 0;
+    private Vector3 _targetPatrolPosition;   
+    private ChickenManager _chickenManager;
+    private Health _health;
 
     private void Awake()
     {
-        chickenManager = FindObjectOfType<ChickenManager>();   
-        agent = GetComponent<NavMeshAgent>();
-        animator = GetComponent<Animator>();
+        _chickenManager = FindObjectOfType<ChickenManager>();   
+        _agent = GetComponent<NavMeshAgent>();
+        _animator = GetComponent<Animator>();
+        _health = GetComponent<Health>();
+        
+        if (_health == null)
+            _health = GetComponentInChildren<Health>();
     }
 
-    private IEnumerator Start()
+    private void OnEnable()
     {
-        targetChicken = FindNearestChicken();
-        animator.SetTrigger("appear");
+        _health.onDie += OnDie;
+    }
+    
+    private void OnDisable()
+    {
+        _health.onDie -= OnDie;
+    }
 
-        state = startState;
+    private void Start()
+    {
+        _targetChicken = FindNearestChicken();
 
-        // Ждем пока рука не спустится и переводим ее в состояние охоты
-        yield return new WaitForSeconds(2.5f);
-
-        state = HandState.Hunt;
+        ChangeState(startState);
     }
 
     private void Update()
     {
-        switch (state)
+        switch (_state)
         {
             case HandState.Hunt:
-                Hunt();
+                HuntUpdate();
                 break;
             case HandState.Patrol:
-                Patrol();
+                PatrolUpdate();
+                break;
+            case HandState.Healing:
+                HealingUpdate();
                 break;
         }
     }
@@ -63,7 +76,7 @@ public class HandAIBase : MonoBehaviour
         float minDist = Mathf.Infinity;
         ChickenAIBase nearestChicken = null;
         
-        foreach (var chicken in chickenManager.Chickens)
+        foreach (var chicken in _chickenManager.Chickens)
         {
             if (chicken.IsKilled)
                 continue;
@@ -81,60 +94,120 @@ public class HandAIBase : MonoBehaviour
 
     private void PlayAttackAnim()
     {
-        animator.SetTrigger("attack");
+        _animator.SetTrigger("attack");
     }
 
-    private void Hunt()
+    private void OnDie()
     {
-        targetChicken = FindNearestChicken();
+        ChangeState(HandState.Healing);
+    }
 
-        timeSinceLastAttack += Time.deltaTime;
+    private void HuntUpdate()
+    {
+        _targetChicken = FindNearestChicken();
 
-        if (targetChicken == null)
+        _timeSinceLastAttack += Time.deltaTime;
+
+        if (_targetChicken == null)
         {
             print("Все курицы закончились");
-            state = HandState.Patrol;
+            ChangeState(HandState.Patrol);
             return;
         }
         
-        agent.SetDestination(targetChicken.transform.position);
+        _agent.SetDestination(_targetChicken.transform.position);
 
-        if (chickensInAttackRange.Count > 0 && timeSinceLastAttack >= attackRate)
+        if (_chickensInAttackRange.Count > 0 && _timeSinceLastAttack >= attackRate)
         {
             PlayAttackAnim();
-            timeSinceLastAttack = 0;
+            _timeSinceLastAttack = 0;
         }
     }
+    
+    private void HuntStart(){}
+    
+    private void PatrolStart(){}
 
-    private void Patrol()
+    private void HealingStart()
     {
-        if (patrolTime == 0)
+        _animator.SetTrigger("healing");
+        _health.Resurrect();
+        _health.invincible = true;
+    }
+
+    private void AppearingStart()
+    {
+        _animator.SetTrigger("appear");
+
+        IEnumerator Delay()
         {
-            patrolTime = UnityEngine.Random.Range(minPatrolTime, maxPatrolTime);
+            yield return new WaitForSeconds(2.5f);
+
+            ChangeState(HandState.Hunt);
+            _health.invincible = false;
+        }
+
+        StartCoroutine(Delay());
+    }
+
+    private void PatrolUpdate()
+    {
+        if (_patrolTime == 0)
+        {
+            _patrolTime = UnityEngine.Random.Range(minPatrolTime, maxPatrolTime);
             ChangeTargetRandom();
         }
 
-        agent.SetDestination(targetPatrolPosition);
+        _agent.SetDestination(_targetPatrolPosition);
 
-        if (Vector3.Distance(transform.position, targetPatrolPosition) < .2f)
-            currentStayTimeInPatrolPoint += Time.deltaTime;
+        if (Vector3.Distance(transform.position, _targetPatrolPosition) < .2f)
+            _currentStayTimeInPatrolPoint += Time.deltaTime;
 
-        if (currentStayTimeInPatrolPoint >= stayTimeInPatrolPoint)
+        if (_currentStayTimeInPatrolPoint >= stayTimeInPatrolPoint)
         {
-            currentStayTimeInPatrolPoint = 0;
+            _currentStayTimeInPatrolPoint = 0;
             ChangeTargetRandom();
         }
         
-        currentPatrolTime += Time.deltaTime;
+        _currentPatrolTime += Time.deltaTime;
 
-        if (currentPatrolTime >= patrolTime)
+        if (_currentPatrolTime >= _patrolTime)
         {
-            patrolTime = 0;
-            currentPatrolTime = 0;
-            state = HandState.Hunt;
+            _patrolTime = 0;
+            _currentPatrolTime = 0;
+            ChangeState(HandState.Hunt);
         }
     }
 
+    private void HealingUpdate()
+    {
+        _health.Heal(Time.deltaTime * healingSpeed);
+        
+        if (Math.Abs(_health.currentHealth - _health.maxHealth) <= Mathf.Epsilon)
+            ChangeState(HandState.Appearing);
+    }
+
+    private void ChangeState(HandState newState)
+    {
+        _state = newState;
+        
+        switch (newState)
+        {
+            case HandState.Hunt:
+                HuntStart();
+                break;
+            case HandState.Healing:
+                HealingStart();
+                break;
+            case HandState.Appearing:
+                AppearingStart();
+                break;
+            case HandState.Patrol:
+                PatrolStart();
+                break;
+        }
+    }
+    
     private void OnTriggerEnter(Collider other)
     {
         var chicken = other.GetComponent<ChickenAIBase>();
@@ -145,7 +218,7 @@ public class HandAIBase : MonoBehaviour
         if (chicken.IsKilled)
             return;
 
-        chickensInAttackRange.Add(chicken);
+        _chickensInAttackRange.Add(chicken);
     }
 
     private void OnTriggerExit(Collider other)
@@ -155,21 +228,21 @@ public class HandAIBase : MonoBehaviour
         if (chicken == null)
             return;
         
-        chickensInAttackRange.Remove(chicken);
+        _chickensInAttackRange.Remove(chicken);
     }
 
     private void OnAttackAnimation()
     {
-        if (chickensInAttackRange.Count == 0)
+        if (_chickensInAttackRange.Count == 0)
         {
-            state = HandState.Patrol;
+            _state = HandState.Patrol;
             return;
         }
         
-        chickensInAttackRange[0].Kill();
-        chickensInAttackRange.RemoveAt(0);
+        _chickensInAttackRange[0].Kill();
+        _chickensInAttackRange.RemoveAt(0);
         
-        state = HandState.Patrol;
+        _state = HandState.Patrol;
     }
     
     private void ChangeTargetRandom()
@@ -184,13 +257,13 @@ public class HandAIBase : MonoBehaviour
         target.y = position.y;
         target.z += z;
 
-        currentStayTimeInPatrolPoint = 0;
+        _currentStayTimeInPatrolPoint = 0;
         
-        targetPatrolPosition = target;
+        _targetPatrolPosition = target;
     }
 }
 
 enum HandState
 {
-    Hunt, Patrol, Appearing
+    Hunt, Patrol, Appearing, Healing
 }
