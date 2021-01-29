@@ -58,7 +58,7 @@ public class main_Menu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene("Main_Menu");
+            SceneManager.LoadScene("MenuScene");
         }
 
     }
