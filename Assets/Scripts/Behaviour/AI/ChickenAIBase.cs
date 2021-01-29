@@ -3,11 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 public class ChickenAIBase : MonoBehaviour
 {
     public bool IsKilled { get; private set; } = false;
+    public UnityEvent diedEvent;
     
     [SerializeField] private float stayingTime = 2f;
     [SerializeField] private float targetStoppingDistance = .5f;
@@ -58,8 +61,7 @@ public class ChickenAIBase : MonoBehaviour
         
         chickenManager.RemoveChicken(this);
         
-        // play anim ...
-        print("chicken " + gameObject.name + " was killed");
+        diedEvent?.Invoke();
 
         transform.localScale = new Vector3(1, .05f, 1);
 

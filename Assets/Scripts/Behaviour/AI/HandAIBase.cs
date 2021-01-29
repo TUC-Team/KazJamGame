@@ -3,16 +3,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
 using Random = System.Random;
 
 public class HandAIBase : MonoBehaviour
 {
+    public UnityEvent DiedEvent;
+    
     [SerializeField] private HandState startState;
     [SerializeField] private float minPatrolTime = 5f;
     [SerializeField] private float maxPatrolTime = 10f;
     [SerializeField] private float stayTimeInPatrolPoint = 2f;
     [SerializeField] private float attackRate = 2f;
     [SerializeField] private float healingSpeed = 10f;
+    [SerializeField] private int howManyTimesCanDie = 3;
 
     private NavMeshAgent _agent;
     private ChickenAIBase _targetChicken;
@@ -23,13 +27,16 @@ public class HandAIBase : MonoBehaviour
     private float _patrolTime = 0;
     private float _currentStayTimeInPatrolPoint = 0;
     private float _timeSinceLastAttack = 0;
+    private int _deathCount = 0;
     private Vector3 _targetPatrolPosition;   
     private ChickenManager _chickenManager;
     private Health _health;
+    private GameController _gameController;
 
     private void Awake()
     {
-        _chickenManager = FindObjectOfType<ChickenManager>();   
+        _chickenManager = FindObjectOfType<ChickenManager>();
+        _gameController = FindObjectOfType<GameController>();
         _agent = GetComponent<NavMeshAgent>();
         _animator = GetComponent<Animator>();
         _health = GetComponent<Health>();
@@ -57,6 +64,9 @@ public class HandAIBase : MonoBehaviour
 
     private void Update()
     {
+        if (_gameController.IsGameEnded)
+            return;
+        
         switch (_state)
         {
             case HandState.Hunt:
@@ -99,6 +109,15 @@ public class HandAIBase : MonoBehaviour
 
     private void OnDie()
     {
+        _deathCount++;
+
+        if (_deathCount > howManyTimesCanDie)
+        {
+            _gameController.EndGame(true);
+            DiedEvent?.Invoke();
+            return;
+        }
+        
         ChangeState(HandState.Healing);
     }
 
@@ -110,7 +129,6 @@ public class HandAIBase : MonoBehaviour
 
         if (_targetChicken == null)
         {
-            print("Все курицы закончились");
             ChangeState(HandState.Patrol);
             return;
         }

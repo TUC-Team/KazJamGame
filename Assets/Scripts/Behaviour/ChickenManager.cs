@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,7 +10,14 @@ public class ChickenManager : MonoBehaviour
     
     public System.Action<ChickenAIBase> ChickenRemovedEvent;
     public System.Action<ChickenAIBase> ChickenRegisteredEvent;
-    
+
+    private GameController _gameController;
+
+    private void Awake()
+    {
+        _gameController = FindObjectOfType<GameController>();
+    }
+
     public void RegisterChicken(ChickenAIBase chicken)
     {
         Chickens.Add(chicken);
@@ -20,5 +28,8 @@ public class ChickenManager : MonoBehaviour
     {
         Chickens.Remove(chicken);
         ChickenRemovedEvent?.Invoke(chicken);
+        
+        if (ChickensCount == 0)
+            _gameController.EndGame(false);
     }
 }
