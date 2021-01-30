@@ -16,7 +16,8 @@ public class HandAIBase : MonoBehaviour
     [SerializeField] private float stayTimeInPatrolPoint = 2f;
     [SerializeField] private float attackRate = 2f;
     [SerializeField] private float healingSpeed = 10f;
-    [SerializeField] private int howManyTimesCanDie = 3;
+
+    [SerializeField] FingerHolder _fingerHolder;
 
     private NavMeshAgent _agent;
     private ChickenAIBase _targetChicken;
@@ -111,7 +112,7 @@ public class HandAIBase : MonoBehaviour
     {
         _deathCount++;
 
-        if (_deathCount > howManyTimesCanDie)
+        if ( !_fingerHolder.TryRemoveFinger() )
         {
             _gameController.EndGame(true);
             DiedEvent?.Invoke();
