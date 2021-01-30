@@ -309,7 +309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -384,7 +384,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -470,56 +470,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _messagesRoot: {fileID: 0}
   _steps:
-  - Mode: 4
-    Transition:
-      Target: {fileID: 0}
-      Start: {fileID: 0}
-      Finish: {fileID: 0}
-      Curve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 0
-        m_PostInfinity: 0
-        m_RotationOrder: 0
-      Duration: 0
-    Wait:
-      Duration: 0
-    Message:
-      Index: 0
-    Click:
-      Target: {fileID: 0}
-    Activate:
-      Target: {fileID: 0}
-    Scene:
-      Name: 
-    Key:
-      Any: 0
-      Key: 0
-  - Mode: 4
-    Transition:
-      Target: {fileID: 0}
-      Start: {fileID: 0}
-      Finish: {fileID: 0}
-      Curve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 0
-        m_PostInfinity: 0
-        m_RotationOrder: 0
-      Duration: 0
-    Wait:
-      Duration: 0
-    Message:
-      Index: 0
-    Click:
-      Target: {fileID: 0}
-    Activate:
-      Target: {fileID: 0}
-    Scene:
-      Name: 
-    Key:
-      Any: 0
-      Key: 0
   - Mode: 7
     Transition:
       Target: {fileID: 0}
@@ -665,6 +615,7 @@ GameObject:
   - component: {fileID: 1628156986}
   - component: {fileID: 1628156985}
   - component: {fileID: 1628156984}
+  - component: {fileID: 1628156987}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -735,7 +686,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1628156985}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1628156987}
+        m_MethodName: Load
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1628156985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -773,6 +735,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1628156982}
   m_CullTransparentMesh: 0
+--- !u!114 &1628156987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628156982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e36e0e03c98934714a3e8203972515ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneName: MenuScene
 --- !u!1 &1633002206
 GameObject:
   m_ObjectHideFlags: 0
@@ -890,7 +865,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -964,7 +939,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

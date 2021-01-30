@@ -30,7 +30,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: e5414f292813ac4092808c36921184eb
     GuidInternal: 
-    m_lastTime: -8585896217054545449
+    m_lastTime: -8585896012863651675
     List:
     - name: ambient
       guid: 25ed5d2e46301f4fa68d0060d8d861d5
@@ -123,7 +123,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: c7c93a2b4503e84f9d5776a651c93df3
     GuidInternal: 
-    m_lastTime: -8585896112629089609
+    m_lastTime: -8585895887680829112
     List:
     - name: all_chiken
       guid: 1df3330565f90f4abfeb7c172194833e
@@ -158,6 +158,86 @@ MonoBehaviour:
       - ElementName: audio-asset
         ObjectType: 4
       Path: Default Work Unit\audio-asset
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: back
+      guid: dbdc82d03fffad439b9b0bb1aeb17ed4
+      id: 1559875400
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: button
+        ObjectType: 4
+      - ElementName: back
+        ObjectType: 3
+      Path: Default Work Unit\button\back
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: button
+      guid: c6860b989387b34b96683ea394d21d6e
+      id: 977454165
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: button
+        ObjectType: 4
+      Path: Default Work Unit\button
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: chic_death
+      guid: 893189a2f0a0d84797fb500a83c6fc9b
+      id: 3244530683
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: chic_death
+        ObjectType: 3
+      Path: Default Work Unit\chic_death
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: click
+      guid: c480caea4aeedb449a551ab79162f2a6
+      id: 1584507803
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: button
+        ObjectType: 4
+      - ElementName: click
+        ObjectType: 3
+      Path: Default Work Unit\button\click
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: gun
+      guid: c54f4804ba93f14a96291cd0c2057208
+      id: 915214409
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: mesh
+        ObjectType: 4
+      - ElementName: gun
+        ObjectType: 3
+      Path: Default Work Unit\mesh\gun
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: gun_stop
+      guid: be982f3c5f3afc43b02902abaee13751
+      id: 3664266748
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: mesh
+        ObjectType: 4
+      - ElementName: gun_stop
+        ObjectType: 3
+      Path: Default Work Unit\mesh\gun_stop
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -215,6 +295,20 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: ok
+      guid: 32bec36c0ea28d40881c003111685ebe
+      id: 1651971899
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: button
+        ObjectType: 4
+      - ElementName: ok
+        ObjectType: 3
+      Path: Default Work Unit\button\ok
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -223,7 +317,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: ce5f92fa74ee6c49ad1b30ce686433f3
     GuidInternal: 
-    m_lastTime: -8585896217054734942
+    m_lastTime: -8585896012863661670
     List:
     - name: chiken_sum
       guid: 021d6e92671a3d4ba4bda21c73d2e933
@@ -252,7 +346,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: c003a3000c448849b271f83f7fe3765f
     GuidInternal: 
-    m_lastTime: -8585896217049533299
+    m_lastTime: -8585896012859336001
     List:
     - name: mech
       guid: 59b9b14613e95945ac226aba788b4abf
