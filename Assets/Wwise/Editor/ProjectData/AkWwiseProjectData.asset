@@ -20,7 +20,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: f86452cc0caa6042b1b53fb4d70ace00
     GuidInternal: 
-    m_lastTime: -8585896740065942941
+    m_lastTime: -8585896217049533299
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -30,7 +30,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: e5414f292813ac4092808c36921184eb
     GuidInternal: 
-    m_lastTime: -8585898277579867943
+    m_lastTime: -8585896217054545449
     List:
     - name: ambient
       guid: 25ed5d2e46301f4fa68d0060d8d861d5
@@ -104,7 +104,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: e5fd4687fe94354b951155b38fbc3d89
     GuidInternal: 
-    m_lastTime: -8585896740065972795
+    m_lastTime: -8585896217049543263
     List:
     - name: master_bank
       guid: 1a33723097355b4784fbd9e2b77ea3f3
@@ -123,8 +123,32 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: c7c93a2b4503e84f9d5776a651c93df3
     GuidInternal: 
-    m_lastTime: -8585896740066421659
+    m_lastTime: -8585896112629089609
     List:
+    - name: all_chiken
+      guid: 1df3330565f90f4abfeb7c172194833e
+      id: 1878518477
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: all_chiken
+        ObjectType: 3
+      Path: Default Work Unit\all_chiken
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: ambient
+      guid: 6ede32c19f60b34fad0c7e3ed1bced67
+      id: 77978275
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ambient
+        ObjectType: 3
+      Path: Default Work Unit\ambient
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: audio-asset
       guid: 5ab080505457b94e91c1717744b73ab0
       id: 3910721282
@@ -137,15 +161,57 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: test_loop_new_upd
-      guid: 97a7b2b67b96b844b256d20d83549a14
-      id: 742047857
+    - name: mech_idle
+      guid: 5afc3d837e014e469319c041695a1db9
+      id: 3137477943
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: test_loop_new_upd
+      - ElementName: mesh
+        ObjectType: 4
+      - ElementName: mech_idle
         ObjectType: 3
-      Path: Default Work Unit\test_loop_new_upd
+      Path: Default Work Unit\mesh\mech_idle
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: mech_weapon
+      guid: f83fd3f39cd79b468a81cbc3310fd98b
+      id: 3858988253
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: mesh
+        ObjectType: 4
+      - ElementName: mech_weapon
+        ObjectType: 3
+      Path: Default Work Unit\mesh\mech_weapon
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: mesh
+      guid: 4aa269a3e8d35a4e96a05b27fe01fc76
+      id: 2926330630
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: mesh
+        ObjectType: 4
+      Path: Default Work Unit\mesh
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: mesh_foot
+      guid: cd242911d246f24286dfe9a641e0be1a
+      id: 2335306597
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: mesh
+        ObjectType: 4
+      - ElementName: mesh_foot
+        ObjectType: 3
+      Path: Default Work Unit\mesh\mesh_foot
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -157,8 +223,17 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: ce5f92fa74ee6c49ad1b30ce686433f3
     GuidInternal: 
-    m_lastTime: -8585896740066411683
-    List: []
+    m_lastTime: -8585896217054734942
+    List:
+    - name: chiken_sum
+      guid: 021d6e92671a3d4ba4bda21c73d2e933
+      id: 2488984241
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: chiken_sum
+        ObjectType: 13
+      Path: Default Work Unit\chiken_sum
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -167,7 +242,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 00f13dd6fd56884d800b3986cca12851
     GuidInternal: 
-    m_lastTime: -8585896740065962863
+    m_lastTime: -8585896217049533299
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -177,8 +252,33 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: c003a3000c448849b271f83f7fe3765f
     GuidInternal: 
-    m_lastTime: -8585896740065952909
-    List: []
+    m_lastTime: -8585896217049533299
+    List:
+    - name: mech
+      guid: 59b9b14613e95945ac226aba788b4abf
+      id: 2657888854
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: mech
+        ObjectType: 11
+      Path: Default Work Unit\mech
+      values:
+      - name: earth
+        guid: 8c71256e83e18d45abf0016d23945ddc
+        id: 3747705955
+        PathAndIcons:
+        - ElementName: earth
+          ObjectType: 10
+      - name: grass
+        guid: 72cede90e4e8a64d93d3476b39627e05
+        id: 4248645337
+        PathAndIcons:
+        - ElementName: grass
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -187,7 +287,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 5c49e61d5141424285894ec8b68a6e1d
     GuidInternal: 
-    m_lastTime: -8585896740065952909
+    m_lastTime: -8585896217049533299
     List: []
   ExpandedItems:
   - /tuc-jam-jan-2021
