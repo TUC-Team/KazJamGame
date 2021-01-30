@@ -646,9 +646,10 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
+    m_HighlightedSprite: {fileID: 21300000, guid: f37656b6188595b46a5e5af66f73026b,
+      type: 3}
     m_PressedSprite: {fileID: 21300000, guid: f37656b6188595b46a5e5af66f73026b, type: 3}
-    m_SelectedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 21300000, guid: f37656b6188595b46a5e5af66f73026b, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -820,7 +821,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: loose!
+  m_text: lose!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dcf84b594610e8e45b2142e868c11054, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

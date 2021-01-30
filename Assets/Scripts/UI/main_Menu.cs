@@ -14,6 +14,7 @@ public class main_Menu : MonoBehaviour
 {
     public GameObject Main_Menu;
     public GameObject Settings_Menu;
+    //public GameObject Credits_Menu;
 
     public static bool isOpened = false;
 
@@ -31,6 +32,7 @@ public class main_Menu : MonoBehaviour
     public void CreditsTheGame()
     {
         Debug.Log("Credits");
+        SceneManager.LoadScene("CreditsScene");
     }
     public void QuitTheGame()
     {
