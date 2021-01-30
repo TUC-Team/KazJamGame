@@ -30,7 +30,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: e5414f292813ac4092808c36921184eb
     GuidInternal: 
-    m_lastTime: -8585898277579867943
+    m_lastTime: -8585896231986222737
     List:
     - name: ambient
       guid: 25ed5d2e46301f4fa68d0060d8d861d5
@@ -123,8 +123,32 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: c7c93a2b4503e84f9d5776a651c93df3
     GuidInternal: 
-    m_lastTime: -8585896740066421659
+    m_lastTime: -8585896231986232746
     List:
+    - name: all_chiken
+      guid: 1df3330565f90f4abfeb7c172194833e
+      id: 1878518477
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: all_chiken
+        ObjectType: 3
+      Path: Default Work Unit\all_chiken
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: ambient
+      guid: 6ede32c19f60b34fad0c7e3ed1bced67
+      id: 77978275
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ambient
+        ObjectType: 3
+      Path: Default Work Unit\ambient
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: audio-asset
       guid: 5ab080505457b94e91c1717744b73ab0
       id: 3910721282
@@ -157,8 +181,17 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: ce5f92fa74ee6c49ad1b30ce686433f3
     GuidInternal: 
-    m_lastTime: -8585896740066411683
-    List: []
+    m_lastTime: -8585896231986222737
+    List:
+    - name: chiken_sum
+      guid: 021d6e92671a3d4ba4bda21c73d2e933
+      id: 2488984241
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: chiken_sum
+        ObjectType: 13
+      Path: Default Work Unit\chiken_sum
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -177,8 +210,33 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: c003a3000c448849b271f83f7fe3765f
     GuidInternal: 
-    m_lastTime: -8585896740065952909
-    List: []
+    m_lastTime: -8585896231983400276
+    List:
+    - name: mech
+      guid: 59b9b14613e95945ac226aba788b4abf
+      id: 2657888854
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: mech
+        ObjectType: 11
+      Path: Default Work Unit\mech
+      values:
+      - name: earth
+        guid: 8c71256e83e18d45abf0016d23945ddc
+        id: 3747705955
+        PathAndIcons:
+        - ElementName: earth
+          ObjectType: 10
+      - name: grass
+        guid: 72cede90e4e8a64d93d3476b39627e05
+        id: 4248645337
+        PathAndIcons:
+        - ElementName: grass
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
