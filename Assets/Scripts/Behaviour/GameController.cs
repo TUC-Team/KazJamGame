@@ -14,5 +14,8 @@ public class GameController : MonoBehaviour
         GameEndedEvent?.Invoke(isWin);
 
         print("Game ended, is win = " + isWin);
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible   = true;
     }
 }
