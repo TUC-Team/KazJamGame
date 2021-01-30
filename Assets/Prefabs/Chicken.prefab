@@ -52,6 +52,11 @@ MonoBehaviour:
   diedEvent:
     m_PersistentCalls:
       m_Calls: []
+  chic_death:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 508a97fcb58153140bcb90e5335483ee,
+      type: 2}
   stayingTime: 2
   targetStoppingDistance: 5
 --- !u!195 &7427299224321386884
