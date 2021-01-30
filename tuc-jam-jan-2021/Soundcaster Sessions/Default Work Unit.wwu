@@ -1,6 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{5B047101-E5F7-4EBE-8FAF-3FAF43721F63}" SchemaVersion="97">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{5B047101-E5F7-4EBE-8FAF-3FAF43721F63}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{5B047101-E5F7-4EBE-8FAF-3FAF43721F63}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{501CA00D-5B00-4B62-ACBF-CCD47D337FD7}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="all_chiken" ID="{0533F31D-F965-4A0F-BFEB-7C172194833E}" WorkUnitID="{2B3AC9C7-0345-4FE8-9D57-76A651C93DF3}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="gun" ID="{04484FC5-93BA-4AF1-9629-1CD0C2057208}" WorkUnitID="{2B3AC9C7-0345-4FE8-9D57-76A651C93DF3}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="gun_stop" ID="{3C2F98BE-3A5F-43FC-B029-02ABAEE13751}" WorkUnitID="{2B3AC9C7-0345-4FE8-9D57-76A651C93DF3}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ambient" ID="{C132DE6E-609F-4FB3-AD0C-7E3ED1BCED67}" WorkUnitID="{2B3AC9C7-0345-4FE8-9D57-76A651C93DF3}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="mech_idle" ID="{833DFC5A-017E-464E-9319-C041695A1DB9}" WorkUnitID="{2B3AC9C7-0345-4FE8-9D57-76A651C93DF3}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="chic_death" ID="{A2893189-A0F0-47D8-97FB-500A83C6FC9B}" WorkUnitID="{2B3AC9C7-0345-4FE8-9D57-76A651C93DF3}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="mesh_foot" ID="{112924CD-46D2-42F2-86DF-E9A641E0BE1A}" WorkUnitID="{2B3AC9C7-0345-4FE8-9D57-76A651C93DF3}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="chiken_sum" ID="{926E1D02-1A67-4B3D-A4BD-A21C73D2E933}"/>
+							<Value>95</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="earth" ID="{6E25718C-E183-458D-ABF0-016D23945DDC}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

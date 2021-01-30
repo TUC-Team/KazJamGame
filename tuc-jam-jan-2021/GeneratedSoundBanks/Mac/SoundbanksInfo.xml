@@ -11,25 +11,349 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3053300949">
+		<SoundBank Id="1355168291" Language="SFX" Hash="517230549">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2597442952" Language="SFX" Hash="3877364532">
+		<SoundBank Id="2597442952" Language="SFX" Hash="2211065540">
 			<ObjectPath>\SoundBanks\Default Work Unit\master_bank</ObjectPath>
 			<ShortName>master_bank</ShortName>
 			<Path>master_bank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="742047857" Name="test_loop_new_upd" ObjectPath="\Events\Default Work Unit\test_loop_new_upd" DurationType="Infinite">
+				<Event Id="1878518477" Name="all_chiken" ObjectPath="\Events\Default Work Unit\all_chiken" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="931828245" Language="SFX">
-							<ShortName>75 BPM - E - Dirty Guitar Riffs - Riff 1 - pan left.wav</ShortName>
-							<Path>SFX\75 BPM - E - Dirty Guitar Riffs - Riff 1 - pan left_D79FB2B7.wem</Path>
+						<File Id="35203722" Language="SFX">
+							<ShortName>chiken_70-100_b.wav</ShortName>
+							<Path>SFX\chiken_70-100_b_10C4C929.wem</Path>
+						</File>
+						<File Id="88830912" Language="SFX">
+							<ShortName>chiken_90-100_c.wav</ShortName>
+							<Path>SFX\chiken_90-100_c_10C4C929.wem</Path>
+						</File>
+						<File Id="148750320" Language="SFX">
+							<ShortName>chiken_50-70_a.wav</ShortName>
+							<Path>SFX\chiken_50-70_a_10C4C929.wem</Path>
+						</File>
+						<File Id="168440969" Language="SFX">
+							<ShortName>chiken_1-30_a.wav</ShortName>
+							<Path>SFX\chiken_1-30_a_10C4C929.wem</Path>
+						</File>
+						<File Id="269309461" Language="SFX">
+							<ShortName>chiken_90-100_a.wav</ShortName>
+							<Path>SFX\chiken_90-100_a_10C4C929.wem</Path>
+						</File>
+						<File Id="274114366" Language="SFX">
+							<ShortName>chiken_50-70_b.wav</ShortName>
+							<Path>SFX\chiken_50-70_b_10C4C929.wem</Path>
+						</File>
+						<File Id="301749092" Language="SFX">
+							<ShortName>chiken_70-100.wav</ShortName>
+							<Path>SFX\chiken_70-100_10C4C929.wem</Path>
+						</File>
+						<File Id="471278734" Language="SFX">
+							<ShortName>chiken_50-70.wav</ShortName>
+							<Path>SFX\chiken_50-70_10C4C929.wem</Path>
+						</File>
+						<File Id="562111713" Language="SFX">
+							<ShortName>chiken_70-100_c.wav</ShortName>
+							<Path>SFX\chiken_70-100_c_10C4C929.wem</Path>
+						</File>
+						<File Id="627388428" Language="SFX">
+							<ShortName>chiken_90-100.wav</ShortName>
+							<Path>SFX\chiken_90-100_10C4C929.wem</Path>
+						</File>
+						<File Id="634240592" Language="SFX">
+							<ShortName>chiken_50-70_c.wav</ShortName>
+							<Path>SFX\chiken_50-70_c_10C4C929.wem</Path>
+						</File>
+						<File Id="674289816" Language="SFX">
+							<ShortName>chiken_90-100_b.wav</ShortName>
+							<Path>SFX\chiken_90-100_b_10C4C929.wem</Path>
+						</File>
+						<File Id="780675312" Language="SFX">
+							<ShortName>chiken_1-30.wav</ShortName>
+							<Path>SFX\chiken_1-30_10C4C929.wem</Path>
+						</File>
+						<File Id="936939341" Language="SFX">
+							<ShortName>chiken_1-30_c.wav</ShortName>
+							<Path>SFX\chiken_1-30_c_10C4C929.wem</Path>
+						</File>
+						<File Id="957112700" Language="SFX">
+							<ShortName>chiken_1-30_b.wav</ShortName>
+							<Path>SFX\chiken_1-30_b_10C4C929.wem</Path>
+						</File>
+						<File Id="968794086" Language="SFX">
+							<ShortName>chiken_70-100_a.wav</ShortName>
+							<Path>SFX\chiken_70-100_a_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="77978275" Name="ambient" ObjectPath="\Events\Default Work Unit\ambient" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="32198630" Language="SFX">
+							<ShortName>pig.wav</ShortName>
+							<Path>SFX\pig_CD8EDA95.wem</Path>
+						</File>
+						<File Id="153956634" Language="SFX">
+							<ShortName>ambience_4.wav</ShortName>
+							<Path>SFX\ambience_4_10C4C929.wem</Path>
+						</File>
+						<File Id="175567307" Language="SFX">
+							<ShortName>ambience_3.wav</ShortName>
+							<Path>SFX\ambience_3_10C4C929.wem</Path>
+						</File>
+						<File Id="221229108" Language="SFX">
+							<ShortName>ambience.wav</ShortName>
+							<Path>SFX\ambience_10C4C929.wem</Path>
+						</File>
+						<File Id="320916411" Language="SFX">
+							<ShortName>horse_2.wav</ShortName>
+							<Path>SFX\horse_2_CD8EDA95.wem</Path>
+						</File>
+						<File Id="462334283" Language="SFX">
+							<ShortName>ambience_2.wav</ShortName>
+							<Path>SFX\ambience_2_10C4C929.wem</Path>
+						</File>
+						<File Id="478597703" Language="SFX">
+							<ShortName>chiken_2.wav</ShortName>
+							<Path>SFX\chiken_2_CD8EDA95.wem</Path>
+						</File>
+						<File Id="481652445" Language="SFX">
+							<ShortName>horse.wav</ShortName>
+							<Path>SFX\horse_CD8EDA95.wem</Path>
+						</File>
+						<File Id="514009095" Language="SFX">
+							<ShortName>cow.wav</ShortName>
+							<Path>SFX\cow_CD8EDA95.wem</Path>
+						</File>
+						<File Id="614582224" Language="SFX">
+							<ShortName>pig_2.wav</ShortName>
+							<Path>SFX\pig_2_CD8EDA95.wem</Path>
+						</File>
+						<File Id="620229369" Language="SFX">
+							<ShortName>chiken.wav</ShortName>
+							<Path>SFX\chiken_CD8EDA95.wem</Path>
+						</File>
+						<File Id="640875635" Language="SFX">
+							<ShortName>pig_3.wav</ShortName>
+							<Path>SFX\pig_3_CD8EDA95.wem</Path>
+						</File>
+						<File Id="803315005" Language="SFX">
+							<ShortName>ducks.wav</ShortName>
+							<Path>SFX\ducks_CD8EDA95.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1559875400" Name="back" ObjectPath="\Events\Default Work Unit\button\back" DurationType="OneShot" DurationMin="0.281247" DurationMax="0.297971">
+					<IncludedMemoryFiles>
+						<File Id="61206307" Language="SFX">
+							<ShortName>back.wav</ShortName>
+							<Path>SFX\back_10C4C929.wem</Path>
+						</File>
+						<File Id="385149662" Language="SFX">
+							<ShortName>back_2.wav</ShortName>
+							<Path>SFX\back_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3244530683" Name="chic_death" ObjectPath="\Events\Default Work Unit\chic_death" DurationType="OneShot" DurationMin="0.776032" DurationMax="0.932544">
+					<IncludedMemoryFiles>
+						<File Id="343190335" Language="SFX">
+							<ShortName>chic_death.wav</ShortName>
+							<Path>SFX\chic_death_10C4C929.wem</Path>
+						</File>
+						<File Id="422877586" Language="SFX">
+							<ShortName>chic_death_6.wav</ShortName>
+							<Path>SFX\chic_death_6_10C4C929.wem</Path>
+						</File>
+						<File Id="430730648" Language="SFX">
+							<ShortName>chic_death_4.wav</ShortName>
+							<Path>SFX\chic_death_4_10C4C929.wem</Path>
+						</File>
+						<File Id="471326929" Language="SFX">
+							<ShortName>chic_death_7.wav</ShortName>
+							<Path>SFX\chic_death_7_10C4C929.wem</Path>
+						</File>
+						<File Id="505054945" Language="SFX">
+							<ShortName>chic_death_3.wav</ShortName>
+							<Path>SFX\chic_death_3_10C4C929.wem</Path>
+						</File>
+						<File Id="656433185" Language="SFX">
+							<ShortName>chic_death_8.wav</ShortName>
+							<Path>SFX\chic_death_8_10C4C929.wem</Path>
+						</File>
+						<File Id="917559979" Language="SFX">
+							<ShortName>chic_death_5.wav</ShortName>
+							<Path>SFX\chic_death_5_10C4C929.wem</Path>
+						</File>
+						<File Id="1059715957" Language="SFX">
+							<ShortName>chic_death_2.wav</ShortName>
+							<Path>SFX\chic_death_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1584507803" Name="click" ObjectPath="\Events\Default Work Unit\button\click" DurationType="OneShot" DurationMin="0.921882" DurationMax="0.976700">
+					<IncludedMemoryFiles>
+						<File Id="252589312" Language="SFX">
+							<ShortName>click_button_2.wav</ShortName>
+							<Path>SFX\click_button_2_10C4C929.wem</Path>
+						</File>
+						<File Id="809408112" Language="SFX">
+							<ShortName>click_button_3.wav</ShortName>
+							<Path>SFX\click_button_3_10C4C929.wem</Path>
+						</File>
+						<File Id="1051423982" Language="SFX">
+							<ShortName>click_button.wav</ShortName>
+							<Path>SFX\click_button_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="915214409" Name="gun" ObjectPath="\Events\Default Work Unit\mesh\gun" DurationType="OneShot" DurationMin="24.052086" DurationMax="24.052086">
+					<IncludedMemoryFiles>
+						<File Id="548806298" Language="SFX">
+							<ShortName>gun_2.wav</ShortName>
+							<Path>SFX\gun_2_10C4C929.wem</Path>
+						</File>
+						<File Id="963812834" Language="SFX">
+							<ShortName>gun.wav</ShortName>
+							<Path>SFX\gun_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3664266748" Name="gun_stop" ObjectPath="\Events\Default Work Unit\mesh\gun_stop" DurationType="OneShot" DurationMin="0.893258" DurationMax="0.920344">
+					<IncludedMemoryFiles>
+						<File Id="337948038" Language="SFX">
+							<ShortName>tail_4.wav</ShortName>
+							<Path>SFX\tail_4_A0977AEC.wem</Path>
+						</File>
+						<File Id="367448076" Language="SFX">
+							<ShortName>tail_2.wav</ShortName>
+							<Path>SFX\tail_2_A7DB1876.wem</Path>
+						</File>
+						<File Id="956806330" Language="SFX">
+							<ShortName>tail_3.wav</ShortName>
+							<Path>SFX\tail_3_2112A32D.wem</Path>
+						</File>
+						<File Id="964272491" Language="SFX">
+							<ShortName>tail.wav</ShortName>
+							<Path>SFX\tail_E40545DD.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3137477943" Name="mech_idle" ObjectPath="\Events\Default Work Unit\mesh\mech_idle" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="64579310" Language="SFX">
+							<ShortName>eng_start.wav</ShortName>
+							<Path>SFX\eng_start_10C4C929.wem</Path>
+						</File>
+						<File Id="342743465" Language="SFX">
+							<ShortName>mech_7.wav</ShortName>
+							<Path>SFX\mech_7_10C4C929.wem</Path>
+						</File>
+						<File Id="361231484" Language="SFX">
+							<ShortName>eng_loop_2.wav</ShortName>
+							<Path>SFX\eng_loop_2_10C4C929.wem</Path>
+						</File>
+						<File Id="368332672" Language="SFX">
+							<ShortName>eng_loop.wav</ShortName>
+							<Path>SFX\eng_loop_10C4C929.wem</Path>
+						</File>
+						<File Id="376504652" Language="SFX">
+							<ShortName>mech_5.wav</ShortName>
+							<Path>SFX\mech_5_10C4C929.wem</Path>
+						</File>
+						<File Id="467989761" Language="SFX">
+							<ShortName>mech_2.wav</ShortName>
+							<Path>SFX\mech_2_10C4C929.wem</Path>
+						</File>
+						<File Id="620113880" Language="SFX">
+							<ShortName>mech_4.wav</ShortName>
+							<Path>SFX\mech_4_10C4C929.wem</Path>
+						</File>
+						<File Id="864576889" Language="SFX">
+							<ShortName>mech_8.wav</ShortName>
+							<Path>SFX\mech_8_10C4C929.wem</Path>
+						</File>
+						<File Id="888190345" Language="SFX">
+							<ShortName>mech.wav</ShortName>
+							<Path>SFX\mech_10C4C929.wem</Path>
+						</File>
+						<File Id="937144722" Language="SFX">
+							<ShortName>eng_loop_3.wav</ShortName>
+							<Path>SFX\eng_loop_3_10C4C929.wem</Path>
+						</File>
+						<File Id="957912267" Language="SFX">
+							<ShortName>mech_3.wav</ShortName>
+							<Path>SFX\mech_3_10C4C929.wem</Path>
+						</File>
+						<File Id="1014058332" Language="SFX">
+							<ShortName>mech_6.wav</ShortName>
+							<Path>SFX\mech_6_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3858988253" Name="mech_weapon" ObjectPath="\Events\Default Work Unit\mesh\mech_weapon" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2335306597" Name="mesh_foot" ObjectPath="\Events\Default Work Unit\mesh\mesh_foot" DurationType="OneShot" DurationMin="0.401043" DurationMax="0.437341">
+					<IncludedMemoryFiles>
+						<File Id="25487962" Language="SFX">
+							<ShortName>mech_ft_4.wav</ShortName>
+							<Path>SFX\mech_ft_4_10C4C929.wem</Path>
+						</File>
+						<File Id="90906003" Language="SFX">
+							<ShortName>mech_ft.wav</ShortName>
+							<Path>SFX\mech_ft_10C4C929.wem</Path>
+						</File>
+						<File Id="180102941" Language="SFX">
+							<ShortName>mech_ft_9.wav</ShortName>
+							<Path>SFX\mech_ft_9_10C4C929.wem</Path>
+						</File>
+						<File Id="239610983" Language="SFX">
+							<ShortName>mech_ft_3.wav</ShortName>
+							<Path>SFX\mech_ft_3_10C4C929.wem</Path>
+						</File>
+						<File Id="316506965" Language="SFX">
+							<ShortName>mech_ft_8.wav</ShortName>
+							<Path>SFX\mech_ft_8_10C4C929.wem</Path>
+						</File>
+						<File Id="445915932" Language="SFX">
+							<ShortName>mech_ft_2.wav</ShortName>
+							<Path>SFX\mech_ft_2_10C4C929.wem</Path>
+						</File>
+						<File Id="496832325" Language="SFX">
+							<ShortName>mech_ft_7.wav</ShortName>
+							<Path>SFX\mech_ft_7_10C4C929.wem</Path>
+						</File>
+						<File Id="528882666" Language="SFX">
+							<ShortName>mech_ft_5.wav</ShortName>
+							<Path>SFX\mech_ft_5_10C4C929.wem</Path>
+						</File>
+						<File Id="755622170" Language="SFX">
+							<ShortName>mech_ft_10.wav</ShortName>
+							<Path>SFX\mech_ft_10_10C4C929.wem</Path>
+						</File>
+						<File Id="938600150" Language="SFX">
+							<ShortName>mech_ft_6.wav</ShortName>
+							<Path>SFX\mech_ft_6_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1651971899" Name="ok" ObjectPath="\Events\Default Work Unit\button\ok" DurationType="OneShot" DurationMin="0.921882" DurationMax="0.976700">
+					<IncludedMemoryFiles>
+						<File Id="319687317" Language="SFX">
+							<ShortName>ok_button_2.wav</ShortName>
+							<Path>SFX\ok_button_2_10C4C929.wem</Path>
+						</File>
+						<File Id="361935822" Language="SFX">
+							<ShortName>ok_button.wav</ShortName>
+							<Path>SFX\ok_button_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="2488984241" Name="chiken_sum" ObjectPath="\Game Parameters\Default Work Unit\chiken_sum"/>
+			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

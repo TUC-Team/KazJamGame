@@ -3,17 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{2B3AC9C7-0345-4FE8-9D57-76A651C93DF3}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="test_loop_new_upd" ID="{B6B2A797-967B-44B8-B256-D20D83549A14}">
-					<ChildrenList>
-						<Action Name="" ID="{59C2CBA1-0DCB-4950-9555-95B616FB14BC}" ShortID="597566900">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="75 BPM - E - Dirty Guitar Riffs - Riff 1 - pan left" ID="{958A218F-7DCE-4244-BBB4-F7296BF1867B}" WorkUnitID="{0B8A8412-535D-478C-A682-64DFB12B79D8}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Folder Name="audio-asset" ID="{5080B05A-5754-4EB9-91C1-717744B73AB0}" ShortID="601810086"/>
 				<Event Name="ambient" ID="{C132DE6E-609F-4FB3-AD0C-7E3ED1BCED67}">
 					<ChildrenList>
@@ -48,6 +37,113 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="mesh" ID="{A369A24A-D3E8-4E5A-96A0-5B27FE01FC76}" ShortID="614508974">
+					<ChildrenList>
+						<Event Name="mesh_foot" ID="{112924CD-46D2-42F2-86DF-E9A641E0BE1A}">
+							<ChildrenList>
+								<Action Name="" ID="{B6E2BFC1-D999-4145-9CC6-CADD0B30ED4E}" ShortID="184353680">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mech_steps" ID="{D244D0BD-A633-477B-AC9F-696B24292BAF}" WorkUnitID="{0B8A8412-535D-478C-A682-64DFB12B79D8}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="mech_idle" ID="{833DFC5A-017E-464E-9319-C041695A1DB9}">
+							<ChildrenList>
+								<Action Name="" ID="{D734EAA8-2F16-45D2-B73E-1C39B2511C5C}" ShortID="977524867">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mech_idle" ID="{A13FADBA-9609-4014-BACD-5EA4D40CCD4A}" WorkUnitID="{0B8A8412-535D-478C-A682-64DFB12B79D8}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="mech_weapon" ID="{F3D33FF8-D79C-469B-8A81-CBC3310FD98B}"/>
+						<Event Name="gun" ID="{04484FC5-93BA-4AF1-9629-1CD0C2057208}">
+							<ChildrenList>
+								<Action Name="" ID="{3527C5A7-22BE-45CC-AE4C-43C03A789B3B}" ShortID="98420218">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="pc_weapon" ID="{26E6D028-D3D6-4101-9B32-83489543DC37}" WorkUnitID="{0B8A8412-535D-478C-A682-64DFB12B79D8}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="gun_stop" ID="{3C2F98BE-3A5F-43FC-B029-02ABAEE13751}">
+							<ChildrenList>
+								<Action Name="" ID="{A5B06F2B-A3D2-4E8B-96AA-F40D0898C8EE}" ShortID="891646332">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="laser_tail" ID="{B32F39F7-A678-4F49-BF5F-A176E9958759}" WorkUnitID="{0B8A8412-535D-478C-A682-64DFB12B79D8}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{6F5CFCDC-FB4F-4956-A7D8-8ABAD4E8D397}" ShortID="800734477">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="pc_weapon" ID="{26E6D028-D3D6-4101-9B32-83489543DC37}" WorkUnitID="{0B8A8412-535D-478C-A682-64DFB12B79D8}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="chic_death" ID="{A2893189-A0F0-47D8-97FB-500A83C6FC9B}">
+					<ChildrenList>
+						<Action Name="" ID="{C87ACEDD-B29F-47BF-AC8C-61AB39AEA2CB}" ShortID="409146197">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="chiken_death" ID="{908E9025-F102-4A70-984C-4B06AB1D4BF3}" WorkUnitID="{0B8A8412-535D-478C-A682-64DFB12B79D8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="button" ID="{980B86C6-8793-4BB3-9668-3EA394D21D6E}" ShortID="335088469">
+					<ChildrenList>
+						<Event Name="back" ID="{D082DCDB-FF3F-43AD-9B9B-0BB1AEB17ED4}">
+							<ChildrenList>
+								<Action Name="" ID="{9089BC8D-0283-4BFD-A16D-91CB25DE8B46}" ShortID="158419568">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="back" ID="{E135BB51-95B8-422D-8CA9-B69A6D444239}" WorkUnitID="{0B8A8412-535D-478C-A682-64DFB12B79D8}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="click" ID="{EACA80C4-EE4A-44DB-9A55-1AB79162F2A6}">
+							<ChildrenList>
+								<Action Name="" ID="{38F17668-AC24-438D-8343-80D3A6F2BB7C}" ShortID="609501206">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="click" ID="{C84699CE-0554-4D20-B6B1-50955AB7859E}" WorkUnitID="{0B8A8412-535D-478C-A682-64DFB12B79D8}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ok" ID="{6CC3BE32-A20E-408D-881C-003111685EBE}">
+							<ChildrenList>
+								<Action Name="" ID="{A05D1CD5-ED2A-4072-9EFC-336DF67A5B8D}" ShortID="502878766">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ok" ID="{792E6A92-0F2C-42F7-9124-0D059915D7C9}" WorkUnitID="{0B8A8412-535D-478C-A682-64DFB12B79D8}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
