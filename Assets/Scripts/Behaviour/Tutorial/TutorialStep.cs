@@ -9,4 +9,5 @@ public sealed class TutorialStep {
 	public ClickData        Click;
 	public ActivateData     Activate;
 	public SceneData        Scene;
+	public KeyData          Key;
 }

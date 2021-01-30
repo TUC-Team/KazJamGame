@@ -207,6 +207,9 @@ MonoBehaviour:
       Target: {fileID: 6939780477909267129}
     Scene:
       Name: 
+    Key:
+      Any: 0
+      Key: 0
   - Mode: 4
     Transition:
       Target: {fileID: 0}
@@ -229,6 +232,9 @@ MonoBehaviour:
       Target: {fileID: 8924276771464172781}
     Scene:
       Name: 
+    Key:
+      Any: 0
+      Key: 0
   - Mode: 7
     Transition:
       Target: {fileID: 0}
@@ -251,6 +257,9 @@ MonoBehaviour:
       Target: {fileID: 8924276771464172781}
     Scene:
       Name: 
+    Key:
+      Any: 0
+      Key: 27
   - Mode: 6
     Transition:
       Target: {fileID: 0}
@@ -273,6 +282,9 @@ MonoBehaviour:
       Target: {fileID: 8924276771464172781}
     Scene:
       Name: MenuScene
+    Key:
+      Any: 0
+      Key: 0
 --- !u!4 &559698265
 Transform:
   m_ObjectHideFlags: 0
