@@ -1,5 +1,10 @@
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	77978275	ambient			\Default Work Unit\Master Audio Bus\ambient	
+	1635194334	pc			\Default Work Unit\Master Audio Bus\pc	
+	1718040157	chiken			\Default Work Unit\Master Audio Bus\chiken	
+	2299321487	enemy			\Default Work Unit\Master Audio Bus\enemy	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	music			\Default Work Unit\Master Audio Bus\music	
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

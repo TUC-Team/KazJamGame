@@ -1,6 +1,90 @@
 Event	ID	Name			Wwise Object Path	Notes
-	742047857	test_loop_new_upd			\Default Work Unit\test_loop_new_upd	
+	77978275	ambient			\Default Work Unit\ambient	
+	915214409	gun			\Default Work Unit\mesh\gun	
+	1559875400	back			\Default Work Unit\button\back	
+	1584507803	click			\Default Work Unit\button\click	
+	1651971899	ok			\Default Work Unit\button\ok	
+	1878518477	all_chiken			\Default Work Unit\all_chiken	
+	2335306597	mesh_foot			\Default Work Unit\mesh\mesh_foot	
+	3137477943	mech_idle			\Default Work Unit\mesh\mech_idle	
+	3244530683	chic_death			\Default Work Unit\chic_death	
+	3664266748	gun_stop			\Default Work Unit\mesh\gun_stop	
+	3858988253	mech_weapon			\Default Work Unit\mesh\mech_weapon	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2488984241	chiken_sum			\Default Work Unit\chiken_sum	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	931828245	75 BPM - E - Dirty Guitar Riffs - Riff 1 - pan left	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\75 BPM - E - Dirty Guitar Riffs - Riff 1 - pan left_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\75 BPM - E - Dirty Guitar Riffs - Riff 1 - pan left		1228868
+	25487962	mech_ft_4	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\mech_ft_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\pc\mech_steps\mech_ft_4		70872
+	32198630	pig	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\pig_CD8EDA95.wem		\Actor-Mixer Hierarchy\Default Work Unit\ambient\random_ambience\pig		23259
+	35203722	chiken_70-100_b	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\chiken_70-100_b_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\chiken\all_chiken\70-100\chiken_70-100_b		1411328
+	61206307	back	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\back_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\ui\back\back		49740
+	64579310	eng_start	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\eng_start_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\pc\mech_idle\eng_start		551376
+	88830912	chiken_90-100_c	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\chiken_90-100_c_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\chiken\all_chiken\90-100\chiken_90-100_c		1411328
+	90906003	mech_ft	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\mech_ft_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\pc\mech_steps\mech_ft		70872
+	148750320	chiken_50-70_a	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\chiken_50-70_a_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\chiken\all_chiken\50-70\chiken_50-70_a		424592
+	153956634	ambience_4	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\ambience_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\ambient\amb\ambience_4		2822528
+	168440969	chiken_1-30_a	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\chiken_1-30_a_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\chiken\all_chiken\1-30\chiken_1-30_a		1411328
+	175567307	ambience_3	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\ambience_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\ambient\amb\ambience_3		2822528
+	180102941	mech_ft_9	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\mech_ft_9_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\pc\mech_steps\mech_ft_9		70872
+	221229108	ambience	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\ambience_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\ambient\amb\ambience		2822528
+	239610983	mech_ft_3	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\mech_ft_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\pc\mech_steps\mech_ft_3		70872
+	252589312	click_button_2	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\click_button_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\ui\click\click_button_2		162748
+	269309461	chiken_90-100_a	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\chiken_90-100_a_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\chiken\all_chiken\90-100\chiken_90-100_a		1411328
+	274114366	chiken_50-70_b	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\chiken_50-70_b_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\chiken\all_chiken\50-70\chiken_50-70_b		424592
+	301749092	chiken_70-100	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\chiken_70-100_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\chiken\all_chiken\70-100\chiken_70-100		1411328
+	316506965	mech_ft_8	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\mech_ft_8_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\pc\mech_steps\mech_ft_8		70872
+	319687317	ok_button_2	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\ok_button_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\ui\ok\ok_button_2		162748
+	320916411	horse_2	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\horse_2_CD8EDA95.wem		\Actor-Mixer Hierarchy\Default Work Unit\ambient\random_ambience\horse_2		6082
+	337948038	tail_4	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\tail_4_A0977AEC.wem		\Actor-Mixer Hierarchy\Default Work Unit\pc\laser_tail\tail_4		162476
+	342743465	mech_7	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\mech_7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\pc\mech_idle\robot_mesh\mech_7		201336
+	343190335	chic_death	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\chic_death_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\chiken\chiken_death\chic_death		155396
+	361231484	eng_loop_2	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\eng_loop_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\pc\mech_idle\eng\eng_loop_2		1411328
+	361935822	ok_button	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\ok_button_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\ui\ok\ok_button		162748
+	367448076	tail_2	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\tail_2_A7DB1876.wem		\Actor-Mixer Hierarchy\Default Work Unit\pc\laser_tail\tail_2		157700
+	368332672	eng_loop	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\eng_loop_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\pc\mech_idle\eng\eng_loop		1411328
+	376504652	mech_5	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\mech_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\pc\mech_idle\robot_mesh\mech_5		201336
+	385149662	back_2	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\back_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\ui\back\back_2		49740
+	422877586	chic_death_6	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\chic_death_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\chiken\chiken_death\chic_death_6		137020
+	430730648	chic_death_4	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\chic_death_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\chiken\chiken_death\chic_death_4		137020
+	445915932	mech_ft_2	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\mech_ft_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\pc\mech_steps\mech_ft_2		70872
+	462334283	ambience_2	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\ambience_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\ambient\amb\ambience_2		2822528
+	467989761	mech_2	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\mech_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\pc\mech_idle\robot_mesh\mech_2		551376
+	471278734	chiken_50-70	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\chiken_50-70_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\chiken\all_chiken\50-70\chiken_50-70		424592
+	471326929	chic_death_7	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\chic_death_7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\chiken\chiken_death\chic_death_7		137020
+	478597703	chiken_2	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\chiken_2_CD8EDA95.wem		\Actor-Mixer Hierarchy\Default Work Unit\ambient\random_ambience\chiken_2		15751
+	481652445	horse	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\horse_CD8EDA95.wem		\Actor-Mixer Hierarchy\Default Work Unit\ambient\random_ambience\horse		5436
+	496832325	mech_ft_7	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\mech_ft_7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\pc\mech_steps\mech_ft_7		70872
+	505054945	chic_death_3	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\chic_death_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\chiken\chiken_death\chic_death_3		137020
+	514009095	cow	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\cow_CD8EDA95.wem		\Actor-Mixer Hierarchy\Default Work Unit\ambient\random_ambience\cow		17432
+	528882666	mech_ft_5	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\mech_ft_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\pc\mech_steps\mech_ft_5		70872
+	548806298	gun_2	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\gun_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\pc\pc_weapon\laser\gun_2		4242916
+	562111713	chiken_70-100_c	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\chiken_70-100_c_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\chiken\all_chiken\70-100\chiken_70-100_c		1411328
+	614582224	pig_2	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\pig_2_CD8EDA95.wem		\Actor-Mixer Hierarchy\Default Work Unit\ambient\random_ambience\pig_2		22080
+	620113880	mech_4	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\mech_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\pc\mech_idle\robot_mesh\mech_4		551376
+	620229369	chiken	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\chiken_CD8EDA95.wem		\Actor-Mixer Hierarchy\Default Work Unit\ambient\random_ambience\chiken		15106
+	627388428	chiken_90-100	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\chiken_90-100_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\chiken\all_chiken\90-100\chiken_90-100		1411328
+	634240592	chiken_50-70_c	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\chiken_50-70_c_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\chiken\all_chiken\50-70\chiken_50-70_c		424592
+	640875635	pig_3	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\pig_3_CD8EDA95.wem		\Actor-Mixer Hierarchy\Default Work Unit\ambient\random_ambience\pig_3		52013
+	656433185	chic_death_8	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\chic_death_8_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\chiken\chiken_death\chic_death_8		137020
+	674289816	chiken_90-100_b	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\chiken_90-100_b_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\chiken\all_chiken\90-100\chiken_90-100_b		1411328
+	755622170	mech_ft_10	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\mech_ft_10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\pc\mech_steps\mech_ft_10		70872
+	780675312	chiken_1-30	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\chiken_1-30_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\chiken\all_chiken\1-30\chiken_1-30		1411328
+	803315005	ducks	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\ducks_CD8EDA95.wem		\Actor-Mixer Hierarchy\Default Work Unit\ambient\random_ambience\ducks		31086
+	809408112	click_button_3	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\click_button_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\ui\click\click_button_3		162748
+	864576889	mech_8	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\mech_8_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\pc\mech_idle\robot_mesh\mech_8		201336
+	888190345	mech	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\mech_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\pc\mech_idle\robot_mesh\mech		551376
+	917559979	chic_death_5	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\chic_death_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\chiken\chiken_death\chic_death_5		137020
+	936939341	chiken_1-30_c	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\chiken_1-30_c_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\chiken\all_chiken\1-30\chiken_1-30_c		1411328
+	937144722	eng_loop_3	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\eng_loop_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\pc\mech_idle\eng\eng_loop_3		1411328
+	938600150	mech_ft_6	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\mech_ft_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\pc\mech_steps\mech_ft_6		70872
+	956806330	tail_3	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\tail_3_2112A32D.wem		\Actor-Mixer Hierarchy\Default Work Unit\pc\laser_tail\tail_3		159528
+	957112700	chiken_1-30_b	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\chiken_1-30_b_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\chiken\all_chiken\1-30\chiken_1-30_b		1411328
+	957912267	mech_3	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\mech_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\pc\mech_idle\robot_mesh\mech_3		201336
+	963812834	gun	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\gun_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\pc\pc_weapon\laser\gun		4242916
+	964272491	tail	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\tail_E40545DD.wem		\Actor-Mixer Hierarchy\Default Work Unit\pc\laser_tail\tail		159124
+	968794086	chiken_70-100_a	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\chiken_70-100_a_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\chiken\all_chiken\70-100\chiken_70-100_a		1411328
+	1014058332	mech_6	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\mech_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\pc\mech_idle\robot_mesh\mech_6		201336
+	1051423982	click_button	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\click_button_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\ui\click\click_button		162748
+	1059715957	chic_death_2	D:\Jam2021\tuc-jam-jan-2021\.cache\Windows\SFX\chic_death_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\chiken\chiken_death\chic_death_2		137020
 
