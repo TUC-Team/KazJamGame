@@ -115,6 +115,7 @@ public class WeaponController : MonoBehaviour
     public float GetAmmoNeededToShoot() => (shootType != WeaponShootType.Charge ? 1f : Mathf.Max(1f, ammoUsedOnStartCharge)) / (maxAmmo * bulletsPerShot);
 
     AudioSource m_ShootAudioSource;
+    private WwiseAudioSystem _audioSystem;
 
     const string k_AnimAttackParameter = "Attack";
 
@@ -126,6 +127,8 @@ public class WeaponController : MonoBehaviour
         m_ShootAudioSource = GetComponent<AudioSource>();
         DebugUtility.HandleErrorIfNullGetComponent<AudioSource, WeaponController>(m_ShootAudioSource, this, gameObject);
 
+        _audioSystem = GetComponent<WwiseAudioSystem>(); 
+        
         if (useContinuousShootSound)
         {
             m_continuousShootAudioSource = gameObject.AddComponent<AudioSource>();
@@ -267,9 +270,16 @@ public class WeaponController : MonoBehaviour
                 {
                     return TryShoot();
                 }
+
+                if (inputUp)
+                {
+                    _audioSystem.StopShootingSerie();
+                }
                 return false;
 
+
             case WeaponShootType.Charge:
+                
                 if (inputHeld)
                 {
                     TryBeginCharge();
@@ -358,6 +368,7 @@ public class WeaponController : MonoBehaviour
         }
 
         m_LastTimeShot = Time.time;
+        _audioSystem.StartShootingSerie();
 
         // play shoot SFX
         if (shootSFX && !useContinuousShootSound)

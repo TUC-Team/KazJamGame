@@ -11,7 +11,8 @@ public class ChickenAIBase : MonoBehaviour
 {
     public bool IsKilled { get; private set; } = false;
     public UnityEvent diedEvent;
-    
+    public AK.Wwise.Event chic_death;
+
     [SerializeField] private float stayingTime = 2f;
     [SerializeField] private float targetStoppingDistance = .5f;
     
@@ -60,7 +61,8 @@ public class ChickenAIBase : MonoBehaviour
         IsKilled = true;
         
         chickenManager.RemoveChicken(this);
-        
+        chic_death.Post(gameObject);
+
         diedEvent?.Invoke();
 
         transform.localScale = new Vector3(1, .05f, 1);

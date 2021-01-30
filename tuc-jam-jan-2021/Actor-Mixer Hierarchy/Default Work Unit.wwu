@@ -934,6 +934,7 @@
 					<ChildrenList>
 						<BlendContainer Name="all_chiken" ID="{9546B645-6CD6-4D0D-839C-818A1606B974}" ShortID="567184258">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="BlendBehavior" Type="int16" Value="1"/>
 								<Property Name="Highpass" Type="int16">
 									<ValueList>
@@ -952,6 +953,9 @@
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="chiken" ID="{22B35903-CCC4-4C13-9EB3-000C89745990}" WorkUnitID="{8B5B023E-9141-4F83-9BBA-F44A169D43CC}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
 								</Reference>
@@ -1520,6 +1524,7 @@
 						</BlendContainer>
 						<RandomSequenceContainer Name="chiken_death" ID="{908E9025-F102-4A70-984C-4B06AB1D4BF3}" ShortID="1003863486">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="Highpass" Type="int16">
 									<ValueList>
 										<Value>14</Value>
@@ -1550,6 +1555,9 @@
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="chiken" ID="{22B35903-CCC4-4C13-9EB3-000C89745990}" WorkUnitID="{8B5B023E-9141-4F83-9BBA-F44A169D43CC}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
 								</Reference>

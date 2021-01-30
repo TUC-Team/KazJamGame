@@ -37,7 +37,7 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="chiken_sum" ID="{926E1D02-1A67-4B3D-A4BD-A21C73D2E933}"/>
-							<Value>95</Value>
+							<Value>100</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
