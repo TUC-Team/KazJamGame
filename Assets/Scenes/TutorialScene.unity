@@ -933,6 +933,21 @@ PrefabInstance:
       objectReference: {fileID: 3937147350678517434}
     - target: {fileID: 1056801365216247584, guid: e9fc75a18426f4cbbaed513aac572eb6,
         type: 3}
+      propertyPath: _steps.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1056801365216247584, guid: e9fc75a18426f4cbbaed513aac572eb6,
+        type: 3}
+      propertyPath: _steps.Array.data[8].Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1056801365216247584, guid: e9fc75a18426f4cbbaed513aac572eb6,
+        type: 3}
+      propertyPath: _steps.Array.data[8].Scene.Name
+      value: GameScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 1056801365216247584, guid: e9fc75a18426f4cbbaed513aac572eb6,
+        type: 3}
       propertyPath: _steps.Array.data[2].Click.Target
       value: 
       objectReference: {fileID: 3316389635638509567}
@@ -953,41 +968,6 @@ PrefabInstance:
       objectReference: {fileID: 8671959227975025600}
     - target: {fileID: 1056801365216247584, guid: e9fc75a18426f4cbbaed513aac572eb6,
         type: 3}
-      propertyPath: _steps.Array.data[1].Transition.Start
-      value: 
-      objectReference: {fileID: 8671959227975025600}
-    - target: {fileID: 1056801365216247584, guid: e9fc75a18426f4cbbaed513aac572eb6,
-        type: 3}
-      propertyPath: _steps.Array.data[2].Transition.Start
-      value: 
-      objectReference: {fileID: 8671959227975025600}
-    - target: {fileID: 1056801365216247584, guid: e9fc75a18426f4cbbaed513aac572eb6,
-        type: 3}
-      propertyPath: _steps.Array.data[3].Transition.Start
-      value: 
-      objectReference: {fileID: 8671959227975025600}
-    - target: {fileID: 1056801365216247584, guid: e9fc75a18426f4cbbaed513aac572eb6,
-        type: 3}
-      propertyPath: _steps.Array.data[4].Transition.Start
-      value: 
-      objectReference: {fileID: 8671959227975025600}
-    - target: {fileID: 1056801365216247584, guid: e9fc75a18426f4cbbaed513aac572eb6,
-        type: 3}
-      propertyPath: _steps.Array.data[5].Transition.Start
-      value: 
-      objectReference: {fileID: 8671959227975025600}
-    - target: {fileID: 1056801365216247584, guid: e9fc75a18426f4cbbaed513aac572eb6,
-        type: 3}
-      propertyPath: _steps.Array.data[6].Transition.Start
-      value: 
-      objectReference: {fileID: 8671959227975025600}
-    - target: {fileID: 1056801365216247584, guid: e9fc75a18426f4cbbaed513aac572eb6,
-        type: 3}
-      propertyPath: _steps.Array.data[7].Transition.Start
-      value: 
-      objectReference: {fileID: 8671959227975025600}
-    - target: {fileID: 1056801365216247584, guid: e9fc75a18426f4cbbaed513aac572eb6,
-        type: 3}
       propertyPath: _steps.Array.data[0].Transition.Finish
       value: 
       objectReference: {fileID: 223901496}
@@ -998,74 +978,34 @@ PrefabInstance:
       objectReference: {fileID: 1706063198}
     - target: {fileID: 1056801365216247584, guid: e9fc75a18426f4cbbaed513aac572eb6,
         type: 3}
-      propertyPath: _steps.Array.data[1].Transition.Finish
-      value: 
-      objectReference: {fileID: 223901496}
+      propertyPath: _steps.Array.data[8].Transition.Duration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1056801365216247584, guid: e9fc75a18426f4cbbaed513aac572eb6,
         type: 3}
-      propertyPath: _steps.Array.data[1].Transition.Target
-      value: 
-      objectReference: {fileID: 1706063198}
+      propertyPath: _steps.Array.data[8].Transition.Curve.m_PreInfinity
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1056801365216247584, guid: e9fc75a18426f4cbbaed513aac572eb6,
         type: 3}
-      propertyPath: _steps.Array.data[2].Transition.Finish
-      value: 
-      objectReference: {fileID: 223901496}
+      propertyPath: _steps.Array.data[8].Transition.Curve.m_PostInfinity
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1056801365216247584, guid: e9fc75a18426f4cbbaed513aac572eb6,
         type: 3}
-      propertyPath: _steps.Array.data[2].Transition.Target
-      value: 
-      objectReference: {fileID: 1706063198}
+      propertyPath: _steps.Array.data[8].Transition.Curve.m_Curve.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1056801365216247584, guid: e9fc75a18426f4cbbaed513aac572eb6,
         type: 3}
-      propertyPath: _steps.Array.data[3].Transition.Finish
-      value: 
-      objectReference: {fileID: 223901496}
+      propertyPath: _steps.Array.data[8].Transition.Curve.m_Curve.Array.data[1].time
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1056801365216247584, guid: e9fc75a18426f4cbbaed513aac572eb6,
         type: 3}
-      propertyPath: _steps.Array.data[3].Transition.Target
-      value: 
-      objectReference: {fileID: 1706063198}
-    - target: {fileID: 1056801365216247584, guid: e9fc75a18426f4cbbaed513aac572eb6,
-        type: 3}
-      propertyPath: _steps.Array.data[4].Transition.Finish
-      value: 
-      objectReference: {fileID: 223901496}
-    - target: {fileID: 1056801365216247584, guid: e9fc75a18426f4cbbaed513aac572eb6,
-        type: 3}
-      propertyPath: _steps.Array.data[4].Transition.Target
-      value: 
-      objectReference: {fileID: 1706063198}
-    - target: {fileID: 1056801365216247584, guid: e9fc75a18426f4cbbaed513aac572eb6,
-        type: 3}
-      propertyPath: _steps.Array.data[5].Transition.Finish
-      value: 
-      objectReference: {fileID: 223901496}
-    - target: {fileID: 1056801365216247584, guid: e9fc75a18426f4cbbaed513aac572eb6,
-        type: 3}
-      propertyPath: _steps.Array.data[5].Transition.Target
-      value: 
-      objectReference: {fileID: 1706063198}
-    - target: {fileID: 1056801365216247584, guid: e9fc75a18426f4cbbaed513aac572eb6,
-        type: 3}
-      propertyPath: _steps.Array.data[6].Transition.Finish
-      value: 
-      objectReference: {fileID: 223901496}
-    - target: {fileID: 1056801365216247584, guid: e9fc75a18426f4cbbaed513aac572eb6,
-        type: 3}
-      propertyPath: _steps.Array.data[6].Transition.Target
-      value: 
-      objectReference: {fileID: 1706063198}
-    - target: {fileID: 1056801365216247584, guid: e9fc75a18426f4cbbaed513aac572eb6,
-        type: 3}
-      propertyPath: _steps.Array.data[7].Transition.Finish
-      value: 
-      objectReference: {fileID: 223901496}
-    - target: {fileID: 1056801365216247584, guid: e9fc75a18426f4cbbaed513aac572eb6,
-        type: 3}
-      propertyPath: _steps.Array.data[7].Transition.Target
-      value: 
-      objectReference: {fileID: 1706063198}
+      propertyPath: _steps.Array.data[8].Transition.Curve.m_Curve.Array.data[1].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3449132692266851208, guid: e9fc75a18426f4cbbaed513aac572eb6,
         type: 3}
       propertyPath: m_RootOrder
