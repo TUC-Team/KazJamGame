@@ -117,6 +117,9 @@ MonoBehaviour:
       Target: {fileID: 0}
     Scene:
       Name: 
+    Key:
+      Any: 0
+      Key: 0
   - Mode: 1
     Transition:
       Target: {fileID: 0}
@@ -157,6 +160,9 @@ MonoBehaviour:
       Target: {fileID: 0}
     Scene:
       Name: 
+    Key:
+      Any: 0
+      Key: 0
   - Mode: 3
     Transition:
       Target: {fileID: 0}
@@ -197,6 +203,9 @@ MonoBehaviour:
       Target: {fileID: 0}
     Scene:
       Name: 
+    Key:
+      Any: 0
+      Key: 0
   - Mode: 2
     Transition:
       Target: {fileID: 0}
@@ -237,6 +246,9 @@ MonoBehaviour:
       Target: {fileID: 0}
     Scene:
       Name: 
+    Key:
+      Any: 0
+      Key: 0
   - Mode: 4
     Transition:
       Target: {fileID: 0}
@@ -277,6 +289,9 @@ MonoBehaviour:
       Target: {fileID: 0}
     Scene:
       Name: 
+    Key:
+      Any: 0
+      Key: 0
   - Mode: 1
     Transition:
       Target: {fileID: 0}
@@ -317,6 +332,9 @@ MonoBehaviour:
       Target: {fileID: 0}
     Scene:
       Name: 
+    Key:
+      Any: 0
+      Key: 0
   - Mode: 5
     Transition:
       Target: {fileID: 0}
@@ -357,6 +375,9 @@ MonoBehaviour:
       Target: {fileID: 0}
     Scene:
       Name: 
+    Key:
+      Any: 0
+      Key: 0
   - Mode: 6
     Transition:
       Target: {fileID: 0}
@@ -396,7 +417,10 @@ MonoBehaviour:
     Activate:
       Target: {fileID: 0}
     Scene:
-      Name: GameScene
+      Name: LevelScene
+    Key:
+      Any: 0
+      Key: 0
 --- !u!1001 &874060724534246518
 PrefabInstance:
   m_ObjectHideFlags: 0
