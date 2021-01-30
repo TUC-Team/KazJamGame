@@ -1,4 +1,4 @@
-﻿﻿#if UNITY_EDITOR
+﻿#if UNITY_EDITOR
 //////////////////////////////////////////////////////////////////////
 //
 // Copyright (c) 2014 Audiokinetic Inc. / All Rights Reserved
