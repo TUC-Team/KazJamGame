@@ -15,6 +15,39 @@
 					</ChildrenList>
 				</Event>
 				<Folder Name="audio-asset" ID="{5080B05A-5754-4EB9-91C1-717744B73AB0}" ShortID="601810086"/>
+				<Event Name="ambient" ID="{C132DE6E-609F-4FB3-AD0C-7E3ED1BCED67}">
+					<ChildrenList>
+						<Action Name="" ID="{C9DD7ABF-BB58-48E0-9845-31A36B8AA107}" ShortID="100452668">
+							<PropertyList>
+								<Property Name="FadeInCurve" Type="int16" Value="6"/>
+								<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="random_ambience" ID="{31609141-56CA-4328-A535-656C7B014B68}" WorkUnitID="{0B8A8412-535D-478C-A682-64DFB12B79D8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{8E38FB81-5F08-4E79-8A99-F3E3987AB459}" ShortID="620532268">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="amb" ID="{F510B916-21EB-4215-BF26-DC26D28EBCAE}" WorkUnitID="{0B8A8412-535D-478C-A682-64DFB12B79D8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="all_chiken" ID="{0533F31D-F965-4A0F-BFEB-7C172194833E}">
+					<ChildrenList>
+						<Action Name="" ID="{AA268093-BAEA-4029-B475-9B1233F64451}" ShortID="371587365">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="all_chiken" ID="{9546B645-6CD6-4D0D-839C-818A1606B974}" WorkUnitID="{0B8A8412-535D-478C-A682-64DFB12B79D8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

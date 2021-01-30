@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{FA925FCE-EE74-496C-AD1B-30CE686433F3}" SchemaVersion="97">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{FA925FCE-EE74-496C-AD1B-30CE686433F3}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{FA925FCE-EE74-496C-AD1B-30CE686433F3}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="chiken_sum" ID="{926E1D02-1A67-4B3D-A4BD-A21C73D2E933}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="20"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="22"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>
