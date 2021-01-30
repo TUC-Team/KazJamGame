@@ -9,7 +9,7 @@ using Random = System.Random;
 public class HandAIBase : MonoBehaviour
 {
     public UnityEvent DiedEvent;
-    
+
     [SerializeField] private HandState startState;
     [SerializeField] private float minPatrolTime = 5f;
     [SerializeField] private float maxPatrolTime = 10f;
@@ -29,7 +29,7 @@ public class HandAIBase : MonoBehaviour
     private float _currentStayTimeInPatrolPoint = 0;
     private float _timeSinceLastAttack = 0;
     private int _deathCount = 0;
-    private Vector3 _targetPatrolPosition;   
+    private Vector3 _targetPatrolPosition;
     private ChickenManager _chickenManager;
     private Health _health;
     private GameController _gameController;
@@ -41,7 +41,7 @@ public class HandAIBase : MonoBehaviour
         _agent = GetComponent<NavMeshAgent>();
         _animator = GetComponent<Animator>();
         _health = GetComponent<Health>();
-        
+
         if (_health == null)
             _health = GetComponentInChildren<Health>();
     }
@@ -50,7 +50,7 @@ public class HandAIBase : MonoBehaviour
     {
         _health.onDie += OnDie;
     }
-    
+
     private void OnDisable()
     {
         _health.onDie -= OnDie;
@@ -67,7 +67,7 @@ public class HandAIBase : MonoBehaviour
     {
         if (_gameController.IsGameEnded)
             return;
-        
+
         switch (_state)
         {
             case HandState.Hunt:
@@ -86,12 +86,12 @@ public class HandAIBase : MonoBehaviour
     {
         float minDist = Mathf.Infinity;
         ChickenAIBase nearestChicken = null;
-        
+
         foreach (var chicken in _chickenManager.Chickens)
         {
             if (chicken.IsKilled)
                 continue;
-            
+
             float dist = Vector3.Distance(transform.position, chicken.transform.position);
             if (dist < minDist)
             {
@@ -118,7 +118,7 @@ public class HandAIBase : MonoBehaviour
             DiedEvent?.Invoke();
             return;
         }
-        
+
         ChangeState(HandState.Healing);
     }
 
@@ -133,7 +133,7 @@ public class HandAIBase : MonoBehaviour
             ChangeState(HandState.Patrol);
             return;
         }
-        
+
         _agent.SetDestination(_targetChicken.transform.position);
 
         if (_chickensInAttackRange.Count > 0 && _timeSinceLastAttack >= attackRate)
@@ -142,9 +142,9 @@ public class HandAIBase : MonoBehaviour
             _timeSinceLastAttack = 0;
         }
     }
-    
+
     private void HuntStart(){}
-    
+
     private void PatrolStart(){}
 
     private void HealingStart()
@@ -187,7 +187,7 @@ public class HandAIBase : MonoBehaviour
             _currentStayTimeInPatrolPoint = 0;
             ChangeTargetRandom();
         }
-        
+
         _currentPatrolTime += Time.deltaTime;
 
         if (_currentPatrolTime >= _patrolTime)
@@ -201,7 +201,7 @@ public class HandAIBase : MonoBehaviour
     private void HealingUpdate()
     {
         _health.Heal(Time.deltaTime * healingSpeed);
-        
+
         if (Math.Abs(_health.currentHealth - _health.maxHealth) <= Mathf.Epsilon)
             ChangeState(HandState.Appearing);
     }
@@ -209,7 +209,7 @@ public class HandAIBase : MonoBehaviour
     private void ChangeState(HandState newState)
     {
         _state = newState;
-        
+
         switch (newState)
         {
             case HandState.Hunt:
@@ -226,7 +226,7 @@ public class HandAIBase : MonoBehaviour
                 break;
         }
     }
-    
+
     private void OnTriggerEnter(Collider other)
     {
         var chicken = other.GetComponent<ChickenAIBase>();
@@ -246,7 +246,7 @@ public class HandAIBase : MonoBehaviour
 
         if (chicken == null)
             return;
-        
+
         _chickensInAttackRange.Remove(chicken);
     }
 
@@ -257,13 +257,13 @@ public class HandAIBase : MonoBehaviour
             _state = HandState.Patrol;
             return;
         }
-        
+
         _chickensInAttackRange[0].Kill();
         _chickensInAttackRange.RemoveAt(0);
-        
+
         _state = HandState.Patrol;
     }
-    
+
     private void ChangeTargetRandom()
     {
         var position = transform.position;
@@ -277,7 +277,7 @@ public class HandAIBase : MonoBehaviour
         target.z += z;
 
         _currentStayTimeInPatrolPoint = 0;
-        
+
         _targetPatrolPosition = target;
     }
 }
