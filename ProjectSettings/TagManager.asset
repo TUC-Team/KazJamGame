@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Fense
+  - Tree
   layers:
   - Default
   - TransparentFX
