@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: Pechenka-Regular2 SDF
   m_EditorClassIdentifier: 
-  hashCode: 0
+  hashCode: 779137259
   material: {fileID: 261337392978255671}
-  materialHashCode: 0
+  materialHashCode: 1410434411
   m_Version: 1.1.0
   m_SourceFontFileGUID: 40a8b31af4c1c734ca55ffb09f437bc6
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 40a8b31af4c1c734ca55ffb09f437bc6,
@@ -2536,9 +2536,9 @@ Material:
     - _OutlineWidth: 0
     - _PerspectiveFilter: 0.875
     - _Reflectivity: 10
-    - _ScaleRatioA: 1
-    - _ScaleRatioB: 1
-    - _ScaleRatioC: 1
+    - _ScaleRatioA: 0.8333333
+    - _ScaleRatioB: 0.6770833
+    - _ScaleRatioC: 0.6770833
     - _ScaleX: 1
     - _ScaleY: 1
     - _ShaderFlags: 0
