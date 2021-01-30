@@ -9,6 +9,13 @@
 							<ObjectRef Name="System" ID="{EA468ECC-BE34-4BCC-86F5-37FEB7B4A72E}" WorkUnitID="{AD27FE81-1DCF-42DA-8AB7-995B4F09652C}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="pc" ID="{0FE04D8F-73F4-4258-A087-8CE3938CC41B}"/>
+						<Bus Name="chiken" ID="{0F69F68F-CDFF-4DD4-A868-D9382B6CBA52}"/>
+						<Bus Name="enemy" ID="{59108662-989E-453E-9CBD-FE97EBF1A209}"/>
+						<Bus Name="ambient" ID="{2E5DED25-3046-4F1F-A68D-0060D8D861D5}"/>
+						<Bus Name="music" ID="{8379D730-BEA0-445F-9E8E-05461BA006B1}"/>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

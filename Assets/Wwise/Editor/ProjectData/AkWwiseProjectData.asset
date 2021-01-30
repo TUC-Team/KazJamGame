@@ -30,8 +30,41 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: e5414f292813ac4092808c36921184eb
     GuidInternal: 
-    m_lastTime: -8585896740066182298
+    m_lastTime: -8585898277579867943
     List:
+    - name: ambient
+      guid: 25ed5d2e46301f4fa68d0060d8d861d5
+      id: 77978275
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: ambient
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\ambient
+    - name: chiken
+      guid: 8ff6690fffcdd44da868d9382b6cba52
+      id: 1718040157
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: chiken
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\chiken
+    - name: enemy
+      guid: 628610599e983e459cbdfe97ebf1a209
+      id: 2299321487
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: enemy
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\enemy
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -41,6 +74,28 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
       Path: Default Work Unit\Master Audio Bus
+    - name: music
+      guid: 30d77983a0be5f449e8e05461ba006b1
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: music
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\music
+    - name: pc
+      guid: 8f4de00ff4735842a0878ce3938cc41b
+      id: 1635194334
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: pc
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\pc
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -136,7 +191,5 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /tuc-jam-jan-2021
-  - /tuc-jam-jan-2021/Events
-  - /tuc-jam-jan-2021/Events/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

@@ -44,6 +44,1149 @@
 						<ActiveSource Name="75 BPM - E - Dirty Guitar Riffs - Riff 1 - pan left" ID="{96EA4614-7D09-4B60-B7FA-9EE8E5D48927}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Folder Name="pc" ID="{8DB7E094-F928-464A-9E84-88AC45AA1699}" ShortID="231377631">
+					<ChildrenList>
+						<SwitchContainer Name="mech_ftstps" ID="{99A55F51-8575-4D0D-AD9C-080D4C581376}" ShortID="126758940">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294F41E5-1328-40AC-9280-8C36921184EB}"/>
+								</Reference>
+							</ReferenceList>
+							<GroupingInfo/>
+						</SwitchContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="chiken" ID="{0078207B-70C0-4FBC-86F8-1D87DA595615}" ShortID="1063727449">
+					<ChildrenList>
+						<BlendContainer Name="all_chiken" ID="{9546B645-6CD6-4D0D-839C-818A1606B974}" ShortID="567184258">
+							<PropertyList>
+								<Property Name="BlendBehavior" Type="int16" Value="1"/>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>12</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>14</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="chiken" ID="{0F69F68F-CDFF-4DD4-A868-D9382B6CBA52}" WorkUnitID="{294F41E5-1328-40AC-9280-8C36921184EB}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="1-30" ID="{CAAB3BD2-1916-482E-A489-849CDF910388}" ShortID="1072501410">
+									<PropertyList>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{4EF5813B-D741-45F6-BA5E-6BA8968A731F}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-3"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294F41E5-1328-40AC-9280-8C36921184EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="chiken_1-30" ID="{472CD40B-15B4-4CEA-9A6B-86AB2590B76C}" ShortID="81040193">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294F41E5-1328-40AC-9280-8C36921184EB}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="chiken_1-30" ID="{92EF99D5-D4F3-4D1E-9CCA-09104A4DFEAA}">
+													<Language>SFX</Language>
+													<AudioFile>chiken_1-30.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="780675312"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="chiken_1-30" ID="{92EF99D5-D4F3-4D1E-9CCA-09104A4DFEAA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="chiken_1-30_a" ID="{A65261FE-E914-4B75-AA12-B70CA4774B53}" ShortID="622265775">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294F41E5-1328-40AC-9280-8C36921184EB}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="chiken_1-30_a" ID="{9D1834A9-CF5F-47F1-B9F2-1D8AF40021B4}">
+													<Language>SFX</Language>
+													<AudioFile>chiken_1-30_a.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="168440969"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="chiken_1-30_a" ID="{9D1834A9-CF5F-47F1-B9F2-1D8AF40021B4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="chiken_1-30_b" ID="{3998224B-2F56-40F5-8FF4-AF11577E01EB}" ShortID="118984360">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294F41E5-1328-40AC-9280-8C36921184EB}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="chiken_1-30_b" ID="{E9BAE1CE-61EB-48AC-BAE3-22562AB9AD1D}">
+													<Language>SFX</Language>
+													<AudioFile>chiken_1-30_b.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="957112700"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="chiken_1-30_b" ID="{E9BAE1CE-61EB-48AC-BAE3-22562AB9AD1D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="chiken_1-30_c" ID="{E8F295C6-4DD9-4A5C-9D9C-7B9A9F18841B}" ShortID="927348734">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294F41E5-1328-40AC-9280-8C36921184EB}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="chiken_1-30_c" ID="{A7A987E5-A9DB-47FE-8573-F3C4F2F77158}">
+													<Language>SFX</Language>
+													<AudioFile>chiken_1-30_c.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="936939341"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="chiken_1-30_c" ID="{A7A987E5-A9DB-47FE-8573-F3C4F2F77158}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="50-70" ID="{9363415B-8FF5-48F7-8F65-1339D4A4A2E9}" ShortID="328571056">
+									<PropertyList>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-16</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{C6DA2C63-5EED-4124-88DE-6CC50E3E2792}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-3"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="ambient" ID="{2E5DED25-3046-4F1F-A68D-0060D8D861D5}" WorkUnitID="{294F41E5-1328-40AC-9280-8C36921184EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="chiken_50-70" ID="{F355E1AD-0936-435C-B29B-D02CAD841C85}" ShortID="689869955">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294F41E5-1328-40AC-9280-8C36921184EB}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="chiken_50-70" ID="{8A095CFB-F654-4ED7-99AF-2A54851AB679}">
+													<Language>SFX</Language>
+													<AudioFile>chiken_50-70.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="471278734"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="chiken_50-70" ID="{8A095CFB-F654-4ED7-99AF-2A54851AB679}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="chiken_50-70_a" ID="{63E011D6-6B17-405F-893B-61913AB67404}" ShortID="666631716">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294F41E5-1328-40AC-9280-8C36921184EB}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="chiken_50-70_a" ID="{84AEE712-54AE-4CDF-9553-D907A2793FC1}">
+													<Language>SFX</Language>
+													<AudioFile>chiken_50-70_a.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="148750320"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="chiken_50-70_a" ID="{84AEE712-54AE-4CDF-9553-D907A2793FC1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="chiken_50-70_b" ID="{1BE0F591-E6C5-4F42-9355-D82F4AEA9FD1}" ShortID="129273186">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294F41E5-1328-40AC-9280-8C36921184EB}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="chiken_50-70_b" ID="{675B7612-5B93-4316-9D55-AA8CA6FB3D83}">
+													<Language>SFX</Language>
+													<AudioFile>chiken_50-70_b.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="274114366"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="chiken_50-70_b" ID="{675B7612-5B93-4316-9D55-AA8CA6FB3D83}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="chiken_50-70_c" ID="{CFC1E0BB-C985-4F08-AC3D-EC5EDC0D161A}" ShortID="667228446">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294F41E5-1328-40AC-9280-8C36921184EB}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="chiken_50-70_c" ID="{3DDD274A-01F0-41FD-AF22-2D8439194202}">
+													<Language>SFX</Language>
+													<AudioFile>chiken_50-70_c.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="634240592"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="chiken_50-70_c" ID="{3DDD274A-01F0-41FD-AF22-2D8439194202}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="70-100" ID="{D926FA14-0519-41E3-8120-532F7BBED6E6}" ShortID="34070512">
+									<PropertyList>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{D88FE03B-75F1-4C78-B72C-73B94E2AA289}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-3"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="ambient" ID="{2E5DED25-3046-4F1F-A68D-0060D8D861D5}" WorkUnitID="{294F41E5-1328-40AC-9280-8C36921184EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="chiken_70-100" ID="{53CDFBBB-FFAD-4265-AF9E-0FCE958D0FCD}" ShortID="846845724">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294F41E5-1328-40AC-9280-8C36921184EB}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="chiken_70-100" ID="{541B2164-FBE3-45C6-97B2-C9E182F91EE7}">
+													<Language>SFX</Language>
+													<AudioFile>chiken_70-100.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="301749092"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="chiken_70-100" ID="{541B2164-FBE3-45C6-97B2-C9E182F91EE7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="chiken_70-100_a" ID="{672AA923-3EE2-4AD1-9C3B-DD2189AAD16A}" ShortID="613136730">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294F41E5-1328-40AC-9280-8C36921184EB}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="chiken_70-100_a" ID="{B2133363-B724-4603-AAF4-C2EC7B74FAD2}">
+													<Language>SFX</Language>
+													<AudioFile>chiken_70-100_a.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="968794086"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="chiken_70-100_a" ID="{B2133363-B724-4603-AAF4-C2EC7B74FAD2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="chiken_70-100_b" ID="{933BAF4F-F9D3-4C02-A26C-8A692BB4DCCB}" ShortID="166426207">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294F41E5-1328-40AC-9280-8C36921184EB}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="chiken_70-100_b" ID="{A99DE449-CAE9-4A9C-B7BC-2B407EB10EC7}">
+													<Language>SFX</Language>
+													<AudioFile>chiken_70-100_b.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="35203722"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="chiken_70-100_b" ID="{A99DE449-CAE9-4A9C-B7BC-2B407EB10EC7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="chiken_70-100_c" ID="{37088DB6-E127-49C8-B91B-FF74BEA477B2}" ShortID="325912660">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294F41E5-1328-40AC-9280-8C36921184EB}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="chiken_70-100_c" ID="{16A0F3CD-F5F3-4C40-87D9-1E16A87D8B65}">
+													<Language>SFX</Language>
+													<AudioFile>chiken_70-100_c.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="562111713"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="chiken_70-100_c" ID="{16A0F3CD-F5F3-4C40-87D9-1E16A87D8B65}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="90-100" ID="{5968F1D2-3B1F-4CF2-9386-9B5574EB9513}" ShortID="744580214">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>11</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>16</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{652753C4-DC2E-4A1A-A789-8A8C4BC66E4B}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-3"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="ambient" ID="{2E5DED25-3046-4F1F-A68D-0060D8D861D5}" WorkUnitID="{294F41E5-1328-40AC-9280-8C36921184EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="chiken_90-100" ID="{674DDE32-A8A5-42C0-8419-8C76CA0B419A}" ShortID="566608197">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294F41E5-1328-40AC-9280-8C36921184EB}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="chiken_90-100" ID="{A2CF0B47-7248-4DA0-8B02-E02DEAED7D5D}">
+													<Language>SFX</Language>
+													<AudioFile>chiken_90-100.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="627388428"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="chiken_90-100" ID="{A2CF0B47-7248-4DA0-8B02-E02DEAED7D5D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="chiken_90-100_a" ID="{A65E1470-70D3-4EBB-9C39-DD78A3C18662}" ShortID="469254807">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294F41E5-1328-40AC-9280-8C36921184EB}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="chiken_90-100_a" ID="{3C75B002-A80C-48BA-B4E0-21B5F277C7C8}">
+													<Language>SFX</Language>
+													<AudioFile>chiken_90-100_a.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="269309461"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="chiken_90-100_a" ID="{3C75B002-A80C-48BA-B4E0-21B5F277C7C8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="chiken_90-100_b" ID="{D36DD9ED-389B-4550-9483-25FC66BC0EFE}" ShortID="162550678">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294F41E5-1328-40AC-9280-8C36921184EB}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="chiken_90-100_b" ID="{40811A68-3EDD-45C6-8AB9-FC0D91E36B4A}">
+													<Language>SFX</Language>
+													<AudioFile>chiken_90-100_b.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="674289816"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="chiken_90-100_b" ID="{40811A68-3EDD-45C6-8AB9-FC0D91E36B4A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="chiken_90-100_c" ID="{36286F99-3B4F-4AA9-99DC-1407A371F310}" ShortID="522604833">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294F41E5-1328-40AC-9280-8C36921184EB}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="chiken_90-100_c" ID="{7C6E02E2-ACC8-4EB4-B34F-2B058E67EA00}">
+													<Language>SFX</Language>
+													<AudioFile>chiken_90-100_c.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="88830912"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="chiken_90-100_c" ID="{7C6E02E2-ACC8-4EB4-B34F-2B058E67EA00}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<BlendTrackList>
+								<BlendTrack Name="50-70" ID="{01B470C8-2D01-47D8-B2CB-2B8923190526}" ShortID="750363387">
+									<PropertyList>
+										<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="LayerCrossFadeControlInput">
+											<ObjectRef Name="chiken_sum" ID="{926E1D02-1A67-4B3D-A4BD-A21C73D2E933}" WorkUnitID="{FA925FCE-EE74-496C-AD1B-30CE686433F3}"/>
+										</Reference>
+									</ReferenceList>
+									<BlendTrackAssocList>
+										<BlendTrackAssoc>
+											<ItemRef Name="50-70" ID="{9363415B-8FF5-48F7-8F65-1339D4A4A2E9}"/>
+											<CrossfadingInfo>
+												<LeftEdgePos>23.9621267297888</LeftEdgePos>
+												<LeftFadingMode>Automatic</LeftFadingMode>
+												<RightEdgePos>77.7132871449381</RightEdgePos>
+												<RightFadingMode>Automatic</RightFadingMode>
+												<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
+											</CrossfadingInfo>
+										</BlendTrackAssoc>
+										<BlendTrackAssoc>
+											<ItemRef Name="70-100" ID="{D926FA14-0519-41E3-8120-532F7BBED6E6}"/>
+											<CrossfadingInfo>
+												<LeftEdgePos>66.0381232702112</LeftEdgePos>
+												<LeftFadingMode>Automatic</LeftFadingMode>
+												<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
+												<RightEdgePos>98.2741028769118</RightEdgePos>
+												<RightFadingMode>Automatic</RightFadingMode>
+												<RightFadingSegmentShape>Exp3</RightFadingSegmentShape>
+											</CrossfadingInfo>
+										</BlendTrackAssoc>
+										<BlendTrackAssoc>
+											<ItemRef Name="90-100" ID="{5968F1D2-3B1F-4CF2-9386-9B5574EB9513}"/>
+											<CrossfadingInfo>
+												<LeftEdgePos>80.9909066824472</LeftEdgePos>
+												<LeftFadingMode>Automatic</LeftFadingMode>
+												<LeftFadingSegmentShape>Log3</LeftFadingSegmentShape>
+												<RightEdgePos>100</RightEdgePos>
+												<RightFadingMode>Automatic</RightFadingMode>
+											</CrossfadingInfo>
+										</BlendTrackAssoc>
+									</BlendTrackAssocList>
+								</BlendTrack>
+								<BlendTrack Name="1-30" ID="{62BE2958-2105-41CD-8A2F-1B484767E09C}" ShortID="159895599">
+									<PropertyList>
+										<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="LayerCrossFadeControlInput">
+											<ObjectRef Name="chiken_sum" ID="{926E1D02-1A67-4B3D-A4BD-A21C73D2E933}" WorkUnitID="{FA925FCE-EE74-496C-AD1B-30CE686433F3}"/>
+										</Reference>
+									</ReferenceList>
+									<BlendTrackAssocList>
+										<BlendTrackAssoc>
+											<ItemRef Name="1-30" ID="{CAAB3BD2-1916-482E-A489-849CDF910388}"/>
+											<CrossfadingInfo>
+												<LeftEdgePos>0</LeftEdgePos>
+												<LeftFadingMode>Automatic</LeftFadingMode>
+												<RightEdgePos>100</RightEdgePos>
+												<RightFadingMode>Automatic</RightFadingMode>
+											</CrossfadingInfo>
+										</BlendTrackAssoc>
+									</BlendTrackAssocList>
+								</BlendTrack>
+							</BlendTrackList>
+						</BlendContainer>
+						<RandomSequenceContainer Name="chiken_death" ID="{908E9025-F102-4A70-984C-4B06AB1D4BF3}" ShortID="1003863486">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294F41E5-1328-40AC-9280-8C36921184EB}"/>
+								</Reference>
+							</ReferenceList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="ambient" ID="{35436862-59AA-49FC-AC7B-F799F2B80CDF}" ShortID="226786435">
+					<ChildrenList>
+						<RandomSequenceContainer Name="amb" ID="{F510B916-21EB-4215-BF26-DC26D28EBCAE}" ShortID="916590303">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>20</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>14</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="ambient" ID="{2E5DED25-3046-4F1F-A68D-0060D8D861D5}" WorkUnitID="{294F41E5-1328-40AC-9280-8C36921184EB}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="ambience" ID="{F9925DDC-B581-4858-BB06-C905E52377A4}" ShortID="316926861">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294F41E5-1328-40AC-9280-8C36921184EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ambience" ID="{C286A513-26DE-478D-B31B-98F1B23F9D4A}">
+											<Language>SFX</Language>
+											<AudioFile>ambience.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="221229108"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ambience" ID="{C286A513-26DE-478D-B31B-98F1B23F9D4A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ambience_2" ID="{02BDACA6-4608-46CF-85C2-87A8610E66B4}" ShortID="273245434">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294F41E5-1328-40AC-9280-8C36921184EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ambience_2" ID="{CE37CB89-E131-4138-AD13-7AB2979E1EF4}">
+											<Language>SFX</Language>
+											<AudioFile>ambience_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="462334283"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ambience_2" ID="{CE37CB89-E131-4138-AD13-7AB2979E1EF4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ambience_3" ID="{ADB68EAF-3A00-4569-B8EF-F42756CBC72B}" ShortID="679284648">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294F41E5-1328-40AC-9280-8C36921184EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ambience_3" ID="{75BEF4D3-07BA-4C90-884C-A1887F3357A2}">
+											<Language>SFX</Language>
+											<AudioFile>ambience_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="175567307"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ambience_3" ID="{75BEF4D3-07BA-4C90-884C-A1887F3357A2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ambience_4" ID="{A9BF5B4B-585C-467B-927D-FF536E2515DC}" ShortID="400751950">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294F41E5-1328-40AC-9280-8C36921184EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ambience_4" ID="{C6DDF139-01B5-4773-BFAE-FFD83D6A8607}">
+											<Language>SFX</Language>
+											<AudioFile>ambience_4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="153956634"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ambience_4" ID="{C6DDF139-01B5-4773-BFAE-FFD83D6A8607}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="random_ambience" ID="{31609141-56CA-4328-A535-656C7B014B68}" ShortID="740840877">
+							<PropertyList>
+								<Property Name="3DPosition" Type="int16" Value="2"/>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+								<Property Name="Highpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{8D291F78-198C-4CC6-8673-6425BA3A2F44}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="32"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{9A4314C2-4DA6-4BB7-8F4B-8DC28CFE233B}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="22"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{34008CC7-7869-4722-92F7-2E5824D10E31}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="20">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{72B6CE6E-0A2B-4A22-BA04-A3491702C8C1}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="10"/>
+													<Property Name="Min" Type="Real64" Value="-4"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{02D189F9-FF5A-439C-A7F6-BB5AA766FEF3}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-3"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="30" ID="{1B3F0829-3286-4D27-83D2-ECDABE2AAE65}" WorkUnitID="{8B5B023E-9141-4F83-9BBA-F44A169D43CC}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect Medium" ID="{C2242190-EA66-4EC8-A876-8713CEEBAAC8}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="ambient" ID="{2E5DED25-3046-4F1F-A68D-0060D8D861D5}" WorkUnitID="{294F41E5-1328-40AC-9280-8C36921184EB}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="chiken" ID="{0808EDC9-67A2-43AE-85DE-5FE7367BDC5C}" ShortID="538454732">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294F41E5-1328-40AC-9280-8C36921184EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="chiken" ID="{F3DEA6EB-AD1E-4544-9A74-4D7EF42C06D5}">
+											<Language>SFX</Language>
+											<AudioFile>chiken.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="620229369"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="chiken" ID="{F3DEA6EB-AD1E-4544-9A74-4D7EF42C06D5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="chiken_2" ID="{31EC6DE0-CB59-4430-8D06-3FC1BEFFA876}" ShortID="122123444">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294F41E5-1328-40AC-9280-8C36921184EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="chiken_2" ID="{617E49C9-EA1E-4DC6-8303-3C5EF38D117A}">
+											<Language>SFX</Language>
+											<AudioFile>chiken_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="478597703"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="chiken_2" ID="{617E49C9-EA1E-4DC6-8303-3C5EF38D117A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="cow" ID="{F2AC4BBD-59CC-4E65-AB1F-3F98EDA34A53}" ShortID="804791445">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294F41E5-1328-40AC-9280-8C36921184EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="cow" ID="{8E3E9A52-3E8B-48B3-AD33-537008A5AEDA}">
+											<Language>SFX</Language>
+											<AudioFile>cow.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="514009095"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="cow" ID="{8E3E9A52-3E8B-48B3-AD33-537008A5AEDA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ducks" ID="{4403B922-FCFF-4429-9CF2-E11C8A60FAB7}" ShortID="949040559">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294F41E5-1328-40AC-9280-8C36921184EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ducks" ID="{0DAF398C-016D-4E40-BC93-C05B27D695C6}">
+											<Language>SFX</Language>
+											<AudioFile>ducks.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="803315005"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ducks" ID="{0DAF398C-016D-4E40-BC93-C05B27D695C6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="horse" ID="{34D6CFCE-AE24-4F43-8323-A1C3346B4EE0}" ShortID="1021935992">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294F41E5-1328-40AC-9280-8C36921184EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="horse" ID="{8C3AB765-AE8D-4C99-921D-114E367D6570}">
+											<Language>SFX</Language>
+											<AudioFile>horse.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="481652445"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="horse" ID="{8C3AB765-AE8D-4C99-921D-114E367D6570}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="horse_2" ID="{D1AC0A03-BD8B-428C-B190-463B72E8A90D}" ShortID="610901993">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294F41E5-1328-40AC-9280-8C36921184EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="horse_2" ID="{D565651F-959C-483C-9A60-8A00F9ECD4C0}">
+											<Language>SFX</Language>
+											<AudioFile>horse_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="320916411"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="horse_2" ID="{D565651F-959C-483C-9A60-8A00F9ECD4C0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="pig" ID="{A2153BF9-22BF-46A5-8244-CA7BDBA69846}" ShortID="196969994">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294F41E5-1328-40AC-9280-8C36921184EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="pig" ID="{4E5F10CC-A525-4EBC-825D-8F031E0D0656}">
+											<Language>SFX</Language>
+											<AudioFile>pig.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="32198630"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="pig" ID="{4E5F10CC-A525-4EBC-825D-8F031E0D0656}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="pig_2" ID="{6CF26F01-3441-4A70-BBB4-DC02FBE46656}" ShortID="118779306">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294F41E5-1328-40AC-9280-8C36921184EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="pig_2" ID="{04007963-722B-404A-A0A5-3772085CE116}">
+											<Language>SFX</Language>
+											<AudioFile>pig_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="614582224"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="pig_2" ID="{04007963-722B-404A-A0A5-3772085CE116}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="pig_3" ID="{B7DEDC60-CBDC-482A-AC33-68A1AC0CECF4}" ShortID="860833873">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{987BE823-B1CB-4B28-9D60-742B3AE2C646}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{294F41E5-1328-40AC-9280-8C36921184EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="pig_3" ID="{871367A7-481B-478B-A72C-528D194FB798}">
+											<Language>SFX</Language>
+											<AudioFile>pig_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="640875635"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="pig_3" ID="{871367A7-481B-478B-A72C-528D194FB798}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{7ACBD489-58AD-4C02-B3D5-BAD20BCF9A71}">
+									<PropertyList>
+										<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<Path2D Name="random_ambience_Path" ID="{BB8D8610-70AA-427B-A86A-D3D239E3D352}">
+											<PointList>
+												<Point>
+													<XPos>-80.89054</XPos>
+													<YPos>7.69231</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>-46.1966604823748</XPos>
+													<YPos>-62.2377622377622</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="random_ambience_Path_01" ID="{1B16793A-112C-43D4-8EA0-2839690C6964}">
+											<PointList>
+												<Point>
+													<XPos>35.99258</XPos>
+													<YPos>-2.44755</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>81.81818</XPos>
+													<YPos>-24.47552</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="random_ambience_Path_02" ID="{958D6209-296A-4699-ABC5-051F00D34C61}">
+											<PointList>
+												<Point>
+													<XPos>-39.33209</XPos>
+													<YPos>-68.53147</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>79.9628942486085</XPos>
+													<YPos>-54.1958041958042</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="random_ambience_Path_03" ID="{54674CDA-5B97-4D4B-A6B4-873A42BB11BA}">
+											<PointList>
+												<Point>
+													<XPos>-13.35808</XPos>
+													<YPos>-20.62937</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>-41.37291</XPos>
+													<YPos>-73.42657</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="random_ambience_Path_04" ID="{1B338CE0-FC69-41FB-8858-E20329862242}">
+											<PointList>
+												<Point>
+													<XPos>1.48423</XPos>
+													<YPos>-17.13287</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>54.73098</XPos>
+													<YPos>-3.14686</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="random_ambience_Path_05" ID="{51A5A652-FA01-48F8-B77B-201B44A88625}">
+											<PointList>
+												<Point>
+													<XPos>4.45269</XPos>
+													<YPos>1.74825</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>76.99443</XPos>
+													<YPos>31.46853</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="random_ambience_Path_06" ID="{8E1D5725-FFF5-451E-B56F-A8AC0A410E67}">
+											<PointList>
+												<Point>
+													<XPos>-75.32468</XPos>
+													<YPos>-10.13985</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>42.11503</XPos>
+													<YPos>-61.88811</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
