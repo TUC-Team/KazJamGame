@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 5fe63d829d6bbcb43ad423ed11061790
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Pechenka
+  fontNames:
+  - Pechenka
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 40a8b31af4c1c734ca55ffb09f437bc6, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
