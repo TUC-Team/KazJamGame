@@ -1909,36 +1909,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3197546034743387473, guid: dd2c1181b33d77c4e8b9a5e7b60c614a,
-        type: 3}
-      propertyPath: DiedEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3197546034743387473, guid: dd2c1181b33d77c4e8b9a5e7b60c614a,
-        type: 3}
-      propertyPath: DiedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3197546034743387473, guid: dd2c1181b33d77c4e8b9a5e7b60c614a,
-        type: 3}
-      propertyPath: DiedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 3197546035174805096}
-    - target: {fileID: 3197546034743387473, guid: dd2c1181b33d77c4e8b9a5e7b60c614a,
-        type: 3}
-      propertyPath: DiedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3197546034743387473, guid: dd2c1181b33d77c4e8b9a5e7b60c614a,
-        type: 3}
-      propertyPath: DiedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetTrigger
-      objectReference: {fileID: 0}
-    - target: {fileID: 3197546034743387473, guid: dd2c1181b33d77c4e8b9a5e7b60c614a,
-        type: 3}
-      propertyPath: DiedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 3197546034743387475, guid: dd2c1181b33d77c4e8b9a5e7b60c614a,
         type: 3}
       propertyPath: m_RootOrder
@@ -2464,12 +2434,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 223a2e9fbe96d9d4daa904cfcb3a9a99, type: 3}
---- !u!95 &635586494 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 3197546034743387478, guid: dd2c1181b33d77c4e8b9a5e7b60c614a,
-    type: 3}
-  m_PrefabInstance: {fileID: 688643316}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &643061587
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2603,36 +2567,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3197546034743387473, guid: dd2c1181b33d77c4e8b9a5e7b60c614a,
-        type: 3}
-      propertyPath: DiedEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3197546034743387473, guid: dd2c1181b33d77c4e8b9a5e7b60c614a,
-        type: 3}
-      propertyPath: DiedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3197546034743387473, guid: dd2c1181b33d77c4e8b9a5e7b60c614a,
-        type: 3}
-      propertyPath: DiedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 635586494}
-    - target: {fileID: 3197546034743387473, guid: dd2c1181b33d77c4e8b9a5e7b60c614a,
-        type: 3}
-      propertyPath: DiedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3197546034743387473, guid: dd2c1181b33d77c4e8b9a5e7b60c614a,
-        type: 3}
-      propertyPath: DiedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetTrigger
-      objectReference: {fileID: 0}
-    - target: {fileID: 3197546034743387473, guid: dd2c1181b33d77c4e8b9a5e7b60c614a,
-        type: 3}
-      propertyPath: DiedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3197546034743387475, guid: dd2c1181b33d77c4e8b9a5e7b60c614a,
         type: 3}
@@ -6797,12 +6731,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ccac5dc4d58ca048ad1940e0945d6cc, type: 3}
---- !u!95 &3197546035174805096 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 3197546034743387478, guid: dd2c1181b33d77c4e8b9a5e7b60c614a,
-    type: 3}
-  m_PrefabInstance: {fileID: 442182462}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4557225264884332555
 PrefabInstance:
   m_ObjectHideFlags: 0
