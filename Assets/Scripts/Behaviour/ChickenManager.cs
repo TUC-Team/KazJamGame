@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ChickenManager : MonoBehaviour
 {
+    bool active;
     public List<ChickenAIBase> Chickens { get; private set; } = new List<ChickenAIBase>();
     public int ChickensCount => Chickens.Count;
 
@@ -32,13 +31,5 @@ public class ChickenManager : MonoBehaviour
 
         if (ChickensCount == 0)
             _gameController.EndGame(false);
-    }
-    public void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            SceneManager.LoadScene("MenuScene");
-        }
-
     }
 }

@@ -1,14 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-using System;
-using System.Linq;
-using System.Text;
-using UnityEngine.Events;
-using UnityEngine.Audio;
 
 public class main_Menu : MonoBehaviour
 {
@@ -49,8 +41,8 @@ public class main_Menu : MonoBehaviour
 
     public void Start()
     {
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
+
+        CursorHelper.DisableFpsMode();
         EventSystem.current.SetSelectedGameObject(null);
 
     }
@@ -58,9 +50,12 @@ public class main_Menu : MonoBehaviour
 
     public void Update()
     {
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene("MenuScene");
+            SceneManager.LoadScene("GameScene");
+           //SceneManager.SetActiveScene(SceneManager.("GameScene"));
+            //SceneManager.UnloadSceneAsync("MenuScene");
         }
 
     }

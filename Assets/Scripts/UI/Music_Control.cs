@@ -1,42 +1,36 @@
 ﻿using System;
 using UnityEngine;
-using UnityEngine.Audio;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.UI;
 public class Music_Control : MonoBehaviour
 {
 
-AudioMixer audioMixer;
+	public Slider music_Slider;
+	public Slider sfx_Slider;
+	public float musicVolume;
+	public float SFXVolume;
 
-[Space(15)]
-public Slider musicSlider;
-public Slider sfxSlider;
+	public void SetVolume(string Wh_Value)
+	{
 
-public void SetMusicVolume(float volume)
-{
-	//audioMixer.SetFloat("musicVolume", volume);
-}
 
-public void SetSFXVolume(float volume)
-{
-	//audioMixer.SetFloat("sfxVolume", volume);
-}
 
-public void Start()
-{
-	musicSlider.value = PlayerPrefs.GetFloat("musicVolume", 0);
-	sfxSlider.value = PlayerPrefs.GetFloat("sfxVolume", 0);
-}
+		if (Wh_Value == "Music")
+        {
+			float sliderValue = music_Slider.value;
+			Debug.Log("Music to change Value");
+			musicVolume = music_Slider.value;
+			AkSoundEngine.SetRTPCValue("Music", musicVolume);
+        }
 
-public void OnDisable()
-{
-	float musicVolume = 0;
-	float sfxVolume = 0;
+		if (Wh_Value == "Volume")
+		{
+			float sliderValue = sfx_Slider.value;
+			Debug.Log("Volume sound to change Value");
+			SFXVolume = sfx_Slider.value;
+			AkSoundEngine.SetRTPCValue("Volume", SFXVolume);
+		}
+	}
 
-	//audioMixer.GetFloat("musicVolume", out musicVolume);
-	//audioMixer.GetFloat("sfxVolume", out sfxVolume);
-
-	PlayerPrefs.SetFloat("musicVolume", musicVolume);
-	PlayerPrefs.SetFloat("sfxVolume", sfxVolume);
-	PlayerPrefs.Save();
-}
 }
