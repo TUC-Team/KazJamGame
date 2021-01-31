@@ -8,6 +8,12 @@ public sealed class TutorialManager : MonoBehaviour {
 	int _currentStepIndex = -1;
 	TutorialState _currentState;
 
+	void OnValidate() {
+		foreach ( var step in _steps ) {
+			step.Refresh();
+		}
+	}
+
 	void Update() {
 		if ( _currentState == null ) {
 			if ( !TryGetNextStep(out var nextStep) ) {

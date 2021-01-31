@@ -9,13 +9,17 @@ using Random = UnityEngine.Random;
 
 public class ChickenAIBase : MonoBehaviour
 {
+    static readonly int Move = Animator.StringToHash("Move");
+
     public bool IsKilled { get; private set; } = false;
     public UnityEvent diedEvent;
     public AK.Wwise.Event chic_death;
 
     [SerializeField] private float stayingTime = 2f;
     [SerializeField] private float targetStoppingDistance = .5f;
-    
+
+    [SerializeField] Animator _animator;
+
     private NavMeshAgent agent;
     private Vector3 targetPosition;
     private float timeInTargetPosition;
@@ -29,8 +33,10 @@ public class ChickenAIBase : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         collider = GetComponent<Collider>();
         chickenManager = FindObjectOfType<ChickenManager>();
-        
-        chickenManager.RegisterChicken(this);
+
+        if ( chickenManager ) {
+            chickenManager.RegisterChicken(this);
+        }
 
         timeInTargetPosition = 0;
     }
@@ -59,8 +65,10 @@ public class ChickenAIBase : MonoBehaviour
     public void Kill()
     {
         IsKilled = true;
-        
-        chickenManager.RemoveChicken(this);
+
+        if ( chickenManager ) {
+            chickenManager.RemoveChicken(this);
+        }
         chic_death.Post(gameObject);
 
         diedEvent?.Invoke();
@@ -87,5 +95,6 @@ public class ChickenAIBase : MonoBehaviour
         timeInTargetPosition = 0;
         
         targetPosition = target;
+        _animator.SetBool(Move, true);
     }
 }

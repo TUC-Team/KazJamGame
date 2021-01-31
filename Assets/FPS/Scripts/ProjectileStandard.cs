@@ -1,10 +1,12 @@
-﻿using Assets.FPS.Scripts;
+﻿using System;
+using Assets.FPS.Scripts;
 using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(ProjectileBase))]
-public class ProjectileStandard : MonoBehaviour
-{
+public class ProjectileStandard : MonoBehaviour {
+    public static event Action<Vector3> OnHitHappens = _ => {};
+
     [Header("General")]
     [Tooltip("Radius of this projectile's collision detection")]
     public float radius = 0.01f;
@@ -207,7 +209,9 @@ public class ProjectileStandard : MonoBehaviour
     }
 
     void OnHit(Vector3 point, Vector3 normal, Collider collider)
-    { 
+    {
+        OnHitHappens(point);
+
         // damage
         if (areaOfDamage)
         {

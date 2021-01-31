@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 53551133103244883}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Water Pump
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,6 +45,20 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1503769515409821587, guid: c40bcc47158b35840915a6ba4db68f7a, type: 3}
+--- !u!136 &900509403799689342
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7953560906203599646}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 4.909179
+  m_Height: 24.23
+  m_Direction: 1
+  m_Center: {x: 0.00000047683716, y: 8.42, z: 0}
 --- !u!1001 &7107190732300889679
 PrefabInstance:
   m_ObjectHideFlags: 0

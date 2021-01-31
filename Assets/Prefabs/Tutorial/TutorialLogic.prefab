@@ -27,7 +27,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1801272666558399057}
   - {fileID: 7649754853578889543}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -61,7 +60,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3449132692266851208}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1056801365216247584
 MonoBehaviour:
@@ -77,7 +76,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _messagesRoot: {fileID: 0}
   _steps:
-  - Mode: 0
+  - name: ShowMessage (0)
+    Mode: 1
     Transition:
       Target: {fileID: 0}
       Start: {fileID: 0}
@@ -120,7 +120,96 @@ MonoBehaviour:
     Key:
       Any: 0
       Key: 0
-  - Mode: 1
+  - name: WaitTime (3)
+    Mode: 5
+    Transition:
+      Target: {fileID: 0}
+      Start: {fileID: 0}
+      Finish: {fileID: 0}
+      Curve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 0
+      Duration: 1
+    Wait:
+      Duration: 3
+    Message:
+      Index: 0
+    Click:
+      Target: {fileID: 0}
+    Activate:
+      Target: {fileID: 0}
+    Scene:
+      Name: 
+    Key:
+      Any: 0
+      Key: 0
+  - name: HideMessage (0)
+    Mode: 2
+    Transition:
+      Target: {fileID: 0}
+      Start: {fileID: 0}
+      Finish: {fileID: 0}
+      Curve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 0
+      Duration: 1
+    Wait:
+      Duration: 3
+    Message:
+      Index: 0
+    Click:
+      Target: {fileID: 0}
+    Activate:
+      Target: {fileID: 0}
+    Scene:
+      Name: 
+    Key:
+      Any: 0
+      Key: 0
+  - name: Transition (null - null)
+    Mode: 0
     Transition:
       Target: {fileID: 0}
       Start: {fileID: 0}
@@ -163,136 +252,8 @@ MonoBehaviour:
     Key:
       Any: 0
       Key: 0
-  - Mode: 3
-    Transition:
-      Target: {fileID: 0}
-      Start: {fileID: 0}
-      Finish: {fileID: 0}
-      Curve:
-        serializedVersion: 2
-        m_Curve:
-        - serializedVersion: 3
-          time: 0
-          value: 0
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        - serializedVersion: 3
-          time: 1
-          value: 1
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 0
-      Duration: 1
-    Wait:
-      Duration: 0
-    Message:
-      Index: 0
-    Click:
-      Target: {fileID: 0}
-    Activate:
-      Target: {fileID: 0}
-    Scene:
-      Name: 
-    Key:
-      Any: 0
-      Key: 0
-  - Mode: 2
-    Transition:
-      Target: {fileID: 0}
-      Start: {fileID: 0}
-      Finish: {fileID: 0}
-      Curve:
-        serializedVersion: 2
-        m_Curve:
-        - serializedVersion: 3
-          time: 0
-          value: 0
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        - serializedVersion: 3
-          time: 1
-          value: 1
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 0
-      Duration: 1
-    Wait:
-      Duration: 0
-    Message:
-      Index: 0
-    Click:
-      Target: {fileID: 0}
-    Activate:
-      Target: {fileID: 0}
-    Scene:
-      Name: 
-    Key:
-      Any: 0
-      Key: 0
-  - Mode: 4
-    Transition:
-      Target: {fileID: 0}
-      Start: {fileID: 0}
-      Finish: {fileID: 0}
-      Curve:
-        serializedVersion: 2
-        m_Curve:
-        - serializedVersion: 3
-          time: 0
-          value: 0
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        - serializedVersion: 3
-          time: 1
-          value: 1
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 0
-      Duration: 1
-    Wait:
-      Duration: 0
-    Message:
-      Index: 0
-    Click:
-      Target: {fileID: 0}
-    Activate:
-      Target: {fileID: 0}
-    Scene:
-      Name: 
-    Key:
-      Any: 0
-      Key: 0
-  - Mode: 1
+  - name: ShowMessage (1)
+    Mode: 1
     Transition:
       Target: {fileID: 0}
       Start: {fileID: 0}
@@ -335,7 +296,8 @@ MonoBehaviour:
     Key:
       Any: 0
       Key: 0
-  - Mode: 5
+  - name: WaitClick ()
+    Mode: 3
     Transition:
       Target: {fileID: 0}
       Start: {fileID: 0}
@@ -366,9 +328,9 @@ MonoBehaviour:
         m_RotationOrder: 0
       Duration: 1
     Wait:
-      Duration: 2
+      Duration: 0
     Message:
-      Index: 0
+      Index: 1
     Click:
       Target: {fileID: 0}
     Activate:
@@ -378,7 +340,140 @@ MonoBehaviour:
     Key:
       Any: 0
       Key: 0
-  - Mode: 6
+  - name: HideMessage (1)
+    Mode: 2
+    Transition:
+      Target: {fileID: 0}
+      Start: {fileID: 0}
+      Finish: {fileID: 0}
+      Curve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 0
+      Duration: 1
+    Wait:
+      Duration: 0
+    Message:
+      Index: 1
+    Click:
+      Target: {fileID: 0}
+    Activate:
+      Target: {fileID: 0}
+    Scene:
+      Name: 
+    Key:
+      Any: 0
+      Key: 0
+  - name: ShowMessage (2)
+    Mode: 1
+    Transition:
+      Target: {fileID: 0}
+      Start: {fileID: 0}
+      Finish: {fileID: 0}
+      Curve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 0
+      Duration: 1
+    Wait:
+      Duration: 0
+    Message:
+      Index: 2
+    Click:
+      Target: {fileID: 0}
+    Activate:
+      Target: {fileID: 0}
+    Scene:
+      Name: 
+    Key:
+      Any: 0
+      Key: 0
+  - name: Activate (null)
+    Mode: 4
+    Transition:
+      Target: {fileID: 0}
+      Start: {fileID: 0}
+      Finish: {fileID: 0}
+      Curve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 0
+      Duration: 1
+    Wait:
+      Duration: 0
+    Message:
+      Index: 2
+    Click:
+      Target: {fileID: 0}
+    Activate:
+      Target: {fileID: 0}
+    Scene:
+      Name: 
+    Key:
+      Any: 0
+      Key: 0
+  - name: WaitClick ()
+    Mode: 3
     Transition:
       Target: {fileID: 0}
       Start: {fileID: 0}
@@ -417,83 +512,615 @@ MonoBehaviour:
     Activate:
       Target: {fileID: 0}
     Scene:
+      Name: 
+    Key:
+      Any: 0
+      Key: 0
+  - name: HideMessage (2)
+    Mode: 2
+    Transition:
+      Target: {fileID: 0}
+      Start: {fileID: 0}
+      Finish: {fileID: 0}
+      Curve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 0
+      Duration: 1
+    Wait:
+      Duration: 0
+    Message:
+      Index: 2
+    Click:
+      Target: {fileID: 0}
+    Activate:
+      Target: {fileID: 0}
+    Scene:
+      Name: 
+    Key:
+      Any: 0
+      Key: 0
+  - name: ShowMessage (3)
+    Mode: 1
+    Transition:
+      Target: {fileID: 0}
+      Start: {fileID: 0}
+      Finish: {fileID: 0}
+      Curve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      Duration: 0
+    Wait:
+      Duration: 0
+    Message:
+      Index: 3
+    Click:
+      Target: {fileID: 0}
+    Activate:
+      Target: {fileID: 0}
+    Scene:
+      Name: 
+    Key:
+      Any: 0
+      Key: 0
+  - name: Activate (null)
+    Mode: 4
+    Transition:
+      Target: {fileID: 0}
+      Start: {fileID: 0}
+      Finish: {fileID: 0}
+      Curve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      Duration: 0
+    Wait:
+      Duration: 0
+    Message:
+      Index: 0
+    Click:
+      Target: {fileID: 0}
+    Activate:
+      Target: {fileID: 0}
+    Scene:
+      Name: 
+    Key:
+      Any: 0
+      Key: 0
+  - name: WaitClick ()
+    Mode: 3
+    Transition:
+      Target: {fileID: 0}
+      Start: {fileID: 0}
+      Finish: {fileID: 0}
+      Curve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      Duration: 0
+    Wait:
+      Duration: 0
+    Message:
+      Index: 0
+    Click:
+      Target: {fileID: 0}
+    Activate:
+      Target: {fileID: 0}
+    Scene:
+      Name: 
+    Key:
+      Any: 0
+      Key: 0
+  - name: HideMessage (3)
+    Mode: 2
+    Transition:
+      Target: {fileID: 0}
+      Start: {fileID: 0}
+      Finish: {fileID: 0}
+      Curve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      Duration: 0
+    Wait:
+      Duration: 0
+    Message:
+      Index: 3
+    Click:
+      Target: {fileID: 0}
+    Activate:
+      Target: {fileID: 0}
+    Scene:
+      Name: 
+    Key:
+      Any: 0
+      Key: 0
+  - name: ShowMessage (4)
+    Mode: 1
+    Transition:
+      Target: {fileID: 0}
+      Start: {fileID: 0}
+      Finish: {fileID: 0}
+      Curve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      Duration: 0
+    Wait:
+      Duration: 0
+    Message:
+      Index: 4
+    Click:
+      Target: {fileID: 0}
+    Activate:
+      Target: {fileID: 0}
+    Scene:
+      Name: 
+    Key:
+      Any: 0
+      Key: 0
+  - name: Activate (null)
+    Mode: 4
+    Transition:
+      Target: {fileID: 0}
+      Start: {fileID: 0}
+      Finish: {fileID: 0}
+      Curve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      Duration: 0
+    Wait:
+      Duration: 0
+    Message:
+      Index: 0
+    Click:
+      Target: {fileID: 0}
+    Activate:
+      Target: {fileID: 0}
+    Scene:
+      Name: 
+    Key:
+      Any: 0
+      Key: 0
+  - name: WaitClick ()
+    Mode: 3
+    Transition:
+      Target: {fileID: 0}
+      Start: {fileID: 0}
+      Finish: {fileID: 0}
+      Curve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      Duration: 0
+    Wait:
+      Duration: 0
+    Message:
+      Index: 0
+    Click:
+      Target: {fileID: 0}
+    Activate:
+      Target: {fileID: 0}
+    Scene:
+      Name: 
+    Key:
+      Any: 0
+      Key: 0
+  - name: HideMessage (4)
+    Mode: 2
+    Transition:
+      Target: {fileID: 0}
+      Start: {fileID: 0}
+      Finish: {fileID: 0}
+      Curve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      Duration: 0
+    Wait:
+      Duration: 0
+    Message:
+      Index: 4
+    Click:
+      Target: {fileID: 0}
+    Activate:
+      Target: {fileID: 0}
+    Scene:
+      Name: 
+    Key:
+      Any: 0
+      Key: 0
+  - name: ShowMessage (5)
+    Mode: 1
+    Transition:
+      Target: {fileID: 0}
+      Start: {fileID: 0}
+      Finish: {fileID: 0}
+      Curve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      Duration: 0
+    Wait:
+      Duration: 0
+    Message:
+      Index: 5
+    Click:
+      Target: {fileID: 0}
+    Activate:
+      Target: {fileID: 0}
+    Scene:
+      Name: 
+    Key:
+      Any: 0
+      Key: 0
+  - name: Activate (null)
+    Mode: 4
+    Transition:
+      Target: {fileID: 0}
+      Start: {fileID: 0}
+      Finish: {fileID: 0}
+      Curve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      Duration: 0
+    Wait:
+      Duration: 0
+    Message:
+      Index: 0
+    Click:
+      Target: {fileID: 0}
+    Activate:
+      Target: {fileID: 0}
+    Scene:
+      Name: 
+    Key:
+      Any: 0
+      Key: 0
+  - name: WaitClick ()
+    Mode: 3
+    Transition:
+      Target: {fileID: 0}
+      Start: {fileID: 0}
+      Finish: {fileID: 0}
+      Curve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      Duration: 0
+    Wait:
+      Duration: 0
+    Message:
+      Index: 0
+    Click:
+      Target: {fileID: 0}
+    Activate:
+      Target: {fileID: 0}
+    Scene:
+      Name: 
+    Key:
+      Any: 0
+      Key: 0
+  - name: HideMessage (5)
+    Mode: 2
+    Transition:
+      Target: {fileID: 0}
+      Start: {fileID: 0}
+      Finish: {fileID: 0}
+      Curve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      Duration: 0
+    Wait:
+      Duration: 0
+    Message:
+      Index: 5
+    Click:
+      Target: {fileID: 0}
+    Activate:
+      Target: {fileID: 0}
+    Scene:
+      Name: 
+    Key:
+      Any: 0
+      Key: 0
+  - name: ShowMessage (6)
+    Mode: 1
+    Transition:
+      Target: {fileID: 0}
+      Start: {fileID: 0}
+      Finish: {fileID: 0}
+      Curve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      Duration: 0
+    Wait:
+      Duration: 0
+    Message:
+      Index: 6
+    Click:
+      Target: {fileID: 0}
+    Activate:
+      Target: {fileID: 0}
+    Scene:
+      Name: 
+    Key:
+      Any: 0
+      Key: 0
+  - name: Activate (null)
+    Mode: 4
+    Transition:
+      Target: {fileID: 0}
+      Start: {fileID: 0}
+      Finish: {fileID: 0}
+      Curve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      Duration: 0
+    Wait:
+      Duration: 0
+    Message:
+      Index: 0
+    Click:
+      Target: {fileID: 0}
+    Activate:
+      Target: {fileID: 0}
+    Scene:
+      Name: 
+    Key:
+      Any: 0
+      Key: 0
+  - name: WaitClick ()
+    Mode: 3
+    Transition:
+      Target: {fileID: 0}
+      Start: {fileID: 0}
+      Finish: {fileID: 0}
+      Curve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      Duration: 0
+    Wait:
+      Duration: 0
+    Message:
+      Index: 0
+    Click:
+      Target: {fileID: 0}
+    Activate:
+      Target: {fileID: 0}
+    Scene:
+      Name: 
+    Key:
+      Any: 0
+      Key: 0
+  - name: HideMessage (6)
+    Mode: 2
+    Transition:
+      Target: {fileID: 0}
+      Start: {fileID: 0}
+      Finish: {fileID: 0}
+      Curve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      Duration: 0
+    Wait:
+      Duration: 0
+    Message:
+      Index: 6
+    Click:
+      Target: {fileID: 0}
+    Activate:
+      Target: {fileID: 0}
+    Scene:
+      Name: 
+    Key:
+      Any: 0
+      Key: 0
+  - name: Transition (null - null)
+    Mode: 0
+    Transition:
+      Target: {fileID: 0}
+      Start: {fileID: 0}
+      Finish: {fileID: 0}
+      Curve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      Duration: 1
+    Wait:
+      Duration: 0
+    Message:
+      Index: 0
+    Click:
+      Target: {fileID: 0}
+    Activate:
+      Target: {fileID: 0}
+    Scene:
+      Name: 
+    Key:
+      Any: 0
+      Key: 0
+  - name: Activate (null)
+    Mode: 4
+    Transition:
+      Target: {fileID: 0}
+      Start: {fileID: 0}
+      Finish: {fileID: 0}
+      Curve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 0
+      Duration: 0
+    Wait:
+      Duration: 0
+    Message:
+      Index: 0
+    Click:
+      Target: {fileID: 0}
+    Activate:
+      Target: {fileID: 0}
+    Scene:
+      Name: 
+    Key:
+      Any: 0
+      Key: 0
+  - name: ShowMessage (7)
+    Mode: 1
+    Transition:
+      Target: {fileID: 0}
+      Start: {fileID: 0}
+      Finish: {fileID: 0}
+      Curve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 0
+      Duration: 0
+    Wait:
+      Duration: 0
+    Message:
+      Index: 7
+    Click:
+      Target: {fileID: 0}
+    Activate:
+      Target: {fileID: 0}
+    Scene:
+      Name: 
+    Key:
+      Any: 0
+      Key: 0
+  - name: WaitTime (1.5)
+    Mode: 5
+    Transition:
+      Target: {fileID: 0}
+      Start: {fileID: 0}
+      Finish: {fileID: 0}
+      Curve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 0
+      Duration: 0
+    Wait:
+      Duration: 1.5
+    Message:
+      Index: 0
+    Click:
+      Target: {fileID: 0}
+    Activate:
+      Target: {fileID: 0}
+    Scene:
+      Name: 
+    Key:
+      Any: 0
+      Key: 0
+  - name: LoadScene (LevelScene)
+    Mode: 6
+    Transition:
+      Target: {fileID: 0}
+      Start: {fileID: 0}
+      Finish: {fileID: 0}
+      Curve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 0
+      Duration: 0
+    Wait:
+      Duration: 0
+    Message:
+      Index: 0
+    Click:
+      Target: {fileID: 0}
+    Activate:
+      Target: {fileID: 0}
+    Scene:
       Name: LevelScene
     Key:
       Any: 0
       Key: 0
---- !u!1001 &874060724534246518
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 3449132692266851208}
-    m_Modifications:
-    - target: {fileID: 1503690363962818072, guid: 14b36b5822cf34178ab699997e651754,
-        type: 3}
-      propertyPath: m_Name
-      value: WwiseGlobal
-      objectReference: {fileID: 0}
-    - target: {fileID: 1503690363962818087, guid: 14b36b5822cf34178ab699997e651754,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1503690363962818087, guid: 14b36b5822cf34178ab699997e651754,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1503690363962818087, guid: 14b36b5822cf34178ab699997e651754,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1503690363962818087, guid: 14b36b5822cf34178ab699997e651754,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1503690363962818087, guid: 14b36b5822cf34178ab699997e651754,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1503690363962818087, guid: 14b36b5822cf34178ab699997e651754,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1503690363962818087, guid: 14b36b5822cf34178ab699997e651754,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1503690363962818087, guid: 14b36b5822cf34178ab699997e651754,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1503690363962818087, guid: 14b36b5822cf34178ab699997e651754,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1503690363962818087, guid: 14b36b5822cf34178ab699997e651754,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1503690363962818087, guid: 14b36b5822cf34178ab699997e651754,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1503690363962818086, guid: 14b36b5822cf34178ab699997e651754, type: 3}
-  m_SourcePrefab: {fileID: 100100000, guid: 14b36b5822cf34178ab699997e651754, type: 3}
---- !u!4 &1801272666558399057 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1503690363962818087, guid: 14b36b5822cf34178ab699997e651754,
-    type: 3}
-  m_PrefabInstance: {fileID: 874060724534246518}
-  m_PrefabAsset: {fileID: 0}

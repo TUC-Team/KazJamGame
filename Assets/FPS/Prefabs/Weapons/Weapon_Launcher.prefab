@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3471509760121373335}
   - component: {fileID: 7583640433812654122}
   m_Layer: 10
-  m_Name: Weapon_DiscLauncher
+  m_Name: Weapon_Launcher
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -73,12 +73,19 @@ MonoBehaviour:
   ammoReloadRate: 1
   ammoReloadDelay: 2
   maxAmmo: 4
+  automaticReleaseOnCharged: 0
   maxChargeDuration: 1.46
   ammoUsedOnStartCharge: 1
   ammoUsageRateWhileCharging: 1
+  weaponAnimator: {fileID: 0}
   muzzleFlashPrefab: {fileID: 0}
+  unparentMuzzleFlash: 0
   shootSFX: {fileID: 8300000, guid: 0cacf9e8e361eb24e9101b28422f7c08, type: 3}
   changeWeaponSFX: {fileID: 8300000, guid: 6f3e0904bbbace745bdef08cdbcdfec0, type: 3}
+  useContinuousShootSound: 0
+  continuousShootStartSFX: {fileID: 0}
+  continuousShootLoopSFX: {fileID: 0}
+  continuousShootEndSFX: {fileID: 0}
 --- !u!114 &1284412032582177879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,6 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc94179cece5b4e41ae9298ddbf83fdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SimultaneousFuelCellsUsage: 0
   fuelCells:
   - {fileID: 2990922162098100105}
   - {fileID: 2990922162098100107}
@@ -116,6 +124,7 @@ MonoBehaviour:
   diskOrbitParticlePrefab: {fileID: 1087039822203223203, guid: b9cf7bff98404174d83a37d58c543aa5,
     type: 3}
   offset: {x: 0, y: 0, z: 0.764}
+  parentTransform: {fileID: 0}
   orbitY:
     min: 3.1416
     max: 12.5664
@@ -357,6 +366,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -368,6 +378,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -434,6 +445,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -445,6 +457,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -512,6 +525,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -524,6 +538,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -591,6 +606,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -603,6 +619,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -670,6 +687,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -681,6 +699,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -743,7 +762,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1625833262181473822
 Transform:
   m_ObjectHideFlags: 0
@@ -858,6 +877,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2990922162098195369}
     m_Modifications:
+    - target: {fileID: 4207638881886404823, guid: 40252b3901782c347a990f90ce729706,
+        type: 3}
+      propertyPath: ShapeModule.length
+      value: 0.10257232
+      objectReference: {fileID: 0}
+    - target: {fileID: 4207638881886404823, guid: 40252b3901782c347a990f90ce729706,
+        type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 0.03363002
+      objectReference: {fileID: 0}
+    - target: {fileID: 4207638881886404823, guid: 40252b3901782c347a990f90ce729706,
+        type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5892127591187906997, guid: 40252b3901782c347a990f90ce729706,
+        type: 3}
+      propertyPath: m_Name
+      value: VFX_GunCylinder_Secondary
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710091646203402432, guid: 40252b3901782c347a990f90ce729706,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6710091646203402432, guid: 40252b3901782c347a990f90ce729706,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -872,6 +916,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710091646203402432, guid: 40252b3901782c347a990f90ce729706,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6710091646203402432, guid: 40252b3901782c347a990f90ce729706,
         type: 3}
@@ -890,16 +939,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6710091646203402432, guid: 40252b3901782c347a990f90ce729706,
         type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6710091646203402432, guid: 40252b3901782c347a990f90ce729706,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6710091646203402432, guid: 40252b3901782c347a990f90ce729706,
-        type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
@@ -912,26 +951,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5892127591187906997, guid: 40252b3901782c347a990f90ce729706,
-        type: 3}
-      propertyPath: m_Name
-      value: VFX_GunCylinder_Secondary
-      objectReference: {fileID: 0}
-    - target: {fileID: 4207638881886404823, guid: 40252b3901782c347a990f90ce729706,
-        type: 3}
-      propertyPath: ShapeModule.radius.value
-      value: 0.03363002
-      objectReference: {fileID: 0}
-    - target: {fileID: 4207638881886404823, guid: 40252b3901782c347a990f90ce729706,
-        type: 3}
-      propertyPath: ShapeModule.radiusThickness
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4207638881886404823, guid: 40252b3901782c347a990f90ce729706,
-        type: 3}
-      propertyPath: ShapeModule.length
-      value: 0.10257232
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40252b3901782c347a990f90ce729706, type: 3}
@@ -948,15 +967,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2990922162098195373}
     m_Modifications:
-    - target: {fileID: 5449920494797286051, guid: 21c8bd050f24da54285f8a3987ee6253,
+    - target: {fileID: 5338991494728519494, guid: 21c8bd050f24da54285f8a3987ee6253,
         type: 3}
-      propertyPath: m_Name
-      value: VFX_OverheatPrimary
-      objectReference: {fileID: 0}
-    - target: {fileID: 5449920494797286051, guid: 21c8bd050f24da54285f8a3987ee6253,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
+      propertyPath: m_RootOrder
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5338991494728519494, guid: 21c8bd050f24da54285f8a3987ee6253,
         type: 3}
@@ -975,6 +989,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5338991494728519494, guid: 21c8bd050f24da54285f8a3987ee6253,
         type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5338991494728519494, guid: 21c8bd050f24da54285f8a3987ee6253,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: -0.7071068
       objectReference: {fileID: 0}
@@ -986,16 +1005,6 @@ PrefabInstance:
     - target: {fileID: 5338991494728519494, guid: 21c8bd050f24da54285f8a3987ee6253,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5338991494728519494, guid: 21c8bd050f24da54285f8a3987ee6253,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 5338991494728519494, guid: 21c8bd050f24da54285f8a3987ee6253,
-        type: 3}
-      propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5338991494728519494, guid: 21c8bd050f24da54285f8a3987ee6253,
@@ -1012,6 +1021,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5449920494797286051, guid: 21c8bd050f24da54285f8a3987ee6253,
+        type: 3}
+      propertyPath: m_Name
+      value: VFX_OverheatPrimary
+      objectReference: {fileID: 0}
+    - target: {fileID: 5449920494797286051, guid: 21c8bd050f24da54285f8a3987ee6253,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21c8bd050f24da54285f8a3987ee6253, type: 3}
@@ -1034,6 +1053,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2990922162098195371}
     m_Modifications:
+    - target: {fileID: 4207638881886404823, guid: 40252b3901782c347a990f90ce729706,
+        type: 3}
+      propertyPath: ShapeModule.length
+      value: 0.10257232
+      objectReference: {fileID: 0}
+    - target: {fileID: 4207638881886404823, guid: 40252b3901782c347a990f90ce729706,
+        type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 0.03363002
+      objectReference: {fileID: 0}
+    - target: {fileID: 4207638881886404823, guid: 40252b3901782c347a990f90ce729706,
+        type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5892127591187906997, guid: 40252b3901782c347a990f90ce729706,
+        type: 3}
+      propertyPath: m_Name
+      value: VFX_GunCylinder_Secondary
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710091646203402432, guid: 40252b3901782c347a990f90ce729706,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6710091646203402432, guid: 40252b3901782c347a990f90ce729706,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1048,6 +1092,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710091646203402432, guid: 40252b3901782c347a990f90ce729706,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6710091646203402432, guid: 40252b3901782c347a990f90ce729706,
         type: 3}
@@ -1066,16 +1115,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6710091646203402432, guid: 40252b3901782c347a990f90ce729706,
         type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6710091646203402432, guid: 40252b3901782c347a990f90ce729706,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6710091646203402432, guid: 40252b3901782c347a990f90ce729706,
-        type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 180
       objectReference: {fileID: 0}
@@ -1088,26 +1127,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5892127591187906997, guid: 40252b3901782c347a990f90ce729706,
-        type: 3}
-      propertyPath: m_Name
-      value: VFX_GunCylinder_Secondary
-      objectReference: {fileID: 0}
-    - target: {fileID: 4207638881886404823, guid: 40252b3901782c347a990f90ce729706,
-        type: 3}
-      propertyPath: ShapeModule.radius.value
-      value: 0.03363002
-      objectReference: {fileID: 0}
-    - target: {fileID: 4207638881886404823, guid: 40252b3901782c347a990f90ce729706,
-        type: 3}
-      propertyPath: ShapeModule.radiusThickness
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4207638881886404823, guid: 40252b3901782c347a990f90ce729706,
-        type: 3}
-      propertyPath: ShapeModule.length
-      value: 0.10257232
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40252b3901782c347a990f90ce729706, type: 3}
