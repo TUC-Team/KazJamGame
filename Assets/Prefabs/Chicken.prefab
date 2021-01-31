@@ -71,6 +71,7 @@ MonoBehaviour:
       type: 2}
   stayingTime: 2
   targetStoppingDistance: 5
+  _animator: {fileID: 4469160293682824342}
 --- !u!195 &7427299224321386884
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -386,11 +387,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: KURA
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: d793dd76bdab8db49b57407b9ebb32e0,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: b127665c3291e4483acd1776523efd36, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d793dd76bdab8db49b57407b9ebb32e0, type: 3}
 --- !u!4 &7558598523084807916 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d793dd76bdab8db49b57407b9ebb32e0,
+    type: 3}
+  m_PrefabInstance: {fileID: 8029689652988246279}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &4469160293682824342 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: d793dd76bdab8db49b57407b9ebb32e0,
     type: 3}
   m_PrefabInstance: {fileID: 8029689652988246279}
   m_PrefabAsset: {fileID: 0}
