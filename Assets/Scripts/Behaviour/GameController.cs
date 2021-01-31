@@ -15,8 +15,7 @@ public class GameController : MonoBehaviour
 
         print("Game ended, is win = " + isWin);
 
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible   = true;
+        CursorHelper.DisableFpsMode();
     }
 
     void Update() {

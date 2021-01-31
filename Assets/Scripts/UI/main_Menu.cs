@@ -42,8 +42,7 @@ public class main_Menu : MonoBehaviour
     public void Start()
     {
 
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
+        CursorHelper.DisableFpsMode();
         EventSystem.current.SetSelectedGameObject(null);
 
     }
