@@ -29,8 +29,10 @@ public class ChickenAIBase : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         collider = GetComponent<Collider>();
         chickenManager = FindObjectOfType<ChickenManager>();
-        
-        chickenManager.RegisterChicken(this);
+
+        if ( chickenManager ) {
+            chickenManager.RegisterChicken(this);
+        }
 
         timeInTargetPosition = 0;
     }
@@ -59,8 +61,10 @@ public class ChickenAIBase : MonoBehaviour
     public void Kill()
     {
         IsKilled = true;
-        
-        chickenManager.RemoveChicken(this);
+
+        if ( chickenManager ) {
+            chickenManager.RemoveChicken(this);
+        }
         chic_death.Post(gameObject);
 
         diedEvent?.Invoke();

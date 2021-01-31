@@ -11,17 +11,26 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1302380591">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2599696814">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<StateGroups>
+				<StateGroup Id="1944582999" Name="pause_state" ObjectPath="\States\Default Work Unit\pause_state">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\pause_state\None"/>
+						<State Id="3537680115" Name="pause_on" ObjectPath="\States\Default Work Unit\pause_state\pause_on"/>
+						<State Id="3967028551" Name="pause_off" ObjectPath="\States\Default Work Unit\pause_state\pause_off"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="2597442952" Language="SFX" Hash="2211065540">
+		<SoundBank Id="2597442952" Language="SFX" Hash="1337149852">
 			<ObjectPath>\SoundBanks\Default Work Unit\master_bank</ObjectPath>
 			<ShortName>master_bank</ShortName>
 			<Path>master_bank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1878518477" Name="all_chiken" ObjectPath="\Events\Default Work Unit\all_chiken" DurationType="Infinite">
+				<Event Id="1878518477" Name="all_chiken" ObjectPath="\Events\Default Work Unit\all_chiken" MaxAttenuation="45.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="35203722" Language="SFX">
 							<ShortName>chiken_70-100_b.wav</ShortName>
@@ -157,7 +166,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3244530683" Name="chic_death" ObjectPath="\Events\Default Work Unit\chic_death" DurationType="OneShot" DurationMin="0.776032" DurationMax="0.932544">
+				<Event Id="3244530683" Name="chic_death" ObjectPath="\Events\Default Work Unit\chic_death" MaxAttenuation="45.000000" DurationType="OneShot" DurationMin="0.776032" DurationMax="0.932544">
 					<IncludedMemoryFiles>
 						<File Id="343190335" Language="SFX">
 							<ShortName>chic_death.wav</ShortName>
@@ -241,6 +250,125 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="1244594577" Name="level_music" ObjectPath="\Events\Default Work Unit\level_music" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="140896964" Language="SFX">
+							<ShortName>trans_1.wav</ShortName>
+							<Path>SFX\trans_1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="149020787" Language="SFX">
+							<ShortName>15-1.wav</ShortName>
+							<Path>SFX\15-1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="270833895" Language="SFX">
+							<ShortName>lose.wav</ShortName>
+							<Path>SFX\lose_D79FB2B7.wem</Path>
+						</File>
+						<File Id="287523758" Language="SFX">
+							<ShortName>trans_2.wav</ShortName>
+							<Path>SFX\trans_2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="379888250" Language="SFX">
+							<ShortName>50-30.wav</ShortName>
+							<Path>SFX\50-30_D79FB2B7.wem</Path>
+						</File>
+						<File Id="434429119" Language="SFX">
+							<ShortName>30-15_2.wav</ShortName>
+							<Path>SFX\30-15_2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="509844051" Language="SFX">
+							<ShortName>win.wav</ShortName>
+							<Path>SFX\win_D79FB2B7.wem</Path>
+						</File>
+						<File Id="523274909" Language="SFX">
+							<ShortName>50-30_2.wav</ShortName>
+							<Path>SFX\50-30_2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="561897222" Language="SFX">
+							<ShortName>30-15_3.wav</ShortName>
+							<Path>SFX\30-15_3_D79FB2B7.wem</Path>
+						</File>
+						<File Id="646382382" Language="SFX">
+							<ShortName>50-30_6.wav</ShortName>
+							<Path>SFX\50-30_6_D79FB2B7.wem</Path>
+						</File>
+						<File Id="745040385" Language="SFX">
+							<ShortName>15-1_2.wav</ShortName>
+							<Path>SFX\15-1_2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="753393213" Language="SFX">
+							<ShortName>30-15_4.wav</ShortName>
+							<Path>SFX\30-15_4_D79FB2B7.wem</Path>
+						</File>
+						<File Id="762152650" Language="SFX">
+							<ShortName>30-15.wav</ShortName>
+							<Path>SFX\30-15_D79FB2B7.wem</Path>
+						</File>
+						<File Id="825533750" Language="SFX">
+							<ShortName>30-15_5.wav</ShortName>
+							<Path>SFX\30-15_5_D79FB2B7.wem</Path>
+						</File>
+						<File Id="842164027" Language="SFX">
+							<ShortName>trans_3.wav</ShortName>
+							<Path>SFX\trans_3_D79FB2B7.wem</Path>
+						</File>
+						<File Id="911471260" Language="SFX">
+							<ShortName>50-30_4.wav</ShortName>
+							<Path>SFX\50-30_4_D79FB2B7.wem</Path>
+						</File>
+						<File Id="1024493049" Language="SFX">
+							<ShortName>50-30_3.wav</ShortName>
+							<Path>SFX\50-30_3_D79FB2B7.wem</Path>
+						</File>
+						<File Id="1024494702" Language="SFX">
+							<ShortName>50-30_5.wav</ShortName>
+							<Path>SFX\50-30_5_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{A847D14E-F484-416D-A3E5-D63D229C35B7}">
+							<Media>
+								<File Id="140896964"/>
+								<File Id="149020787"/>
+								<File Id="287523758"/>
+								<File Id="745040385"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{8A27FCE1-33FB-4A06-BEC8-E74027877450}">
+							<Media>
+								<File Id="287523758"/>
+								<File Id="434429119"/>
+								<File Id="561897222"/>
+								<File Id="753393213"/>
+								<File Id="762152650"/>
+								<File Id="825533750"/>
+								<File Id="842164027"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{248C05EC-9648-4B7A-B387-B4C4DC9DEB15}">
+							<Media>
+								<File Id="287523758"/>
+								<File Id="379888250"/>
+								<File Id="523274909"/>
+								<File Id="646382382"/>
+								<File Id="842164027"/>
+								<File Id="911471260"/>
+								<File Id="1024493049"/>
+								<File Id="1024494702"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{9042F190-7C25-4053-8689-39261C45C4AB}">
+							<Media>
+								<File Id="509844051"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{96B6C17D-0C99-4A5C-889D-95AB550D6317}">
+							<Media>
+								<File Id="270833895"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="3137477943" Name="mech_idle" ObjectPath="\Events\Default Work Unit\mesh\mech_idle" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="64579310" Language="SFX">
@@ -294,6 +422,32 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="3858988253" Name="mech_weapon" ObjectPath="\Events\Default Work Unit\mesh\mech_weapon" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="4055567060" Name="menu_music" ObjectPath="\Events\Default Work Unit\menu_music" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="2022572" Language="SFX">
+							<ShortName>Menu3.wav</ShortName>
+							<Path>SFX\Menu3_D79FB2B7.wem</Path>
+						</File>
+						<File Id="287523758" Language="SFX">
+							<ShortName>trans_2.wav</ShortName>
+							<Path>SFX\trans_2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="647470844" Language="SFX">
+							<ShortName>Menu2.wav</ShortName>
+							<Path>SFX\Menu2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="719263349" Language="SFX">
+							<ShortName>Menu1.wav</ShortName>
+							<Path>SFX\Menu1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="842164027" Language="SFX">
+							<ShortName>trans_3.wav</ShortName>
+							<Path>SFX\trans_3_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="75809433" Name="menu_pause_off" ObjectPath="\Events\Default Work Unit\menu_pause_off" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2660355181" Name="menu_pause_on" ObjectPath="\Events\Default Work Unit\menu_pause_on" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2335306597" Name="mesh_foot" ObjectPath="\Events\Default Work Unit\mesh\mesh_foot" DurationType="OneShot" DurationMin="0.401043" DurationMax="0.437341">
 					<IncludedMemoryFiles>
 						<File Id="25487962" Language="SFX">
@@ -354,6 +508,18 @@
 			<GameParameters>
 				<GameParameter Id="2488984241" Name="chiken_sum" ObjectPath="\Game Parameters\Default Work Unit\chiken_sum"/>
 			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="3826569560" Name="music_state" ObjectPath="\States\Default Work Unit\music_state">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\music_state\None"/>
+						<State Id="3145131320" Name="many" ObjectPath="\States\Default Work Unit\music_state\many"/>
+						<State Id="1026627430" Name="middle" ObjectPath="\States\Default Work Unit\music_state\middle"/>
+						<State Id="1482584505" Name="little" ObjectPath="\States\Default Work Unit\music_state\little"/>
+						<State Id="979765101" Name="win" ObjectPath="\States\Default Work Unit\music_state\win"/>
+						<State Id="221232726" Name="lose" ObjectPath="\States\Default Work Unit\music_state\lose"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

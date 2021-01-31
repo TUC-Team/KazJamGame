@@ -277,6 +277,29 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="view_mode" ID="{31B6DB15-5855-4039-A678-E0CF0309DBBB}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="simple_mode" ID="{801D0E91-B473-4AB0-8326-B7904BC53BA1}"/>
+										<CustomState Name="" ID="{CBA592A3-5A6F-48BD-AB16-F529B1AD9F60}" ShortID="976967188"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="sniper_mode" ID="{83EC116B-133D-4EB7-93BC-AA53F20C0650}"/>
+										<CustomState Name="" ID="{704E01AE-25C5-4021-B68D-63CCE4014372}" ShortID="42618533">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16" Value="11"/>
+												<Property Name="Lowpass" Type="int16" Value="18"/>
+												<Property Name="Volume" Type="Real64" Value="-3"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</RandomSequenceContainer>
 						<BlendContainer Name="mech_idle" ID="{A13FADBA-9609-4014-BACD-5EA4D40CCD4A}" ShortID="141618806">
 							<PropertyList>
@@ -714,6 +737,29 @@
 									</ChildrenList>
 								</RandomSequenceContainer>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="view_mode" ID="{31B6DB15-5855-4039-A678-E0CF0309DBBB}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="simple_mode" ID="{801D0E91-B473-4AB0-8326-B7904BC53BA1}"/>
+										<CustomState Name="" ID="{3B7C9340-5FC0-4710-B3E4-C6B3ECD0564F}" ShortID="851249225"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="sniper_mode" ID="{83EC116B-133D-4EB7-93BC-AA53F20C0650}"/>
+										<CustomState Name="" ID="{B61FCE7F-1E72-40B0-93E1-5D24B9833350}" ShortID="625959795">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16" Value="15"/>
+												<Property Name="Lowpass" Type="int16" Value="15"/>
+												<Property Name="Volume" Type="Real64" Value="-3"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</BlendContainer>
 						<BlendContainer Name="pc_weapon" ID="{26E6D028-D3D6-4101-9B32-83489543DC37}" ShortID="254039490">
 							<ReferenceList>
@@ -1867,6 +1913,30 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="pause_state" ID="{9E2150BC-FDE1-4EF9-BA8B-72F2EE08A7C0}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="pause_off" ID="{C072399A-E0C8-47A8-A096-72E02EF7C96B}"/>
+										<CustomState Name="" ID="{D5AC6BBD-00A4-4106-9BDA-E47C3540A168}" ShortID="264786779"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="pause_on" ID="{3A477F1B-0240-4CAF-90C7-F773B4097DAC}"/>
+										<CustomState Name="" ID="{1B9B9E95-B44C-4470-AE37-113BED8371A6}" ShortID="927632867">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16" Value="16"/>
+												<Property Name="Lowpass" Type="int16" Value="34"/>
+												<Property Name="Pitch" Type="int32" Value="-200"/>
+												<Property Name="Volume" Type="Real64" Value="-5"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="random_ambience" ID="{31609141-56CA-4328-A535-656C7B014B68}" ShortID="740840877">
 							<PropertyList>
@@ -1885,6 +1955,7 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
+								<Property Name="HoldListenerOrientation" Type="bool" Value="True"/>
 								<Property Name="Lowpass" Type="int16">
 									<ModifierList>
 										<ModifierInfo>
@@ -2276,6 +2347,29 @@
 									</ChildrenList>
 								</Position>
 							</PositioningInfo>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="view_mode" ID="{31B6DB15-5855-4039-A678-E0CF0309DBBB}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="simple_mode" ID="{801D0E91-B473-4AB0-8326-B7904BC53BA1}"/>
+										<CustomState Name="" ID="{E1CBBC27-682E-4B07-96AE-2EE87C4E26F2}" ShortID="401330489"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="sniper_mode" ID="{83EC116B-133D-4EB7-93BC-AA53F20C0650}"/>
+										<CustomState Name="" ID="{2B61DF5D-8794-4260-9207-60F33BD62004}" ShortID="311595409">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16" Value="43"/>
+												<Property Name="Lowpass" Type="int16" Value="35"/>
+												<Property Name="Volume" Type="Real64" Value="-8"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>

@@ -20,11 +20,58 @@ namespace AK
         static const AkUniqueID CLICK = 1584507803U;
         static const AkUniqueID GUN = 915214409U;
         static const AkUniqueID GUN_STOP = 3664266748U;
+        static const AkUniqueID LEVEL_MUSIC = 1244594577U;
         static const AkUniqueID MECH_IDLE = 3137477943U;
         static const AkUniqueID MECH_WEAPON = 3858988253U;
+        static const AkUniqueID MENU_MUSIC = 4055567060U;
+        static const AkUniqueID MENU_PAUSE_OFF = 75809433U;
+        static const AkUniqueID MENU_PAUSE_ON = 2660355181U;
         static const AkUniqueID MESH_FOOT = 2335306597U;
         static const AkUniqueID OK = 1651971899U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace MUSIC_STATE
+        {
+            static const AkUniqueID GROUP = 3826569560U;
+
+            namespace STATE
+            {
+                static const AkUniqueID LITTLE = 1482584505U;
+                static const AkUniqueID LOSE = 221232726U;
+                static const AkUniqueID MANY = 3145131320U;
+                static const AkUniqueID MIDDLE = 1026627430U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID WIN = 979765101U;
+            } // namespace STATE
+        } // namespace MUSIC_STATE
+
+        namespace PAUSE_STATE
+        {
+            static const AkUniqueID GROUP = 1944582999U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID PAUSE_OFF = 3967028551U;
+                static const AkUniqueID PAUSE_ON = 3537680115U;
+            } // namespace STATE
+        } // namespace PAUSE_STATE
+
+        namespace VIEW_MODE
+        {
+            static const AkUniqueID GROUP = 2809391992U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID SIMPLE_MODE = 77368567U;
+                static const AkUniqueID SNIPER_MODE = 2878061914U;
+            } // namespace STATE
+        } // namespace VIEW_MODE
+
+    } // namespace STATES
 
     namespace SWITCHES
     {
