@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{D63DF100-56FD-4D88-800B-3986CCA12851}" SchemaVersion="97">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{D63DF100-56FD-4D88-800B-3986CCA12851}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{D63DF100-56FD-4D88-800B-3986CCA12851}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="music_state" ID="{5C83FFE8-A2BC-4A23-A4EE-3F4EB6032082}">
+					<ChildrenList>
+						<State Name="None" ID="{ADC48ED4-D9A0-4892-A64F-29B062DF55AF}"/>
+						<State Name="many" ID="{248C05EC-9648-4B7A-B387-B4C4DC9DEB15}"/>
+						<State Name="middle" ID="{8A27FCE1-33FB-4A06-BEC8-E74027877450}"/>
+						<State Name="little" ID="{A847D14E-F484-416D-A3E5-D63D229C35B7}"/>
+						<State Name="win" ID="{9042F190-7C25-4053-8689-39261C45C4AB}"/>
+						<State Name="lose" ID="{96B6C17D-0C99-4A5C-889D-95AB550D6317}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="pause_state" ID="{9E2150BC-FDE1-4EF9-BA8B-72F2EE08A7C0}">
+					<ChildrenList>
+						<State Name="None" ID="{0A7DE620-50D4-40CD-8879-3B17D992EE1B}"/>
+						<State Name="pause_on" ID="{3A477F1B-0240-4CAF-90C7-F773B4097DAC}"/>
+						<State Name="pause_off" ID="{C072399A-E0C8-47A8-A096-72E02EF7C96B}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="view_mode" ID="{31B6DB15-5855-4039-A678-E0CF0309DBBB}">
+					<ChildrenList>
+						<State Name="None" ID="{2041694D-B18B-41AD-89F7-6D63DE2577AA}"/>
+						<State Name="simple_mode" ID="{801D0E91-B473-4AB0-8326-B7904BC53BA1}"/>
+						<State Name="sniper_mode" ID="{83EC116B-133D-4EB7-93BC-AA53F20C0650}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>
