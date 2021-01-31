@@ -30,7 +30,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: e5414f292813ac4092808c36921184eb
     GuidInternal: 
-    m_lastTime: -8585895644366543430
+    m_lastTime: -8585895194850894076
     List:
     - name: ambient
       guid: 25ed5d2e46301f4fa68d0060d8d861d5
@@ -123,7 +123,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: c7c93a2b4503e84f9d5776a651c93df3
     GuidInternal: 
-    m_lastTime: -8585895644374272769
+    m_lastTime: -8585895194873936924
     List:
     - name: all_chiken
       guid: 1df3330565f90f4abfeb7c172194833e
@@ -241,6 +241,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: level_music
+      guid: e02b4646bc042242a1a3f4651f39653f
+      id: 1244594577
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: level_music
+        ObjectType: 3
+      Path: Default Work Unit\level_music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: mech_idle
       guid: 5afc3d837e014e469319c041695a1db9
       id: 3137477943
@@ -266,6 +278,42 @@ MonoBehaviour:
       - ElementName: mech_weapon
         ObjectType: 3
       Path: Default Work Unit\mesh\mech_weapon
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: menu_music
+      guid: ef8b3a16ff3ab748bb93ddcebfc734cd
+      id: 4055567060
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: menu_music
+        ObjectType: 3
+      Path: Default Work Unit\menu_music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: menu_pause_off
+      guid: 8680f981378c374cb54f5ac17005476e
+      id: 75809433
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: menu_pause_off
+        ObjectType: 3
+      Path: Default Work Unit\menu_pause_off
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: menu_pause_on
+      guid: 79eae96be757474b9162f06f3a1bc3aa
+      id: 2660355181
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: menu_pause_on
+        ObjectType: 3
+      Path: Default Work Unit\menu_pause_on
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -336,8 +384,119 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 00f13dd6fd56884d800b3986cca12851
     GuidInternal: 
-    m_lastTime: -8585895644360320071
-    List: []
+    m_lastTime: -8585895194842799041
+    List:
+    - name: music_state
+      guid: e8ff835cbca2234aa4ee3f4eb6032082
+      id: 3826569560
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: music_state
+        ObjectType: 9
+      Path: Default Work Unit\music_state
+      values:
+      - name: little
+        guid: 4ed147a884f46d41a3e5d63d229c35b7
+        id: 1482584505
+        PathAndIcons:
+        - ElementName: little
+          ObjectType: 8
+      - name: lose
+        guid: 7dc1b696990c5c4a889d95ab550d6317
+        id: 221232726
+        PathAndIcons:
+        - ElementName: lose
+          ObjectType: 8
+      - name: many
+        guid: ec058c2448967a4bb387b4c4dc9deb15
+        id: 3145131320
+        PathAndIcons:
+        - ElementName: many
+          ObjectType: 8
+      - name: middle
+        guid: e1fc278afb33064abec8e74027877450
+        id: 1026627430
+        PathAndIcons:
+        - ElementName: middle
+          ObjectType: 8
+      - name: None
+        guid: d48ec4ada0d99248a64f29b062df55af
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: win
+        guid: 90f14290257c5340868939261c45c4ab
+        id: 979765101
+        PathAndIcons:
+        - ElementName: win
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: pause_state
+      guid: bc50219ee1fdf94eba8b72f2ee08a7c0
+      id: 1944582999
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: pause_state
+        ObjectType: 9
+      Path: Default Work Unit\pause_state
+      values:
+      - name: None
+        guid: 20e67d0ad450cd4088793b17d992ee1b
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: pause_off
+        guid: 9a3972c0c8e0a847a09672e02ef7c96b
+        id: 3967028551
+        PathAndIcons:
+        - ElementName: pause_off
+          ObjectType: 8
+      - name: pause_on
+        guid: 1b7f473a4002af4c90c7f773b4097dac
+        id: 3537680115
+        PathAndIcons:
+        - ElementName: pause_on
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: view_mode
+      guid: 15dbb63155583940a678e0cf0309dbbb
+      id: 2809391992
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: view_mode
+        ObjectType: 9
+      Path: Default Work Unit\view_mode
+      values:
+      - name: None
+        guid: 4d6941208bb1ad4189f76d63de2577aa
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: simple_mode
+        guid: 910e1d8073b4b04a8326b7904bc53ba1
+        id: 77368567
+        PathAndIcons:
+        - ElementName: simple_mode
+          ObjectType: 8
+      - name: sniper_mode
+        guid: 6b11ec833d13b74e93bcaa53f20c0650
+        id: 2878061914
+        PathAndIcons:
+        - ElementName: sniper_mode
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
