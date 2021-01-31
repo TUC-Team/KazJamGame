@@ -44,6 +44,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d5dacc68ecd7b94a8fb557861d0eec3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menu_music_ev:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9054f91bd12f9544b8c08b6b4cc7cdae,
+      type: 2}
 --- !u!81 &8537319879784131651
 AudioListener:
   m_ObjectHideFlags: 0

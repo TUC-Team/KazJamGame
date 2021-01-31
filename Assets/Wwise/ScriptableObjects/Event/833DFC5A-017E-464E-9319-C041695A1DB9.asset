@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 767f7eeec69ba4c4b804f134b0ca8770, type: 3}
+  m_Name: 833DFC5A-017E-464E-9319-C041695A1DB9
+  m_EditorClassIdentifier: 
+  objectName: mech_idle
+  id: 3137477943
+  guid: 833DFC5A-017E-464E-9319-C041695A1DB9

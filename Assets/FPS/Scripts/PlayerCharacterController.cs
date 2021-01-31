@@ -4,6 +4,8 @@ using UnityEngine.Events;
 [RequireComponent(typeof(CharacterController), typeof(PlayerInputHandler), typeof(AudioSource))]
 public class PlayerCharacterController : MonoBehaviour
 {
+    public AK.Wwise.Event mech_idle;
+    public AK.Wwise.Event mech_footsteps;
     [Header("References")]
     [Tooltip("Reference to the main camera used for the player")]
     public Camera playerCamera;
@@ -124,6 +126,7 @@ public class PlayerCharacterController : MonoBehaviour
 
     void Start()
     {
+        mech_idle.Post(gameObject);        
         // fetch components on the same gameObject
         m_Controller = GetComponent<CharacterController>();
         DebugUtility.HandleErrorIfNullGetComponent<CharacterController, PlayerCharacterController>(m_Controller, this, gameObject);
@@ -319,6 +322,7 @@ public class PlayerCharacterController : MonoBehaviour
                 {
                     m_footstepDistanceCounter = 0f;
                     audioSource.PlayOneShot(footstepSFX);
+                    mech_footsteps.Post(gameObject);
                 }
 
                 // keep track of distance traveled for footsteps sound

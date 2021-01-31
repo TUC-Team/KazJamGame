@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class Button_music : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public AK.Wwise.Event navedenie;
+    public AK.Wwise.Event click;
+    public void button_click()
     {
         
+        click.Post(gameObject);
     }
-
-    // Update is called once per frame
-    void Update()
+    public void button_enter()
     {
-        
+        navedenie.Post(gameObject);
+
     }
 }

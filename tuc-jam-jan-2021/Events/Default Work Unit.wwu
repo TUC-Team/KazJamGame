@@ -147,9 +147,23 @@
 				<Event Name="level_music" ID="{46462BE0-04BC-4222-A1A3-F4651F39653F}">
 					<ChildrenList>
 						<Action Name="" ID="{EAD02E2A-26D0-4660-8B38-72F65533672D}" ShortID="245726330">
+							<PropertyList>
+								<Property Name="FadeInCurve" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="music_level" ID="{ADE84169-F481-4F58-89C1-E844855D492E}" WorkUnitID="{E012A705-E17B-4634-9BA8-F4DB6CA42156}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{93497AD3-0AC9-472C-8EF3-455283AF7A8A}" ShortID="180433380">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="menu_music" ID="{AADF805E-EAC5-4594-9185-CE022A2A905A}" WorkUnitID="{E012A705-E17B-4634-9BA8-F4DB6CA42156}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -158,6 +172,10 @@
 				<Event Name="menu_music" ID="{163A8BEF-3AFF-48B7-BB93-DDCEBFC734CD}">
 					<ChildrenList>
 						<Action Name="" ID="{0457A233-3ACC-4E1A-994C-318C9A263319}" ShortID="172447716">
+							<PropertyList>
+								<Property Name="FadeInCurve" Type="int16" Value="5"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="menu_music" ID="{AADF805E-EAC5-4594-9185-CE022A2A905A}" WorkUnitID="{E012A705-E17B-4634-9BA8-F4DB6CA42156}"/>
