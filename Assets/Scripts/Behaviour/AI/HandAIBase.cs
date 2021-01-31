@@ -29,15 +29,18 @@ public class HandAIBase : MonoBehaviour
     private float _currentStayTimeInPatrolPoint = 0;
     private float _timeSinceLastAttack = 0;
     private int _deathCount = 0;
+    private bool _isDied = false;
     private Vector3 _targetPatrolPosition;
     private ChickenManager _chickenManager;
     private Health _health;
     private GameController _gameController;
+    private HandManager _handManager;
 
     private void Awake()
     {
         _chickenManager = FindObjectOfType<ChickenManager>();
         _gameController = FindObjectOfType<GameController>();
+        _handManager = FindObjectOfType<HandManager>();
         _agent = GetComponent<NavMeshAgent>();
         _animator = GetComponent<Animator>();
         _health = GetComponent<Health>();
@@ -58,6 +61,7 @@ public class HandAIBase : MonoBehaviour
 
     private void Start()
     {
+        _handManager.RegisterHand(this);
         _targetChicken = FindNearestChicken();
 
         ChangeState(startState);
@@ -66,6 +70,9 @@ public class HandAIBase : MonoBehaviour
     private void Update()
     {
         if (_gameController.IsGameEnded)
+            return;
+
+        if (_isDied)
             return;
 
         switch (_state)
@@ -114,8 +121,9 @@ public class HandAIBase : MonoBehaviour
 
         if ( !_fingerHolder.TryRemoveFinger() )
         {
-            _gameController.EndGame(true);
+            _handManager.RemoveHand(this);
             DiedEvent?.Invoke();
+            _isDied = true;
             return;
         }
 
@@ -143,9 +151,15 @@ public class HandAIBase : MonoBehaviour
         }
     }
 
-    private void HuntStart(){}
+    private void HuntStart()
+    {
+        _health.invincible = false;
+    }
 
-    private void PatrolStart(){}
+    private void PatrolStart()
+    {
+        _health.invincible = false;
+    }
 
     private void HealingStart()
     {
@@ -203,7 +217,9 @@ public class HandAIBase : MonoBehaviour
         _health.Heal(Time.deltaTime * healingSpeed);
 
         if (Math.Abs(_health.currentHealth - _health.maxHealth) <= Mathf.Epsilon)
+        {
             ChangeState(HandState.Appearing);
+        }
     }
 
     private void ChangeState(HandState newState)
