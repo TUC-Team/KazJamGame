@@ -11,10 +11,81 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Bus Name="pc" ID="{0FE04D8F-73F4-4258-A087-8CE3938CC41B}"/>
-						<Bus Name="chiken" ID="{0F69F68F-CDFF-4DD4-A868-D9382B6CBA52}"/>
-						<Bus Name="enemy" ID="{59108662-989E-453E-9CBD-FE97EBF1A209}"/>
+						<Bus Name="chiken" ID="{0F69F68F-CDFF-4DD4-A868-D9382B6CBA52}">
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="pause_state" ID="{9E2150BC-FDE1-4EF9-BA8B-72F2EE08A7C0}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="pause_off" ID="{C072399A-E0C8-47A8-A096-72E02EF7C96B}"/>
+										<CustomState Name="" ID="{C4F22853-F055-48E9-9FD8-02D7B6CA4689}" ShortID="468157119"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="pause_on" ID="{3A477F1B-0240-4CAF-90C7-F773B4097DAC}"/>
+										<CustomState Name="" ID="{A717C235-07E2-4F91-8558-3D61765087A7}" ShortID="91166144">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+						</Bus>
+						<Bus Name="enemy" ID="{59108662-989E-453E-9CBD-FE97EBF1A209}">
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="pause_state" ID="{9E2150BC-FDE1-4EF9-BA8B-72F2EE08A7C0}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="pause_off" ID="{C072399A-E0C8-47A8-A096-72E02EF7C96B}"/>
+										<CustomState Name="" ID="{28D5851E-377E-40BF-A45A-5E8DEE5084D4}" ShortID="712730230"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="pause_on" ID="{3A477F1B-0240-4CAF-90C7-F773B4097DAC}"/>
+										<CustomState Name="" ID="{A0DEAB3B-6C5A-445E-A56C-E6A40DC43F4B}" ShortID="708035861">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-14"/>
+												<Property Name="Lowpass" Type="int16" Value="32"/>
+												<Property Name="Volume" Type="Real64" Value="15"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+						</Bus>
 						<Bus Name="ambient" ID="{2E5DED25-3046-4F1F-A68D-0060D8D861D5}"/>
-						<Bus Name="music" ID="{8379D730-BEA0-445F-9E8E-05461BA006B1}"/>
+						<Bus Name="music" ID="{8379D730-BEA0-445F-9E8E-05461BA006B1}">
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="pause_state" ID="{9E2150BC-FDE1-4EF9-BA8B-72F2EE08A7C0}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="pause_off" ID="{C072399A-E0C8-47A8-A096-72E02EF7C96B}"/>
+										<CustomState Name="" ID="{FB9EA5D8-3435-49D1-9992-81FE22385178}" ShortID="124987288"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="pause_on" ID="{3A477F1B-0240-4CAF-90C7-F773B4097DAC}"/>
+										<CustomState Name="" ID="{5183B6F5-3354-4F1D-82EA-A53EA1458285}" ShortID="59926879">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16" Value="26"/>
+												<Property Name="Lowpass" Type="int16" Value="66"/>
+												<Property Name="Pitch" Type="int32" Value="-450"/>
+												<Property Name="Volume" Type="Real64" Value="-7"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+						</Bus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

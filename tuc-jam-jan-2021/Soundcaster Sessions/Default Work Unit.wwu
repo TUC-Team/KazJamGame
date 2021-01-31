@@ -40,7 +40,11 @@
 							<Value>100</Value>
 						</RTPCValue>
 					</RTPCValueList>
-					<CurrentStateList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="sniper_mode" ID="{83EC116B-133D-4EB7-93BC-AA53F20C0650}"/>
+						<CurrentStateRef Name="lose" ID="{96B6C17D-0C99-4A5C-889D-95AB550D6317}"/>
+						<CurrentStateRef Name="pause_off" ID="{C072399A-E0C8-47A8-A096-72E02EF7C96B}"/>
+					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="earth" ID="{6E25718C-E183-458D-ABF0-016D23945DDC}"/>
 					</CurrentSwitchList>

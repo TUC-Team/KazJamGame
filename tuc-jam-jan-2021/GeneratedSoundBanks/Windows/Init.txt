@@ -1,3 +1,27 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1944582999	pause_state			\Default Work Unit\pause_state	
+	2809391992	view_mode			\Default Work Unit\view_mode	
+	3826569560	music_state			\Default Work Unit\music_state	
+
+State	ID	Name	State Group			Notes
+	748895195	None	pause_state			
+	3537680115	pause_on	pause_state			
+	3967028551	pause_off	pause_state			
+	77368567	simple_mode	view_mode			
+	748895195	None	view_mode			
+	2878061914	sniper_mode	view_mode			
+	221232726	lose	music_state			
+	748895195	None	music_state			
+	979765101	win	music_state			
+	1026627430	middle	music_state			
+	1482584505	little	music_state			
+	3145131320	many	music_state			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	59926879	pause_on	pause_state	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\music		
+	91166144	pause_on	pause_state	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\chiken		
+	708035861	pause_on	pause_state	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\enemy		
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	77978275	ambient			\Default Work Unit\Master Audio Bus\ambient	
 	1635194334	pc			\Default Work Unit\Master Audio Bus\pc	
