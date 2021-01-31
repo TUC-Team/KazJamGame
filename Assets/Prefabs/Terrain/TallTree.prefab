@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8048873169849965264}
+  - component: {fileID: 3620270840126433320}
   m_Layer: 0
   m_Name: TallTree
   m_TagString: Untagged
@@ -24,13 +25,27 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3219433182608371722}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 51.40043, y: -2.9687843, z: -597.7257}
+  m_LocalPosition: {x: 51.40043, y: -1.11, z: -597.7257}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1585662767133785471}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &3620270840126433320
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3219433182608371722}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.9
+  m_Height: 23.1
+  m_Direction: 1
+  m_Center: {x: 0, y: 10.7, z: 0}
 --- !u!1001 &1264348898347915924
 PrefabInstance:
   m_ObjectHideFlags: 0
