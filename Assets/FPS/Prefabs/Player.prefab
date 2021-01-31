@@ -375,6 +375,21 @@ Projector:
   m_IgnoreLayers:
     serializedVersion: 2
     m_Bits: 512
+--- !u!114 &6599109171277101031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6609701637817090848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47798439a457748f1a9e7bbfc15c0650, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _axis: {x: 0, y: 0, z: 1}
+  _force: 1000
+  _change: 100
 --- !u!1 &6717119209339842490
 GameObject:
   m_ObjectHideFlags: 0
@@ -1191,11 +1206,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Robot_Texture
       objectReference: {fileID: 0}
+    - target: {fileID: 4867380329304247857, guid: c588ce75934d272418681c35e7723f03,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c588ce75934d272418681c35e7723f03, type: 3}
 --- !u!4 &6189262576178652934 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c588ce75934d272418681c35e7723f03,
+    type: 3}
+  m_PrefabInstance: {fileID: 5939708014536818925}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6609701637817090848 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8515053011508804659, guid: c588ce75934d272418681c35e7723f03,
     type: 3}
   m_PrefabInstance: {fileID: 5939708014536818925}
   m_PrefabAsset: {fileID: 0}
