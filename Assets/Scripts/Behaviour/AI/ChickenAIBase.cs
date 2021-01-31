@@ -78,6 +78,8 @@ public class ChickenAIBase : MonoBehaviour
         agent.enabled = false;
         collider.enabled = false;
         this.enabled = false;
+
+        _animator.SetBool(Move, false);
     }
 
     private void ChangeTargetRandom()
