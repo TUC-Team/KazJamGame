@@ -8,15 +8,30 @@ using UnityEngine.SceneManagement;
 
 public class Menu_Loader : MonoBehaviour
 {
+    public AK.Wwise.Event menuMusic;
+    public AK.Wwise.Event levelMusic;
+    public AK.Wwise.Event winMusic;
+    public AK.Wwise.Event loseMusic;
+    public AK.Wwise.Event creditsMusic;
+    public State levelStartState;
+    public State winState;
+    public State loseState;
     private AK.Wwise.Event _lastPlayed;
     public IReadOnlyDictionary<string, Tuple<AK.Wwise.Event, State>> Events { get; private set; }
     private GameObject _lastObject;
 
     private void Start()
     {
-        var scenesMusic = GetComponent<ScenesMusic>();
-        Events = scenesMusic.MusicEvents;
-        var activeScene = SceneManager.GetActiveScene();
+       
+        Events = 
+        new Dictionary<string, Tuple<AK.Wwise.Event, AK.Wwise.State>>(StringComparer.OrdinalIgnoreCase)
+        {
+            { "MenuScene", Tuple.Create(menuMusic, (AK.Wwise.State)null) },
+            { "LevelScene", Tuple.Create(levelMusic, levelStartState) },
+            { "CreditsScene", Tuple.Create(creditsMusic, (AK.Wwise.State)null) },
+            { "WinScene", Tuple.Create(winMusic, winState) },
+            { "LoseScene", Tuple.Create(loseMusic, loseState) },
+        }; var activeScene = SceneManager.GetActiveScene();
         if (activeScene != null)
         {
             ChangeSceneMusic(activeScene);
