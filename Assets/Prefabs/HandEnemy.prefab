@@ -953,8 +953,6 @@ MonoBehaviour:
   _fingers:
   - {fileID: 5885150267234724549}
   - {fileID: 681902268087285267}
-  - {fileID: 4488137092847009534}
-  - {fileID: 4365286747452072498}
 --- !u!1 &9063891927392915600
 GameObject:
   m_ObjectHideFlags: 0
