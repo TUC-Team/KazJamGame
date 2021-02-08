@@ -1,11 +1,61 @@
 fileFormatVersion: 2
 guid: f9d275a69fdc50e46ac8d9cc5a8b90b0
 ModelImporter:
-  serializedVersion: 19301
-  internalIDToNameTable: []
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: pasted__Block
+    100002: pasted__Cab
+    100004: pasted__group15
+    100006: pasted__pCube57
+    100008: pasted__SmartCombine_7
+    100010: pasted__SmartCombine_8
+    100012: pasted__SmartSeparate_10
+    100014: pasted__SmartSeparate_11
+    100016: pasted__SmartSeparate_15
+    100018: pasted__SmartSeparate_8
+    100020: pasted__SmartSeparate_9
+    100022: //RootNode
+    400000: pasted__Block
+    400002: pasted__Cab
+    400004: pasted__group15
+    400006: pasted__pCube57
+    400008: pasted__SmartCombine_7
+    400010: pasted__SmartCombine_8
+    400012: pasted__SmartSeparate_10
+    400014: pasted__SmartSeparate_11
+    400016: pasted__SmartSeparate_15
+    400018: pasted__SmartSeparate_8
+    400020: pasted__SmartSeparate_9
+    400022: //RootNode
+    2100000: lambert1
+    2300000: pasted__pCube57
+    2300002: pasted__SmartCombine_7
+    2300004: pasted__SmartCombine_8
+    2300006: pasted__SmartSeparate_10
+    2300008: pasted__SmartSeparate_11
+    2300010: pasted__SmartSeparate_15
+    2300012: pasted__SmartSeparate_8
+    2300014: pasted__SmartSeparate_9
+    3300000: pasted__pCube57
+    3300002: pasted__SmartCombine_7
+    3300004: pasted__SmartCombine_8
+    3300006: pasted__SmartSeparate_10
+    3300008: pasted__SmartSeparate_11
+    3300010: pasted__SmartSeparate_15
+    3300012: pasted__SmartSeparate_8
+    3300014: pasted__SmartSeparate_9
+    4300000: pasted__SmartSeparate_8
+    4300002: pasted__SmartSeparate_9
+    4300004: pasted__SmartSeparate_10
+    4300006: pasted__SmartSeparate_11
+    4300008: pasted__SmartCombine_8
+    4300010: pasted__SmartSeparate_15
+    4300012: pasted__pCube57
+    4300014: pasted__SmartCombine_7
+    9500000: //RootNode
   externalObjects: {}
   materials:
-    materialImportMode: 1
+    importMaterials: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -38,28 +88,25 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
-    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
-    fileIdsGeneration: 2
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
+    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
-    skinWeightsMode: 0
-    maxBonesPerVertex: 4
-    minBoneWeight: 0.001
-    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -68,10 +115,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips: []
   importAnimation: 1
+  copyAvatar: 0
   humanDescription:
-    serializedVersion: 3
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -81,16 +128,13 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
