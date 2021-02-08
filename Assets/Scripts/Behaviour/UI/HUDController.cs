@@ -26,7 +26,7 @@ public class HUDController : MonoBehaviour
         _chickenManager.ChickenRegisteredEvent += UpdateChickenCount;
         _chickenManager.ChickenRemovedEvent += UpdateChickenCount;
     }
-    
+
     private void OnDisable()
     {
         _chickenManager.ChickenRegisteredEvent -= UpdateChickenCount;

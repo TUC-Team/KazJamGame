@@ -8,7 +8,7 @@ public class Button_music : MonoBehaviour
     public AK.Wwise.Event click;
     public void button_click()
     {
-        
+
         click.Post(gameObject);
     }
     public void button_enter()
