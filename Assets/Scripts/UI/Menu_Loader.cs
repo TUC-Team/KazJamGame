@@ -22,8 +22,8 @@ public class Menu_Loader : MonoBehaviour
 
     private void Start()
     {
-       
-        Events = 
+
+        Events =
         new Dictionary<string, Tuple<AK.Wwise.Event, AK.Wwise.State>>(StringComparer.OrdinalIgnoreCase)
         {
             { "MenuScene", Tuple.Create(menuMusic, (AK.Wwise.State)null) },
@@ -38,7 +38,7 @@ public class Menu_Loader : MonoBehaviour
         }
         SceneManager.activeSceneChanged += OnSceneChanged;
     }
-    
+
     private void OnSceneChanged(Scene from, Scene to)
     {
         ChangeSceneMusic(to);
@@ -64,16 +64,16 @@ public class Menu_Loader : MonoBehaviour
     }
     public void LoadTheGame()
     {
-        
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        Debug.Log("Loader Scene");
+       // Debug.Log("Loader Scene");
     }
 
-    
+
 
     public void QuitTheGame()
     {
-        Debug.Log("Quit");
+       // Debug.Log("Quit");
         Application.Quit();
     }
 }

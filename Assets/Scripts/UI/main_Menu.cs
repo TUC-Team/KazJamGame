@@ -12,23 +12,23 @@ public class main_Menu : MonoBehaviour
 
     public void StartTheGame()
     {
-        Debug.Log("Start");
+       // Debug.Log("Start");
         SceneManager.LoadScene("TutorialScene");
     }
     public void SettingsTheGame()
     {
-        Debug.Log("Settings");
+        //Debug.Log("Settings");
         Main_Menu.SetActive(false);
         Settings_Menu.SetActive(true);
     }
     public void CreditsTheGame()
     {
-        Debug.Log("Credits");
+       // Debug.Log("Credits");
         SceneManager.LoadScene("CreditsScene");
     }
     public void QuitTheGame()
     {
-        Debug.Log("Quit");
+       // Debug.Log("Quit");
         Application.Quit();
     }
 
